@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Header(){
 
   const mainStyle = {
-    backgroundColor: '#38171C',
+  backgroundColor: '#1C0B0D',
     color: '#D2E8CC',
     height: 'calc(30px + 3vmin)',
     padding: '8px',
@@ -14,13 +14,14 @@ function Header(){
   }
 
   const headerTitleStyle = {
-    color: '#D2E8CC',
+    color: '#DDF4D7',
     display: 'inline-flex',
     height: 'calc(24px + 2vmin)',
-    fontSize: 'calc(12px + 2vmin)',
+    fontSize: 'calc(11px + 2vmin)',
     marginRight: '20vw',
     border: '3px double #D2E8CC',
     padding: '0.33vmin',
+    borderRadius:  '5px',
   }
 
 
@@ -34,7 +35,7 @@ function Header(){
     marginLeft: '1.2vw',
     marginRight: '1.2vw',
     color: '#D2E8CC',
-    fontSize: 'calc(6px + 2vmin)',
+    fontSize: 'calc(6px + 1.75vmin)',
   }
 
   return (
