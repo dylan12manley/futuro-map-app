@@ -9,9 +9,9 @@ import Error404 from './Error404';
 function App(){
 
   const styledApp = {
-    backgroundColor: '#A1BA9A',
+    backgroundColor: '#F2E2E1',
     color: '#38171C',
-    padding: '12px',
+    width: '100%',
   }
 
   return (
