@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 function Header(){
 
   const mainStyle = {
+    position: 'fixed',
+    top: '0',
     backgroundColor: '#1C0B0D',
     color: '#D2E8CC',
     height: 'calc(40px + 2.5vmin)',
-    padding: '8px',
     paddingTop: '0px',
     width: '100%',
     display: 'inline-flex',
@@ -19,7 +20,7 @@ function Header(){
     display: 'inline-flex',
     height: 'calc(16px + 1.8vmin)',
     fontSize: 'calc(12px + 1.8vmin)',
-    marginRight: '15vw',
+    marginRight: 'calc(15px + 15vmin)',
     border: '3px double #CCA7A3',
     padding: '0.33vmin',
     borderRadius:  '8px',

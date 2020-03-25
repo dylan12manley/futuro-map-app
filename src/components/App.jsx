@@ -8,15 +8,15 @@ import Error404 from './Error404';
 
 function App(){
 
-  const styledApp = {
-    backgroundColor: '#F2E2E1',
-    color: '#38171C',
+  const appStyle = {
+    backgroundColor: '#F3F7F2',
+    color: '#1C0B0D',
     width: '100%',
   }
 
   return (
     <Router>
-      <div style={styledApp}>
+      <div style={appStyle}>
       <Header />
       <Switch>
         <Route path="/signin" component={SignIn} />
