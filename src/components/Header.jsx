@@ -16,8 +16,10 @@ function Header(){
 
   const headerTitleStyle = {
     backgroundColor: '#1C0B0D',
-    color: '#DDF4D7',
+    color: '#F7F0ED',
     display: 'inline-flex',
+    marginLeft: '1.2vw',
+    marginRight: '1.2vw',
     height: 'calc(16px + 1.8vmin)',
     fontSize: 'calc(12px + 1.8vmin)',
     marginRight: 'calc(15px + 15vmin)',
@@ -28,7 +30,7 @@ function Header(){
 
 
   const navLinksStyle = {
-    color: '#D2E8CC',
+    color: '#F7F0ED',
     display: 'inline-flex',
     marginTop: '1.2vmin',
   }
@@ -37,7 +39,8 @@ function Header(){
     display: 'inline-flex',
     marginLeft: '1.2vw',
     marginRight: '1.2vw',
-    color: '#D2E8CC',
+    color: '#F7F0ED',
+    textDecoration: 'none',
     fontSize: 'calc(6px + 1.75vmin)',
   }
 

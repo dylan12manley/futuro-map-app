@@ -4,6 +4,11 @@ import Card from "react-bootstrap/Card"
 import kenith from './../assets/images/kenith.jpg';
 import rick from './../assets/images/RickFuturo.jpg';
 
+const articleStyle = {
+  color: '#38171C',
+  margin: 'calc(8px + 2.5vmin)'
+}
+
 const articleList = [
   {
     title: 'Why is Rick so Sick, for Real tho?',
@@ -30,7 +35,7 @@ const articleList = [
 
 function Article(){
   return (
-    <React.Fragment>
+    <div style={articleStyle}>
       <h3>thissa Article</h3>
       <h3></h3>
       <h5>authorrd</h5>
@@ -59,7 +64,7 @@ function Article(){
         }
         </div>
       </div>
-    </React.Fragment>
+    </div >
   );
 }
 
