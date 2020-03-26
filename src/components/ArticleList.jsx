@@ -1,4 +1,6 @@
 import React from "react";
+import { connect } from 'react-redux';
+
 import Article from "./Article";
 
 
@@ -17,5 +19,7 @@ function ArticleList(){
     </div>
   );
 }
+
+ArticleList = connect()(ArticleList);
 
 export default ArticleList;

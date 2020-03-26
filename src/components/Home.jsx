@@ -1,9 +1,12 @@
 import React from "react";
 import Header from "./Header";
-import Ticket from "./Ticket";
+import ArticleList from "./ArticleList";
 
 function Home(){
   return (
+    <>
+    <ArticleList/>
+    </>
 
   )}
 
