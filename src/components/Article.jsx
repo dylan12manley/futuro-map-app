@@ -6,8 +6,7 @@ import kenith from './../assets/images/kenith.jpg';
 import rick from './../assets/images/RickFuturo.jpg';
 
 const articleStyle = {
-  position: 'fixed',
-  top: 'calc(40px + 2.5vmin)',
+  marginTop: 'calc(40px + 2.5vmin)',
   color: '#38171C',
   margin: 'calc(8px + 2.5vmin)',
   fontFamily: 'Bungee',
