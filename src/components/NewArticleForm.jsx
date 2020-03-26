@@ -20,16 +20,16 @@ function NewTicketForm(){
         <form onSubmit={handleNewTicketFormSubmission}>
           <input
             type='text'
-            name='names'
-            placeholder='Pair Names' />
-          <input
-            type='text'
-            name='location'
-            placeholder='Location' />
+            name='title'
+            placeholder='Title' />
           <textarea
-            name='issue'
-            placeholder='Describe your issue.' />
-          <button type='submit'>Help!</button>
+            type='text'
+            name='headline'
+            placeholder='Headline' />
+          <textarea
+            name='body'
+            placeholder='Content Body' />
+          <button type='submit'>Add Article</button>
         </form>
       </div>
     );
