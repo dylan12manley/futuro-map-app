@@ -9,7 +9,12 @@ const articleStyle = {
   position: 'fixed',
   top: 'calc(40px + 2.5vmin)',
   color: '#38171C',
-  margin: 'calc(8px + 2.5vmin)'
+  margin: 'calc(8px + 2.5vmin)',
+  fontFamily: 'Bungee',
+}
+
+const articleStyleB = {
+  fontFamily: 'Black Ops One',
 }
 
 const articleList = [
@@ -47,7 +52,7 @@ function Article(){
       <p><em>thissa body or something maby a summary</em></p>
 
 
-      <div className="articleFeed">
+      <div style={articleStyleB}>
         <div className="articlesAvailableDiv">
           {articleList.map((article, id) =>
             <div key={id}>

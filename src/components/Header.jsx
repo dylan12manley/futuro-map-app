@@ -45,12 +45,36 @@ function Header(){
   }
 
   const linkStyle = {
-    display: 'inline-flex',
     marginLeft: '1.2vw',
     marginRight: '1.2vw',
     color: '#F7F0ED',
     textDecoration: 'none',
-    fontSize: 'calc(6px + 1.75vmin)',
+    fontSize: 'calc(3.8px + 1.75vmin)',
+    border: '1px solid #B7B4B3'
+  }
+
+  const linkStyle2 = {
+    marginLeft: '1.2vw',
+    marginRight: '1.2vw',
+    color: '#F7F0ED',
+    textDecoration: 'none',
+    fontSize: 'calc(5px + 1.75vmin)',
+  }
+
+  const linkStyle2b = {
+    marginLeft: '1.2vw',
+    marginRight: '1.2vw',
+    color: '#F7F0ED',
+    textDecoration: 'overline',
+    fontSize: 'calc(4px + 1.75vmin)',
+  }
+
+  const linkStyle3 = {
+    marginLeft: '1.2vw',
+    marginRight: '1.2vw',
+    color: '#F7F0ED',
+    textDecoration: 'overline',
+    fontSize: 'calc(4px + 1.75vmin)',
   }
 
   const bottomStyle = {
@@ -65,13 +89,13 @@ function Header(){
     <div style={mainStyle}>
       <Link to="/" style={linkStyle}><h4 style={headerTitleStyle}>Futuro Magazine</h4></Link>
       <div style={navLinksStyle}>
-        <Link to="/art" style={linkStyle}>Art</Link>
-        <Link to="/fashion" style={linkStyle}>Fashion</Link>
+        <Link to="/art" style={linkStyle2b}>Art</Link>
+        <Link to="/fashion" style={linkStyle2}>Fashion</Link>
         <Link to="/sound" style={linkStyle}>Sound</Link>
-        <Link to="/film" style={linkStyle}>Film</Link>
+        <Link to="/film" style={linkStyle2b}>Film</Link>
+        <Link to="/people" style={linkStyle2}>People</Link>
       </div>
     </div>
-    <div style={bottomStyle}></div>
     </>
   );
 }
