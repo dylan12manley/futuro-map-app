@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { connect } from 'react-redux';
 import PropTypes from "prop-types";
+import * as a from './../actions';
 
 import Home from "./Home";
 import SignIn from "./SignIn";
@@ -19,41 +20,20 @@ class App extends React.Component {
   handleAddingNewArticleToList = (newArticle) => {
     const { dispatch } = this.props;
     const { title, headline, body, author, date, category, id  } = newArticle;
-    const action = {
-      type: 'ADD_ARTICLE',
-      title: title,
-      headline: headline,
-      body: body,
-      author: author,
-      date: date,
-      category: category,
-      id: id,
-    }
+    const action = a.addArticle(newArticle);
     dispatch(action);
   }
 
   handleEditingArticleInList = (articleToEdit) => {
     const { dispatch } = this.props;
     const { title, headline, body, author, date, category, id } = articleToEdit;
-    const action = {
-      type: 'ADD_ARTICLE',
-      title: title,
-      headline: headline,
-      body: body,
-      author: author,
-      date: date,
-      category: category,
-      id: id,
-    }
+    const action = a.addArticle(articleToEdit);
     dispatch(action);
   }
 
   handleDeletingArticle = (id) => {
    const { dispatch } = this.props;
-   const action = {
-     type: 'DELETE_ATRICLE',
-     id: id
-   }
+   const action = a.deleteArticle(id);
    dispatch(action);
  }
 
