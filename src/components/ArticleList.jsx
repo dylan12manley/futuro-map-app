@@ -10,6 +10,7 @@ function ArticleList(props){
   }
 
   return (
+    <>
     <div style={articleListStyle}>
       {Object.values(props.articleList).map((article) => {
         return <Article
@@ -23,6 +24,7 @@ function ArticleList(props){
           key={article.id}/>
       })}
     </div>
+    </>
   );
 }
 

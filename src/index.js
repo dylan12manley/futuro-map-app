@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
 import { createStore } from 'redux';
-import reducer from './reducers/article-list-reducer';
+import rootReducer from './reducers/index';
 import { Provider } from 'react-redux';
 
 import * as serviceWorker from './serviceWorker';
 import './index.css';
 
-const store = createStore(reducer);
+const store = createStore(rootReducer);
 
 store.subscribe(() =>
   console.log(store.getState())
