@@ -1,5 +1,6 @@
 import React from "react";
 // import PropTypes from "prop-types";
+import Header from "./Header";
 import Card from "react-bootstrap/Card"
 import kenith from './../assets/images/kenith.jpg';
 import rick from './../assets/images/RickFuturo.jpg';
@@ -37,6 +38,8 @@ const articleList = [
 
 function Article(){
   return (
+    <>
+    <Header />
     <div style={articleStyle}>
       <h3>thissa Article</h3>
       <h3></h3>
@@ -67,6 +70,7 @@ function Article(){
         </div>
       </div>
     </div >
+    </>
   );
 }
 
