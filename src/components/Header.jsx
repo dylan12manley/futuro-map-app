@@ -23,7 +23,7 @@ function Header(){
     display: 'inline-flex',
     marginLeft: '1.2vw',
     marginRight: '1.2vw',
-    height: 'calc(24px + 1.8vmin)',
+    height: 'calc(26px + 1.8vmin)',
     fontSize: 'calc(12px + 1.8vmin)',
     marginRight: 'calc(15px + 15vmin)',
     border: '3px double #CCA7A3',

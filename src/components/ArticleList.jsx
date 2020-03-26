@@ -8,9 +8,7 @@ function ArticleList(){
 
   const articleListStyle = {
     paddingTop: '100px',
-    backgroundColor: '#DDCFCE',
-    color: '#38171C',
-    margin: 'calc(8px + 2.5vmin)',
+    // margin: 'calc(8px + 2.5vmin)',
   }
 
   return (

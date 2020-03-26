@@ -59,14 +59,14 @@ class App extends React.Component {
 
   render(){
     return (
-      <Router style={appStyle}>
-        <div >
+      <div style={appStyle}>
+      <Router>
         <Switch>
           <Route path="/signin" component={SignIn} />
           <Route path="/" component={Home} />
         </Switch>
-       </div>
       </Router>
+      </div>
     );
   }
 }
