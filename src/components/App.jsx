@@ -6,6 +6,7 @@ import * as a from './../actions';
 
 import Home from "./Home";
 import SignIn from "./SignIn";
+import LandingPage from './LandingPage';
 import Error404 from './Error404';
 
 const appStyle = {
@@ -42,8 +43,10 @@ class App extends React.Component {
       <div style={appStyle}>
       <Router>
         <Switch>
+          <Route exact path="/" component={LandingPage}/>
           <Route path="/signin" component={SignIn} />
-          <Route path="/" component={Home} articleList={this.props.articleList}/>
+          <Route path="/home" component={Home} articleList={this.props.articleList}/>
+          <Route component={Error404} />
         </Switch>
       </Router>
       </div>

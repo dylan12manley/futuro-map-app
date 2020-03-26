@@ -15,19 +15,18 @@ function LandingPage(){
             color: '#D6684D',
             textDecoration: 'underline-overline',
             border: '1.2px double #485266',
-         }}>The page you are looking<br>
-       </br>for does not exist!
+         }}>LANDING<br>
+       </br>PAGE
       </h2>
       <div style={{
             backgroundColor: '#9FC0E0',
             border: '0.4px solid #4A5468',
             padding: '12px',
             }}>
-        <h3>Would you like to return
-          <Link to="/article" style={{ textDecoration: 'none',
+        <h3>GO
+          <Link to="/home" style={{ textDecoration: 'none',
                            color: '#D6684D',
-              }}>Article</Link>,<br>
-          </br>or the <Link to="/">landing page</Link>instead?
+              }}> HOME</Link>?
         </h3>
       </div >
     </div>
