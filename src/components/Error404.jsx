@@ -7,6 +7,7 @@ function Error404(props){
     color: '#8E545E',
     padding: '50px',
     height: '100vh',
+    fontFamily: 'Black Ops One'
   }
   return (
     <div style={styledErrors}>

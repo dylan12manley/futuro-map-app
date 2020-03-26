@@ -3,15 +3,20 @@ import { v4 } from 'uuid'
 
 function NewTicketForm(){
 
-  function handleNewTicketFormSubmission(event) {
+  const formStyle = {
+    backgroundColor: '#183023',
+    color: '#8E545E',
+    height: '100vh',
+    fontFamily: 'Black Ops One'
+  }
+
+  function handleNewArticleFormSubmission(event) {
     event.preventDefault();
-    console.log(event.target.names.value);
-    console.log(event.target.location.value);
-    console.log(event.target.issue.value);
+    console.log(event.target.title.value);
   }
 
   return (
-      <React.Fragment>
+      <div style={formStyle}>
         <form onSubmit={handleNewTicketFormSubmission}>
           <input
             type='text'
@@ -26,6 +31,6 @@ function NewTicketForm(){
             placeholder='Describe your issue.' />
           <button type='submit'>Help!</button>
         </form>
-      </React.Fragment>
+      </div>
     );
   }

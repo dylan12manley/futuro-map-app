@@ -12,6 +12,7 @@ function App(){
     backgroundColor: '#F3F7F2',
     color: '#1C0B0D',
     width: '100%',
+    fontFamily: 'Montserrat Subrayada',
   }
 
   return (

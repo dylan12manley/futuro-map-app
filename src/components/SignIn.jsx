@@ -8,6 +8,7 @@ function SignIn(){
         padding: '5vw',
         margin: '5vw',
         height: '100vh',
+        width: '120vw',
         border: '3px double #4A5468',
       }
 
