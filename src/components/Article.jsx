@@ -1,81 +1,29 @@
 import React from "react";
-// import PropTypes from "prop-types";
-import Header from "./Header";
-import Card from "react-bootstrap/Card"
-import kenith from './../assets/images/kenith.jpg';
-import rick from './../assets/images/RickFuturo.jpg';
+import PropTypes from "prop-types";
 
-const articleStyle = {
-  marginTop: 'calc(40px + 2.5vmin)',
-  color: '#38171C',
-  margin: 'calc(8px + 2.5vmin)',
-  fontFamily: 'Bungee',
-}
 
-const articleStyleB = {
-  fontFamily: 'Black Ops One',
-}
-
-const articleList = [
-  {
-    title: 'Why is Rick so Sick, for Real tho?',
-    author: 'Joey P',
-    publishDate: 'Febuary 19, 2020',
-    articleTeaser: "YO , look Rick and Michelle are like Futuro's  favorite people besides Elon and Grimes lol. Wait Why? Because self actualization isn't even a fucking thought...",
-    articleBody: "YO , look Rick and Michelle are like Futuro's  favorite people besides Elon and Grimes lol. Wait Why? Because self actualization isn't even a fucking thought , It just is mothafuckafucking thing. Like just waking up , opening your eyes and just doing shit , no negative self talk , no barriers , no fucks given.",
-    mainImage: rick,
-    catagory: 'People',
-    id: 1,
-    mainImg: rick
-  },
-  {
-    title: 'Kenneth Cappello’s Photography is Flithy',
-    author: 'Joey P',
-    publishDate: 'Febuary 19th, 2020',
-    articleTeaser: 'Kenneth Cappelo’s photography makes me feel a certain type of way , I think its the way he captures the artist in there natural essence but also makes them look dope as fuck.',
-    articleBody: 'Kenneth Cappelo’s photography makes me feel a certain type of way , I think its the way he captures the artist in there natural essence but also makes them look dope as fuck. You have have cunt’s take lame pictures of you because they be kinda hating on the Low lol , That’s not Kenneth Cappelo , he’s def not a hater with camera.',
-    mainImg: kenith,
-    catagory: 'Film',
-    id: 2
-  }
-]
-
-function Article(){
+function Article(props){
   return (
     <>
-    <Header />
-    <div style={articleStyle}>
-      <h3>thissa Article</h3>
-      <h3></h3>
-      <h5>authorrd</h5>
-      <p><em>thissa body or something maby a summary</em></p>
-
-
-      <div style={articleStyleB}>
-        <div className="articlesAvailableDiv">
-          {articleList.map((article, id) =>
-            <div key={id}>
-            <Card className="cardClass">
-            <div className='cardHeader'>
-              <h4 className='cardTitle'>{article.title}</h4>
-              <h6 className='cardTitleB'>{article.author}<span className='publishDate'>{article.publishDate}</span></h6>
-            </div>
-            <div className="cardImg">
-              <Card.Img className="cardImgImg" src={article.mainImg} alt="The article's main image." />
-            </div>
-              <Card.Text className="articleSubtitle">
-                <p className='ArticleTeaserOnCard'> {article.articleTeaser}</p>
-              </Card.Text>
-            </Card>
-            <hr></hr>
-            </div>
-          )
-        }
-        </div>
+      <div>
+        <h4>{props.title}</h4>
+        <h5>{props.author}</h5>
+        <p><em>{props.date}</em></p>
+        <p><em>{props.headline}</em></p>
+        <p>{props.body}</p>
       </div>
-    </div >
+      <hr/>
     </>
   );
 }
+
+Article.propTypes = {
+  title: PropTypes.string,
+  author: PropTypes.string,
+  date: PropTypes.string,
+  headline: PropTypes.string,
+  body: PropTypes.string,
+  id: PropTypes.string,
+};
 
 export default Article;

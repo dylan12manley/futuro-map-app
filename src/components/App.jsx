@@ -63,7 +63,7 @@ class App extends React.Component {
       <Router>
         <Switch>
           <Route path="/signin" component={SignIn} />
-          <Route path="/" component={Home} />
+          <Route path="/" component={Home} articleList={this.props.articleList}/>
         </Switch>
       </Router>
       </div>
