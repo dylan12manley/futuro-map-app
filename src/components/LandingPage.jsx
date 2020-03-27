@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { }
 
 function LandingPage(){
   const styledLanding = {
@@ -32,6 +33,7 @@ function LandingPage(){
       <div style={{ backgroundColor: '#485266',
                     color: '#D6684D',
                   }}>
+        <img src={}
       </div>
     </div>
 
