@@ -7,9 +7,10 @@ function Article(props){
     <>
       <div>
         <h4>{props.title}</h4>
-        <h5>{props.author}</h5>
-        <p><em>{props.date}</em></p>
         <p><em>{props.headline}</em></p>
+        <p><em>{props.date}</em></p>
+        <h5>{props.author}</h5>
+        <img src={props.mainImg}></img>
         <p>{props.body}</p>
       </div>
       <hr/>
@@ -23,6 +24,7 @@ Article.propTypes = {
   date: PropTypes.string,
   headline: PropTypes.string,
   body: PropTypes.string,
+  mainImg: PropTypes.string,
   id: PropTypes.string,
 };
 
