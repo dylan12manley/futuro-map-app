@@ -1,11 +1,11 @@
 import React from "react";
 import Header from "./Header";
-import ArticleList from "./ArticleList";
+import FakeArticle from "./FakeArticle";
 
 function Home(){
   return (
     <>
-    <ArticleList/>
+    <FakeArticle/>
     </>
 
   )}
