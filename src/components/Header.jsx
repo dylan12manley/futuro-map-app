@@ -25,7 +25,6 @@ function Header(){
     marginRight: '1.2vw',
     height: 'calc(26px + 1.8vmin)',
     fontSize: 'calc(12px + 1.8vmin)',
-    marginRight: 'calc(15px + 15vmin)',
     border: '3px double #CCA7A3',
     padding: '0.33vmin',
     paddingTop: '0px',
@@ -69,20 +68,6 @@ function Header(){
     fontSize: 'calc(4px + 1.75vmin)',
   }
 
-  const linkStyle3 = {
-    marginLeft: '1.2vw',
-    marginRight: '1.2vw',
-    color: '#F7F0ED',
-    textDecoration: 'overline',
-    fontSize: 'calc(4px + 1.75vmin)',
-  }
-
-  const bottomStyle = {
-    height: 'calc(12px + 0.9vmin)',
-    backgroundColor: 'red',
-    position: 'fixed',
-    zIndex: '1',
-  }
 
   return (
     <>

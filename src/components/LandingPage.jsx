@@ -74,45 +74,46 @@ function LandingPage(){
                     color: '#D6684D',
                   }}>
 
-        <img src={F1} style={styledLetterImgs}></img>
-        <img src={U1} style={styledLetterImgs}></img>
-        <img src={T1} style={styledLetterImgs}></img>
-        <img src={U1} style={styledLetterImgs}></img>
-        <img src={R1} style={styledLetterImgs}></img>
-        <img src={O1} style={styledLetterImgs}></img>
+        <img src={F1} style={styledLetterImgs} alt='F1'></img>
+        <img src={U1} style={styledLetterImgs} alt='U1'></img>
+        <img src={T1} style={styledLetterImgs} alt='T1'></img>
+        <img src={U1} style={styledLetterImgs} alt='U1'></img>
+        <img src={R1} style={styledLetterImgs} alt='R1'></img>
+        <img src={O1} style={styledLetterImgs} alt='O1'></img>
         <p>   </p>
-        <img src={M1} style={styledLetterImgs}></img>
-        <img src={A1} style={styledLetterImgs}></img>
-        <img src={G1} style={styledLetterImgs}></img>
-        <img src={A1} style={styledLetterImgs}></img>
-        <img src={Z1} style={styledLetterImgs}></img>
-        <img src={I1} style={styledLetterImgs}></img>
-        <img src={N1} style={styledLetterImgs}></img>
-        <img src={E1} style={styledLetterImgs}></img>
+        <img src={M1} style={styledLetterImgs} alt='M1'></img>
+        <img src={A1} style={styledLetterImgs} alt='A1'></img>
+        <img src={G1} style={styledLetterImgs} alt='G1'></img>
+        <img src={A1} style={styledLetterImgs} alt='A1'></img>
+        <img src={Z1} style={styledLetterImgs} alt='Z1'></img>
+        <img src={I1} style={styledLetterImgs} alt='I1'></img>
+        <img src={N1} style={styledLetterImgs} alt='N1'></img>
+        <img src={E1} style={styledLetterImgs} alt='E1'></img>
       </div>
 
       <div style={{ backgroundColor: '#9FC0E0',
                     color: '#D6684D',
                   }}>
-        <img src={FM1} style={styledMagImgs}></img>
-        <img src={F1} style={styledLetterImgs2}></img>
-        <img src={mag1} style={styledMagImgs}></img>
+        <img src={FM1} style={styledMagImgs} alt='FM1'></img>
+        <img src={F1} style={styledLetterImgs2} alt='F1'></img>
+        <img src={mag1} style={styledMagImgs} alt='Mag'></img>
+        <img src={Rings1} style={styledMagImgs} alt='rings'></img>
       </div>
 
       <div style={{ backgroundColor: '#485266',
                     color: '#D6684D',
                   }}>
 
-        <img src={futuro2} style={styledMagazineTitle}></img>
-        <img src={Magazine2} style={styledMagazineTitle}></img>
+        <img src={futuro2} style={styledMagazineTitle} alt='futuro'></img>
+        <img src={Magazine2} style={styledMagazineTitle} alt='Magazine'></img>
       </div>
 
       <div style={{ backgroundColor: '#9FC0E0',
                     color: '#D6684D',
                   }}>
 
-        <img src={futuro1} style={styledMagazineTitle}></img>
-        <img src={Magazine1} style={styledMagazineTitle}></img>
+        <img src={futuro1} style={styledMagazineTitle} alt='futuro'></img>
+        <img src={Magazine1} style={styledMagazineTitle} alt='Magazine'></img>
       </div>
     </div>
 
