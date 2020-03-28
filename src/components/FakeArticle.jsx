@@ -1,17 +1,13 @@
 import React from "react";
-import Header from "./Header";
+import Article from "./Article";
 import kenith from './../assets/images/kenith.jpg';
 import rick from './../assets/images/RickFuturo.jpg';
 
 const articleStyle = {
-  marginTop: 'calc(40px + 2.5vmin)',
+  marginTop: '50px',
+  padding: 'calc(8px + 1vmin)',
   color: '#38171C',
-  margin: 'calc(8px + 2.5vmin)',
   fontFamily: 'Bungee',
-}
-
-const articleStyleB = {
-  fontFamily: 'Black Ops One',
 }
 
 const articleList = [
@@ -40,22 +36,20 @@ const articleList = [
 function FakeArticle(){
   return (
     <>
-    <Header />
-    <div style={articleStyle}>
-        <div className="articlesAvailableDiv">
-          {articleList.map((article, id) =>
-            <div key={id} className="cardClass">
-              <div className='cardHeader'>
-                <h4 className='cardTitle'>{article.title}</h4>
-                <h6 className='cardTitleB'>{article.author}<span className='publishDate'>{article.date}</span></h6>
-              </div>
-                  <p className='ArticleTeaserOnCard'> {article.headline}</p>
-              <hr></hr>
-            </div>
-          )
-        }
-        </div>
+      <div style={articleStyle}>
+        {Object.values(articleList).map((article) => {
+          return <Article
+            title={article.title}
+            headline={article.headline}
+            body={article.body}
+            author={article.author}
+            date={article.date}
+            category={article.category}
+            id={article.id}
+            key={article.id}/>
+        })}
       </div>
+
     </>
   );
 }
