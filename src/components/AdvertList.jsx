@@ -8,32 +8,36 @@ import tein from './../../images/TEIN.jpg'
 const advertList = [
   {
     title: 'ad number 1',
-    url: 'https://www.keane-eyes.com/',
+    redirectUrl: 'https://www.keane-eyes.com/',
     img: keene,
+    alt: 'Keene',
     id: 1
   },
   {
     title: 'ad number 2',
-    url: 'https://www.dior.com/en_us',
+    redirectUrl: 'https://www.dior.com/en_us',
     img: taschen,
     id: 2
   },
   {
     title: 'ad number 3',
-    url: 'https://www.dior.com/en_us',
+    redirectUrl: 'https://www.dior.com/en_us',
     img: dior,
+    alt: 'Dior',
     id: 3
   },
   {
     title: 'ad number 4',
-    url: 'https://www.keane-eyes.com/',
+    redirectUrl: 'https://www.keane-eyes.com/',
     img: arTecHouse,
+    alt: 'arTecHouse',
     id: 4
   }
   {
     title: 'ad number 5',
-    url: 'https://www.keane-eyes.com/',
-    img: arTecHouse,
+    redirectUrl: 'https://www.store.teinclothing.com/',
+    img: tein,
+    alt: 'T.E.I.N.',
     id: 5
   }
 ]
@@ -44,13 +48,11 @@ function AdvertList(){
     <>
     <div>
       {Object.values(props.advertList).map((advert) => {
-        return <Article
+        return <Advert
           title={advert.title}
-          headline={advert.headline}
-          body={advert.body}
-          author={advert.author}
-          date={advert.date}
-          category={advert.category}
+          redirectUrl={advert.redirectUrl}
+          img={advert.img}
+          alt={advert.alt}
           id={advert.id}
           key={advert.id}/>
       })}
