@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { connect } from 'react-redux';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import PropTypes from "prop-types";
 import * as a from './../actions';
 
@@ -9,7 +10,7 @@ import SignIn from "./SignIn";
 import LandingPage from './LandingPage';
 import Error404 from './Error404';
 import NewArticleForm from './NewArticleForm';
-import AdvertList from './ArticleList';
+import Advert from './Article';
 
 const appStyle = {
   backgroundColor: '#F3F7F2',
@@ -48,7 +49,7 @@ class App extends React.Component {
           <Route exact path="/" component={LandingPage}/>
           <Route path="/signin" component={SignIn} />
           <Route path="/home" component={Home} articleList={this.props.articleList}/>
-          <Route path="/Adverts" component={AdvertList}/>
+          <Route path="/ads" component={Advert}/>
           <Route path="/NewArticleForm" component={NewArticleForm} onNewArticleCreation={this.handleAddingNewArticleToList} />
           <Route component={Error404} />
         </Switch>

@@ -1,30 +1,24 @@
 import React from "react";
 import Header from "./Header";
 import FakeArticle from "./FakeArticle";
-import AdvertList from "./AdvertList";
+import FakeAdvert from "./Advert";
 
-import Columns from 'react-columns';
+import { Row, Col } from 'react-bootstrap';
 
 
 function Home(){
 
-  var queries = [{
-    columns: 2,
-    query: 'min-width: 500px'
-  }, {
-    columns: 3,
-    query: 'min-width: 1000px'
-  }];
-
   return (
     <div >
       <Header/>
-      <div className='row'>
-        <Columns queries={queries}>
+      <Row className='row'>
+        <Col>
           <FakeArticle/>
-          <AdvertList/>
-         </Columns>
-      </div>
+        </Col>
+        <Col>
+          <FakeAdvert/>
+         </Col>
+      </Row>
     </div>
 
   )}
