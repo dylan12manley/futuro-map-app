@@ -2,8 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Card } from 'antd';
 
-import './../styles/article.css';
-
 const { Meta } = Card;
 
 function Article(props){
@@ -13,20 +11,24 @@ function Article(props){
             title=<h2>{props.title}</h2>
             cover={<img alt="article" src={props.mainImg} />}
             headStyle={{
+              fontFamily: 'Rubik',
+              fontWeight: '100',
               margin:'0px',
               height: '42px'
             }}
             bodyStyle={{
-              color: '#1C0B0D'
+              color: '#1C0B0D',
+              fontFamily: 'Rubik',
             }}>
         <div className='articleBottom'>
           <p style={{
             fontSize: '18px',
-            margin: '8px'
+            margin: '8px',
           }}>{props.author} <span style={{
             paddingLeft: '15vw'
           }}>{props.date} </span></p>
           <p style={{
+            fontWeight: '500',
             margin: '0px'}}
             >{props.headline}</p>
         </div>

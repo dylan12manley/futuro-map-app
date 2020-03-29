@@ -57,7 +57,8 @@ function FakeAdvert(){
             redirectUrl={advert.redirectUrl}
             img={advert.img}
             alt={advert.alt}
-            id={advert.id}/>
+            id={advert.id}
+            key={advert.id}/>
         })}
       </div>
       <hr/>
