@@ -3,7 +3,6 @@ import Header from "./Header";
 import FakeArticle from "./FakeArticle";
 import FakeAdvert from "./Advert";
 
-import { Row, Col } from 'react-bootstrap';
 
 
 function Home(){
@@ -11,14 +10,14 @@ function Home(){
   return (
     <div >
       <Header/>
-      <Row className='row'>
-        <Col>
+      <div className='row'>
+        <div className='column' md={9}>
           <FakeArticle/>
-        </Col>
-        <Col>
+        </div>
+        <div className='column' md={3}>
           <FakeAdvert/>
-         </Col>
-      </Row>
+        </div>
+      </div>
     </div>
 
   )}
