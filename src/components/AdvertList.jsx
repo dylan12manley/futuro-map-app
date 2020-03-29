@@ -8,7 +8,7 @@ function AdvertList(props){
 
   return (
     <>
-    <div style={advertStyle}>
+    <div>
       {Object.values(props.advertList).map((advert) => {
         return <Advert
           title={advert.title}

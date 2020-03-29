@@ -5,6 +5,7 @@ function Header(){
 
   const mainStyle = {
     position: 'fixed',
+    zIndex: '1',
     top: '0',
     backgroundColor: '#1C0B0D',
     color: '#D2E8CC',

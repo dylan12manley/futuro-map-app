@@ -5,7 +5,7 @@ import kenith from './../assets/images/kenith.jpg';
 import tyler from './../assets/images/tyler.jpg';
 
 const articleStyle = {
-  marginTop: '50px',
+  marginTop: '55px',
   padding: 'calc(8px + 1vmin)',
   color: '#38171C',
   fontFamily: 'Bungee',

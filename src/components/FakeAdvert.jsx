@@ -6,7 +6,6 @@ import keene from '../assets/images/keene.jpg'
 import arTecHouse from '../assets/images/artechouse.png'
 import taschen from '../assets/images/Taschen.png'
 import tein from '../assets/images/TEIN.jpg'
-import './../styles/article.css'
 
 const advertList = [
   {
@@ -48,7 +47,9 @@ const advertList = [
 function FakeAdvert(){
   return (
     <>
-      <div>
+      <div style={{
+        marginTop: '65px'
+      }}>
         {Object.values(advertList).map((advert) => {
           return <Advert
             title={advert.title}
