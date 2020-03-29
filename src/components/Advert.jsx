@@ -8,7 +8,10 @@ function Advert(props){
   return (
     <>
       <a href={props.redirectUrl}>
-        <img src={props.img} alt={props.alt}></img>
+        <img src={props.img} alt={props.alt} style={{
+          height: '300px',
+          width: '300px',
+        }}></img>
       </a>
     </>
   );
