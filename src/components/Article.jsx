@@ -11,12 +11,24 @@ function Article(props){
     <>
       <Card hoverable
             title=<h2>{props.title}</h2>
-            extra=<p>{props.author} </p>
             cover={<img alt="article" src={props.mainImg} />}
-            style={{}}>
+            headStyle={{
+              margin:'0px',
+              height: '42px'
+            }}
+            bodyStyle={{
+              color: '#1C0B0D'
+            }}>
         <div className='articleBottom'>
-          <p className='date'>{props.date}</p>
-          <p>{props.headline}</p>
+          <p style={{
+            fontSize: '18px',
+            margin: '8px'
+          }}>{props.author} <span style={{
+            paddingLeft: '15vw'
+          }}>{props.date} </span></p>
+          <p style={{
+            margin: '0px'}}
+            >{props.headline}</p>
         </div>
       </Card>
       <hr/>

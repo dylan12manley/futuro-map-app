@@ -7,13 +7,9 @@ import PropTypes from "prop-types";
 function Advert(props){
   return (
     <>
-      <div>
-      <p>{props.title}</p>
       <a href={props.redirectUrl}>
         <img src={props.img} alt={props.alt}></img>
       </a>
-      </div>
-      <hr/>
     </>
   );
 }

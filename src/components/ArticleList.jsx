@@ -5,13 +5,10 @@ import Article from "./Article";
 
 function ArticleList(props){
 
-  const articleListStyle = {
-    paddingTop: '50px',
-  }
 
   return (
     <>
-    <div style={articleListStyle}>
+    <div>
       {Object.values(props.articleList).map((article) => {
         return <Article
           title={article.title}

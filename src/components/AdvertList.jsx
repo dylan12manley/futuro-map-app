@@ -3,11 +3,12 @@ import PropTypes from "prop-types";
 
 import Advert from "./Advert";
 
+
 function AdvertList(props){
 
   return (
     <>
-    <div>
+    <div style={advertStyle}>
       {Object.values(props.advertList).map((advert) => {
         return <Advert
           title={advert.title}
