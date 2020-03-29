@@ -55,10 +55,15 @@ function LandingPage(){
   const styledMagazineTitle = {
     height: '24vmin',
     width: '63vmin',
+
   }
 
   return (
     <div style={styledLanding}>
+      <div style={styledMagazineTitle}>
+        <img src={futuro} style={{width: '60%', height: '75px', transform: 'rotate(325deg)'}} alt='Futuro'></img>
+        <img src={mag} style={{ width: '57%', transform: 'rotate(315deg)'}} alt='Mag'></img>
+      </div>
       <div style={styledLanding}>
         <h2 style={{
               color: '#D6684D',
@@ -85,65 +90,26 @@ function LandingPage(){
           <img src={I1} style={styledLetterImgs} alt='I1'></img>
           <img src={N1} style={styledLetterImgs} alt='N1'></img>
           <img src={E1} style={styledLetterImgs} alt='E1'></img>
+          <img src={rings2} style={{height: '6vmin',
+          width: '6vmin',
+          filter: 'sepia(80%)',
+          transform: 'rotate(180deg)'}} alt='rings2' ></img>
+
         </h2>
       </div>
-      <div style={{
-            backgroundColor: '#9FC0E0',
-            border: '0.4px solid #4A5468',
-            padding: '12px',
-            }}>
-
-        <h3>GO<Link to="/home" style={{ textDecoration: 'none',
-                                        color: '#D6684D',
-                                      }}> HOME</Link>?</h3>
-      </div >
-      <div style={{ backgroundColor: '#485266',
-                    color: '#D6684D',
-                  }}>
-
-
-        <p>   </p>
-
-      </div>
-
-      <div style={{ backgroundColor: '#9FC0E0',
-                    color: '#D6684D',
-                  }}>
+      <div style={{ backgroundColor: '#183023', color: '#D6684D'}}>
         <img src={rings1} style={styledMagImgs} alt='rings'></img>
-        <img src={fm} style={styledMagImgs} alt='FM'></img>
-        <img src={rings1} style={styledMagImgs} alt='rings'></img>
+        <Link to="/home" style={{ textDecoration: 'none', color: '#D6684D'}}><img src={fm} style={styledMagImgs} alt='FM'></img> </Link>
+        <img src={rings1} style={{transform:'rotate(180deg)', height: '24vmin',
+        width: '33vmin',}} alt='rings'></img>
       </div>
 
-      <div style={{
-                    color: '#D6684D',
-                  }}>
-        <img src={futuro} style={{width: '35%',
-                                  height: '105px'}} alt='Futuro'></img>
-      </div>
-      <div style={{
-                    color: '#D6684D',
-                  }}>
-        <img src={mag} style={{ width: '50%',
-      }} alt='Mag'></img>
-      </div>
 
-      <div style={{ backgroundColor: '#485266',
-                    color: '#D6684D',
-                  }}>
-
-        <img src={futuro2} style={{ width: '40%'}} alt='futuro'></img>
-        <img src={Magazine2} style={styledMagazineTitle} alt='Magazine'></img>
-      </div>
-
-      <div style={{ backgroundColor: '#9FC0E0',
-                    color: '#D6684D',
-                  }}>
-
-        <img src={futuro1} style={styledMagazineTitle} alt='futuro'></img>
-        <img src={Magazine1} style={styledMagazineTitle} alt='Magazine'></img>
+      <div style={{color: '#D6684D'}}>
+        <img src={futuro} style={{width: '35%', height: '105px'}} alt='Futuro'></img>
+        <img src={mag} style={{ width: '50%'}} alt='Mag'></img>
       </div>
     </div>
-
   );
 }
 
