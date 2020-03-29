@@ -9,7 +9,7 @@ import { createFirestoreInstance } from 'redux-firestore';
 import firebase from "./firebase";
 
 import * as serviceWorker from './serviceWorker';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'antd/dist/antd.css';
 import './index.css';
 
 const store = createStore(rootReducer);

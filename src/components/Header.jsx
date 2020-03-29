@@ -23,7 +23,7 @@ function Header(){
     display: 'inline-flex',
     marginLeft: '1.2vw',
     marginRight: '1.2vw',
-    marginTop: '10px',
+    marginTop: '30px',
     height: 'calc(26px + 1.8vmin)',
     fontSize: 'calc(12px + 1.8vmin)',
     border: '3px double #CCA7A3',
@@ -49,7 +49,7 @@ function Header(){
     marginRight: '1.2vw',
     color: '#F7F0ED',
     textDecoration: 'none',
-    fontSize: 'calc(3.8px + 1.75vmin)',
+    fontSize: 'calc(5.6px + 1.75vmin)',
     border: '1px solid #B7B4B3'
   }
 
@@ -58,7 +58,7 @@ function Header(){
     marginRight: '1.2vw',
     color: '#F7F0ED',
     textDecoration: 'none',
-    fontSize: 'calc(5px + 1.75vmin)',
+    fontSize: 'calc(6.5px + 1.75vmin)',
   }
 
   const linkStyle2b = {
@@ -66,7 +66,7 @@ function Header(){
     marginRight: '1.2vw',
     color: '#F7F0ED',
     textDecoration: 'overline',
-    fontSize: 'calc(4px + 1.75vmin)',
+    fontSize: 'calc(6px + 1.75vmin)',
   }
 
 

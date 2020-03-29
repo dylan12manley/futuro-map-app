@@ -1,5 +1,6 @@
 import React from "react";
 import Article from "./Article";
+
 import kenith from './../assets/images/kenith.jpg';
 import tyler from './../assets/images/tyler.jpg';
 

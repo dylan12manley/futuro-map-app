@@ -1,22 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Card } from 'antd';
 
-import './../styles/article.css'
+import './../styles/article.css';
+
+const { Meta } = Card;
 
 function Article(props){
   return (
     <>
-      <div>
-        <div className='articleTop'>
-          <h2 className='articleTitle'>{props.title}</h2>
-          <p>{props.author} <span className='date'>{props.date}</span></p>
-        </div>
+      <Card hoverable
+            title=<h2>{props.title}</h2>
+            extra=<p>{props.author} </p>
+            cover={<img alt="article" src={props.mainImg} />}
+            style={{}}>
         <div className='articleBottom'>
+          <p className='date'>{props.date}</p>
           <p>{props.headline}</p>
-          <img src={props.mainImg}></img>
-          <p>{props.body}</p>
         </div>
-      </div>
+      </Card>
       <hr/>
     </>
   );
