@@ -2,8 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Card } from 'antd';
 
-const { Meta } = Card;
-
 function Article(props){
   return (
     <>
