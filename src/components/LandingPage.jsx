@@ -33,19 +33,9 @@ function LandingPage(){
     height: '100vh',
     fontFamily: 'Black Ops One',
     textAlign: 'center',
-  }
-  const styledLetterImgs = {
-    height: '6vmin',
-    width: '6vmin',
-    filter: 'sepia(80%)',
+    filter: 'grayscale(.75)',
   }
 
-  const styledLetterImgs2 = {
-    height: 'calc(18vmin)',
-    width: 'calc(8px+13vmin)',
-    paddingBottom: '3vmin',
-    paddingLeft: '12vmin',
-  }
 
   const styledMagImgs = {
     height: '24vmin',
@@ -55,18 +45,21 @@ function LandingPage(){
 
   return (
     <div style={styledLanding}>
-      <div style={{height: '20vh'}}>
-        <img src={futuro} style={{width: '35%', height: '80%'}} alt='Futuro'></img>
-      </div>
-      <div>
-        <img src={rings1} style={{height: '12vh'}} alt='rings'></img>
-        <Link to="/home" style={{ textDecoration: 'none', color: '#D6684D'}}><img src={fm} style={{height: '8vh'}} alt='FM'></img> </Link>
-        <img src={rings1} style={{transform:'rotate(180deg)', height: '12vh'}} alt='rings'></img>
+      <div style={{paddingTop: '18vh',
+                   filter: 'grayscale(.25)',}}>
+        <div style={{height: '20vh'}}>
+          <img src={futuro} style={{width: '45%', height: '75%', filter: 'brightness(3)'}} alt='Futuro'></img>
+        </div>
+        <div>
+          <img src={rings1} style={{height: '12vh'}} alt='rings'></img>
+          <Link to="/home" style={{ textDecoration: 'none', color: '#D6684D', filter: 'brightness(2)'}}><img src={fm} style={{height: '10vh'}} alt='FM'></img> </Link>
+          <img src={rings1} style={{transform:'rotate(180deg)', height: '12vh'}} alt='rings'></img>
+        </div>
       </div>
 
 
-      <div style={{color: '#D6684D'}}>
-        <img src={mag} style={{ width: '50%'}} alt='Mag'></img>
+      <div style={{color: '#D6684D', filter: 'grayscale(.5)'}}>
+        <img src={mag} style={{ width: '50%', filter: 'brightness(3)' }} alt='Mag'></img>
       </div>
     </div>
   );
