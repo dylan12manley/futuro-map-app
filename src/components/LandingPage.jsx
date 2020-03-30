@@ -30,7 +30,7 @@ function LandingPage(){
     backgroundColor: '#183023',
     color: '#8E545E',
     padding: '50px',
-    height: '35vh',
+    height: '100vh',
     fontFamily: 'Black Ops One',
     textAlign: 'center',
   }
@@ -52,61 +52,20 @@ function LandingPage(){
     width: '33vmin',
   }
 
-  const styledMagazineTitle = {
-    height: '24vmin',
-    width: '63vmin',
-
-  }
 
   return (
     <div style={styledLanding}>
-      <div style={styledMagazineTitle}>
-        <img src={futuro} style={{width: '60%', height: '75px', transform: 'rotate(325deg)'}} alt='Futuro'></img>
-        <img src={mag} style={{ width: '57%', transform: 'rotate(315deg)'}} alt='Mag'></img>
+      <div style={{height: '20vh'}}>
+        <img src={futuro} style={{width: '35%', height: '80%'}} alt='Futuro'></img>
       </div>
-      <div style={styledLanding}>
-        <h2 style={{
-              color: '#D6684D',
-              textDecoration: 'underline-overline',
-              border: '2vmin double #485266',
-              padding: '1vmin',
-              backgroundColor: '#183023',
-              height: '20vh',
-              fontFamily: 'Black Ops One',
-          }}>
-          <img src={rings2} style={styledLetterImgs} alt='rings2'></img>
-          <img src={F1} style={styledLetterImgs} alt='U1'></img>
-          <img src={U1} style={styledLetterImgs} alt='U1'></img>
-          <img src={T1} style={styledLetterImgs} alt='T1'></img>
-          <img src={U1} style={styledLetterImgs} alt='U1'></img>
-          <img src={R1} style={styledLetterImgs} alt='R1'></img>
-          <img src={O1} style={styledLetterImgs} alt='O1'></img><br>
-        </br>
-          <img src={M1} style={styledLetterImgs} alt='M1'></img>
-          <img src={A1} style={styledLetterImgs} alt='A1'></img>
-          <img src={G1} style={styledLetterImgs} alt='G1'></img>
-          <img src={A1} style={styledLetterImgs} alt='A1'></img>
-          <img src={Z1} style={styledLetterImgs} alt='Z1'></img>
-          <img src={I1} style={styledLetterImgs} alt='I1'></img>
-          <img src={N1} style={styledLetterImgs} alt='N1'></img>
-          <img src={E1} style={styledLetterImgs} alt='E1'></img>
-          <img src={rings2} style={{height: '6vmin',
-          width: '6vmin',
-          filter: 'sepia(80%)',
-          transform: 'rotate(180deg)'}} alt='rings2' ></img>
-
-        </h2>
-      </div>
-      <div style={{ backgroundColor: '#183023', color: '#D6684D'}}>
-        <img src={rings1} style={styledMagImgs} alt='rings'></img>
-        <Link to="/home" style={{ textDecoration: 'none', color: '#D6684D'}}><img src={fm} style={styledMagImgs} alt='FM'></img> </Link>
-        <img src={rings1} style={{transform:'rotate(180deg)', height: '24vmin',
-        width: '33vmin',}} alt='rings'></img>
+      <div>
+        <img src={rings1} style={{height: '12vh'}} alt='rings'></img>
+        <Link to="/home" style={{ textDecoration: 'none', color: '#D6684D'}}><img src={fm} style={{height: '8vh'}} alt='FM'></img> </Link>
+        <img src={rings1} style={{transform:'rotate(180deg)', height: '12vh'}} alt='rings'></img>
       </div>
 
 
       <div style={{color: '#D6684D'}}>
-        <img src={futuro} style={{width: '35%', height: '105px'}} alt='Futuro'></img>
         <img src={mag} style={{ width: '50%'}} alt='Mag'></img>
       </div>
     </div>

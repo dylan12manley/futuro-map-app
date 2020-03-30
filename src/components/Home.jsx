@@ -12,9 +12,15 @@ function Home(){
   return (
     <div >
       <Header/>
-      <MainCarousel/>
       <Row>
-        <Col lg={0} xl={1} xxl={2}>
+        <Col xl={0} xxl={1}></Col>
+        <Col xl={24} xxl={22}>
+         <MainCarousel/>
+        </Col>
+        <Col xl={0} xxl={1}></Col>
+      </Row>
+      <Row>
+        <Col lg={0} xl={1} xxl={1}>
         </Col>
         <Col  xs={24} sm={16} lg={17} xl={16} xxl={15}>
           <FakeArticle/>
@@ -22,7 +28,7 @@ function Home(){
         <Col xs={24} sm={8} lg={7} xl={6} xxl={5}>
           <FakeAdvert/>
         </Col>
-        <Col lg={0} xl={1} xxl={2}>
+        <Col lg={0} xl={1} xxl={1}>
         </Col>
       </Row>
     </div>
