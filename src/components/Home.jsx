@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import MainCarousel from "./MainCarousel";
 import FakeArticle from "./FakeArticle";
 import FakeAdvert from "./FakeAdvert";
 import { Row, Col } from 'antd';
@@ -11,6 +12,7 @@ function Home(){
   return (
     <div >
       <Header/>
+      <MainCarousel/>
       <Row>
         <Col lg={0} xl={1} xxl={2}>
         </Col>
