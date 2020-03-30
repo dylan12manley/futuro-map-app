@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 import MainCarousel from "./MainCarousel";
 import FakeArticle from "./FakeArticle";
 import FakeAdvert from "./FakeAdvert";
@@ -37,10 +38,11 @@ function Home(){
         <Col lg={0} xl={1} xxl={1}>
         <Sidebar/>
         </Col>
-        <Col lg={0} xl={0} xxl={1}>
+        <Col lg={0} xl={0} xxl={2}>
         <Sidebar/>
         </Col>
       </Row>
+      <Footer/>
     </div>
 
   )}
