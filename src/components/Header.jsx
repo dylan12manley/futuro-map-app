@@ -9,6 +9,7 @@ function Header(){
     top: '0',
     backgroundColor: '#1C0B0D',
     color: '#D2E8CC',
+    filter: 'grayscale(.75)',
     height: 'calc(40px + 2.5vmin)',
     paddingTop: '0px',
     width: '100%',
