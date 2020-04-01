@@ -10,6 +10,7 @@ function NewArticleForm(props){
     height: '100vh',
     fontFamily: 'Black Ops One'
   }
+
   const firestore = useFirestore();
 
   function addArticleToFirestore(event) {
@@ -53,6 +54,10 @@ function NewArticleForm(props){
             type='text'
             name='category'
             placeholder='Category' />
+            <input
+            type='file'
+            name='mainImage'
+            placeholder='Main Image' />
           <button type='submit'>Add Article</button>
         </form>
       </div>

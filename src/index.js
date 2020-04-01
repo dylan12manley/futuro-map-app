@@ -29,7 +29,9 @@ const rrfProps = {
 
 ReactDOM.render(
   <Provider store={store}>
-    <App id='App' />
+    <ReactReduxFirebaseProvider {...rrfProps}>
+      <App />
+    </ReactReduxFirebaseProvider>
   </Provider>,
   document.getElementById('root')
 );
