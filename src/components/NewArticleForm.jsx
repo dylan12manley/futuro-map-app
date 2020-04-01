@@ -30,7 +30,7 @@ function NewArticleForm(props){
 
   return (
       <div style={formStyle}>
-        <form onSubmit={addArticleToFirestore}>
+        <form onSubmit={props.addArticleToFirestore}>
           <input
             type='text'
             name='title'
@@ -54,7 +54,7 @@ function NewArticleForm(props){
             type='text'
             name='category'
             placeholder='Category' />
-            <input
+          <input
             type='file'
             name='mainImage'
             placeholder='Main Image' />

@@ -42,6 +42,7 @@ Article.propTypes = {
   date: PropTypes.string,
   headline: PropTypes.string,
   body: PropTypes.string,
+  category: PropTypes.string,
   mainImg: PropTypes.string,
   id: PropTypes.string,
 };

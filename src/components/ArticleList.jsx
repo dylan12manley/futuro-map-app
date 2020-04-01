@@ -21,7 +21,7 @@ function ArticleList(props){
   if (isLoaded(articles)) {
     return (
       <>
-      <div style={articleStyle}>
+      <div>
         {Object.values(props.articleList).map((article) => {
           return <Article
             title={article.title}
@@ -30,7 +30,7 @@ function ArticleList(props){
             author={article.author}
             date={article.date}
             category={article.category}
-            mainImage={mainIMage}
+            mainImg={article.mainImg}
             id={article.id}
             key={article.id}/>
         })}
@@ -50,4 +50,3 @@ function ArticleList(props){
 
 
 export default ArticleList;
-

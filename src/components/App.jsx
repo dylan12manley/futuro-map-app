@@ -22,14 +22,14 @@ class App extends React.Component {
 
   handleAddingNewArticleToList = (newArticle) => {
     const { dispatch } = this.props;
-    const { title, headline, body, author, date, category, id  } = newArticle;
+    const { title, headline, body, author, date, category, mainImg, id  } = newArticle;
     const action = a.addArticle(newArticle);
     dispatch(action);
   }
 
   handleEditingArticleInList = (articleToEdit) => {
     const { dispatch } = this.props;
-    const { title, headline, body, author, date, category, id } = articleToEdit;
+    const { title, headline, body, author, date, category, mainImg, id } = articleToEdit;
     const action = a.addArticle(articleToEdit);
     dispatch(action);
   }

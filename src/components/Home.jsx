@@ -3,6 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import MainCarousel from "./MainCarousel";
 import FakeArticle from "./FakeArticle";
+// import ArticleList from "./ArticleList";
 import FakeAdvert from "./FakeAdvert";
 import Sidebar from "./Sidebar";
 import { Row, Col } from 'antd';
@@ -33,6 +34,7 @@ function Home(){
           <FakeArticle/>
         </Col>
         <Col xs={24} sm={8} lg={7} xl={6} xxl={5}>
+          
           <FakeAdvert/>
         </Col>
         <Col lg={0} xl={1} xxl={1}>
