@@ -1,27 +1,27 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { useSelector } from 'react-redux';
 import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase';
 import Article from "./Article";
 
-function ArticleList(props){
+function ArticleList(props) {
 
-  const articleStyle = {
+  const articles = useSelector(state => state.firestore.articles);
+  if (isEmpty) {
+    return( 
+      <div>
+        <p>No Articles Added Yet
+        </p>
+      </div>
+    )
+  }
+  else if (isLoaded(articles)) {
+    return (
+      <>
+      <div style={{
     marginTop: '55px',
     padding: 'calc(8px + 1vmin)',
     color: '#38171C',
-  }
-
-  useFirestoreConnect([
-    { collection: 'articles' }
-  ]);
-
-  const articles = useSelector(state => state.firestore.articles);
-
-  if (isLoaded(articles)) {
-    return (
-      <>
-      <div style={articleStyle}>
+  }}>
         {Object.values(props.articleList).map((article) => {
           return <Article
             title={article.title}

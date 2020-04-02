@@ -1,8 +1,9 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { useFirestore } from 'react-redux-firebase'
 
 function NewArticleForm(props){
+
+  const firestore = useFirestore();
 
   const formStyle = {
     backgroundColor: '#183023',
@@ -11,19 +12,18 @@ function NewArticleForm(props){
     fontFamily: 'Black Ops One'
   }
 
-  const firestore = useFirestore();
-
   function addArticleToFirestore(event) {
     event.preventDefault();
-    props.onNewArticleCreation();
-    return firestore.collection('tickets').add(
+    console.log('article added')
+    return firestore.collection('articles').add(
       {
         title: event.target.title.value,
         author: event.target.author.value,
         date: event.target.date.value,
         headline: event.target.headline.value,
         body: event.target.body.value,
-        category: event.target.category.value
+        category: event.target.category.value,
+        mainImg: event.target.mainImg.value
       }
     );
   }
@@ -56,7 +56,7 @@ function NewArticleForm(props){
             placeholder='Category' />
           <input
             type='file'
-            name='mainImage'
+            name='mainImg'
             placeholder='Main Image' />
           <button type='submit'>Add Article</button>
         </form>
@@ -64,8 +64,5 @@ function NewArticleForm(props){
     );
   }
 
-  NewArticleForm.propTypes = {
-    onNewArticleCreation: PropTypes.func
-  };
 
   export default NewArticleForm;

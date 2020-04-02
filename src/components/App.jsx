@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { connect } from 'react-redux';
 import PropTypes from "prop-types";
-import * as a from './../actions';
 
 import Home from "./Home";
 import SignIn from "./SignIn";
@@ -21,24 +20,17 @@ const appStyle = {
 
 class App extends React.Component {
 
-  handleAddingNewArticleToList = (newArticle) => {
-    const { dispatch } = this.props;
-    const { title, headline, body, author, date, category, mainImg, id  } = newArticle;
-    const action = a.addArticle(newArticle);
-    dispatch(action);
-  }
 
-  handleEditingArticleInList = (articleToEdit) => {
-    const { dispatch } = this.props;
-    const { title, headline, body, author, date, category, mainImg, id } = articleToEdit;
-    const action = a.addArticle(articleToEdit);
-    dispatch(action);
-  }
+
+  // handleEditingArticleInList = (articleToEdit) => {
+  //   const { dispatch } = this.props;
+  //   const { title, headline, body, author, date, category, mainImg, id } = articleToEdit;
+  //   const action = a.addArticle(articleToEdit);
+  //   dispatch(action);
+  // }
 
   handleDeletingArticle = (id) => {
-   const { dispatch } = this.props;
-   const action = a.deleteArticle(id);
-   dispatch(action);
+   this.props.firestore.delete({collection: 'articles', doc: id});
  }
 
   render(){
@@ -51,7 +43,7 @@ class App extends React.Component {
           <Route path="/home" component={Home} articleList={this.props.articleList}/>
           <Route path="/newArticle" component={ArticleList} articleList={this.props.articleList}/>
           <Route path="/ads" component={Advert}/>
-          <Route path="/NewArticleForm" component={NewArticleForm} onNewArticleCreation={this.handleAddingNewArticleToList} />
+          <Route path="/NewArticleForm" component={NewArticleForm} />
           <Route component={Error404} />
         </Switch>
       </Router>
