@@ -16,12 +16,12 @@ function ArticleList(props){
     { collection: 'articles' }
   ]);
 
-  const articles = useSelector(state => state.firestore.ordered.articles);
+  const articles = useSelector(state => state.firestore.articles);
 
   if (isLoaded(articles)) {
     return (
       <>
-      <div>
+      <div style={articleStyle}>
         {Object.values(props.articleList).map((article) => {
           return <Article
             title={article.title}
@@ -46,6 +46,7 @@ function ArticleList(props){
   }
 
 }
+
 
 
 

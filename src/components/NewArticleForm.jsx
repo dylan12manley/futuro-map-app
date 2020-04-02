@@ -30,7 +30,7 @@ function NewArticleForm(props){
 
   return (
       <div style={formStyle}>
-        <form onSubmit={props.addArticleToFirestore}>
+        <form onSubmit={addArticleToFirestore}>
           <input
             type='text'
             name='title'

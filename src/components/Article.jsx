@@ -6,7 +6,7 @@ function Article(props){
   return (
     <>
       <Card hoverable
-            title=<h2>{props.title}</h2>
+            title={<h2>{props.title}</h2>}
             cover={<img alt="article" src={props.mainImg} />}
             headStyle={{
               fontFamily: 'Rubik',
