@@ -1,5 +1,6 @@
 import React from "react";
-import { useFirestore } from 'react-redux-firebase'
+import { useFirestore } from 'react-redux-firebase';
+import { Link } from "react-router-dom";
 
 function NewArticleForm(props){
 
@@ -10,6 +11,12 @@ function NewArticleForm(props){
     color: '#8E545E',
     height: '100vh',
     fontFamily: 'Black Ops One'
+  }
+
+  const linkStyle = {
+    paddingTop: '4vh',
+    textAlign: 'center',
+    color: '#8E545E',
   }
 
   function addArticleToFirestore(event) {
@@ -60,6 +67,11 @@ function NewArticleForm(props){
             placeholder='Main Image' />
           <button type='submit'>Add Article</button>
         </form>
+        <div style={linkStyle}>
+          <Link to="/admin" >Admin Page</Link>
+          <br></br>
+          <Link to="/home" >Home</Link>
+        </div>
       </div>
     );
   }

@@ -9,7 +9,7 @@ import LandingPage from './LandingPage';
 import Error404 from './Error404';
 import NewArticleForm from './NewArticleForm';
 import ArticleList from './ArticleList';
-import Advert from './Advert';
+import Admin from './Admin';
 
 const appStyle = {
   backgroundColor: '#F3F7F2',
@@ -42,7 +42,7 @@ class App extends React.Component {
           <Route path="/signin" component={SignIn} />
           <Route path="/home" component={Home} articleList={this.props.articleList}/>
           <Route path="/newArticle" component={ArticleList} articleList={this.props.articleList}/>
-          <Route path="/ads" component={Advert}/>
+          <Route path="/admin" component={Admin}/>
           <Route path="/NewArticleForm" component={NewArticleForm} />
           <Route component={Error404} />
         </Switch>
