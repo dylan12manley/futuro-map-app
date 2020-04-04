@@ -2,6 +2,7 @@ import React from "react";
 import ArticleList from "./ArticleList";
 import { Row, Col } from 'antd';
 import { Link } from "react-router-dom";
+import { withFirestore, isLoaded } from 'react-redux-firebase';
 
 import Header from "./Header";
 import MainCarousel from "./MainCarousel";
@@ -10,10 +11,29 @@ import FakeAdvert from "./FakeAdvert";
 
 
 
-function Admin(){
+class Admin extends React.Component {
+ 
 
-  return (
-    <>
+  render(){
+    const auth = this.props.firebase.auth();
+    if (!isLoaded(auth)) {
+      return (
+        <React.Fragment>
+          <h1>Loading...</h1>
+        </React.Fragment>
+      )
+    }
+    if ((isLoaded(auth)) && (auth.currentUser == null)) {
+      return (
+        <React.Fragment>
+          <h1>You must be signed in to access the queue.</h1>
+          <Link to="/signin" >Sign In</Link>
+        </React.Fragment>
+      )
+    } 
+    if ((isLoaded(auth)) && (auth.currentUser != null)) {
+      return(
+      <React.Fragment>
       <Header/>
       <Row>
         <Col>
@@ -31,8 +51,11 @@ function Admin(){
           <FakeAdvert/>
         </Col>
       </Row>
-    </>
+      </React.Fragment>
+      )
+    }
+  }
+}
 
-  )}
 
-export default Admin;
+export default withFirestore(Admin);
