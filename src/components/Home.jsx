@@ -16,13 +16,13 @@ function Home(){
     <div >
       <Header/>
       <Row>
-        <Col xl={0} xxl={1}>
+        <Col xl={1} xxl={1}>
           <Sidebar/>
         </Col>
-        <Col xl={24} xxl={22}>
+        <Col xs={0} sm={24} xl={22} xxl={20}>
          <MainCarousel/>
         </Col>
-        <Col xl={0} xxl={1}>
+        <Col xl={1} xxl={3}>
           <Sidebar/>
         </Col>
       </Row>
