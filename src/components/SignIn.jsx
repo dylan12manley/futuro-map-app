@@ -1,36 +1,68 @@
 import React from "react";
+import firebase from "firebase/app";
+import { Link } from "react-router-dom";
 
 function SignIn(){
 
-      const styledErrors = {
-        backgroundColor: '#183023',
-        color: '#8E545E',
-        padding: '5vw',
-        margin: '5vw',
-        height: '100vh',
-        width: '120vw',
-        border: '3px double #4A5468',
-      }
+  function doSignUp(event) {
+    event.preventDefault();
+    const email = event.target.email.value;
+    const password = event.target.password.value;
+    firebase.auth().createUserWithEmailAndPassword(email, password).then(function(){
+      window.alert("successfully signed up!");
+    }).catch(function(error) {
+      window.alert(error.message);
+    });
+  }
+
+  function doSignIn(event) {
+    event.preventDefault();
+    const email = event.target.signinEmail.value;
+    const password = event.target.signinPassword.value;
+    firebase.auth().signInWithEmailAndPassword(email, password).then(function() {
+      window.alert("Successfully signed in!");
+    }).catch(function(error) {
+      window.alert(error.message);
+    });
+  }
+
+  function doSignOut() {
+    firebase.auth().signOut().then(function() {
+      window.alert("Successfully signed out!");
+    }).catch(function(error) {
+      window.alert(error.message);
+    });
+  }
 
       return (
-        <div style={styledErrors}>
-        <h1>Sign In</h1>
-          <h2 style={{
-                color: '#D6684D',
-                textDecoration: 'underline-overline',
-                border: '3px double #485266',
-             }}>Sign In:
-          </h2>
-          <div style={{
-                // backgroundColor: '#9FC0E0',
-
-                padding: '12px',
-                }}>
-            <h3 style={{ textDecoration: 'none',
-                         color: '#D6684D'
-                }}> Sign Up:
-            </h3>
-          </div >
+        <div>
+          <h1><Link to="/admin" >Admin Page?</Link></h1>
+          <h1>Sign up</h1>
+          <form onSubmit={doSignUp}>
+            <input
+              type='text'
+              name='email'
+              placeholder='email' />
+            <input
+              type='password'
+              name='password'
+              placeholder='Password' />
+            <button type='submit'>Sign up</button>
+          </form>
+          <h1>Sign In</h1>
+          <form onSubmit={doSignIn}>
+            <input
+              type='text'
+              name='signinEmail'
+              placeholder='email' />
+            <input
+              type='password'
+              name='signinPassword'
+              placeholder='Password' />
+            <button type='submit'>Sign in</button>
+          </form>
+          <h1>Sign Out</h1>
+          <button onClick={doSignOut}>Sign out</button>
         </div>
       );
 

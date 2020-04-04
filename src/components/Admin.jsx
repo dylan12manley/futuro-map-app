@@ -22,6 +22,8 @@ function Admin(){
       </Row>
       <Row>
         <Col  xs={24} sm={16} lg={17} xl={16} xxl={16}>
+        <Link to="/signin" >Sign In</Link>
+        <br></br>
         <Link to="/newarticleForm" >New Article</Link>
           <ArticleList/>
         </Col>
