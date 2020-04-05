@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import MainCarousel from "./MainCarousel";
-import FakeArticle from "./FakeArticle";
+import ArticleList from "./ArticleList";
 // import ArticleList from "./ArticleList";
 import FakeAdvert from "./FakeAdvert";
 import Sidebar from "./Sidebar";
@@ -31,7 +31,7 @@ function Home(){
         <Sidebar/>
         </Col>
         <Col  xs={24} sm={16} lg={17} xl={16} xxl={15}>
-          <FakeArticle/>
+          <ArticleList/>
         </Col>
         <Col xs={24} sm={8} lg={7} xl={6} xxl={5}>
           

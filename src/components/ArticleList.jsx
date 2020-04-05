@@ -4,14 +4,13 @@ import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase';
 import Article from "./Article";
 
 function ArticleList() {
-
   useFirestoreConnect([
     { collection: 'articles' }
   ]);
   const articles = useSelector(state => state.firestore.ordered.articles);
   if (isLoaded(articles)) {
     return (
-      <div>
+      <div style={{ marginTop: '55px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
         {Object.values(articles).map((article) => {
           return <Article
             title={article.title}

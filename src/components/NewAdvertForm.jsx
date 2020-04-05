@@ -14,6 +14,7 @@ function NewAdvertForm(){
       {
         imgUrl: event.target.imgUrl.value,
         redirectUrl: event.target.redirectUrl.value,
+        altText: event.target.altText.value,
       }
     );
   }
@@ -34,6 +35,10 @@ function NewAdvertForm(){
             type='text'
             name='redirectUrl'
             placeholder='Url for advertisment website'/>
+          <input
+            type='text'
+            name='altText'
+            placeholder='Image Title'/>
           <button type='submit'>Add Advert</button>
         </form>
         <div style={{paddingTop: '4vh',

@@ -3,26 +3,23 @@ import { useSelector } from 'react-redux';
 import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase';
 import Advert from "./Advert";
 
-function AdvertList(props){
+function AdvertList() {
   useFirestoreConnect([
     { collection: 'adverts' }
   ]);
   const adverts = useSelector(state => state.firestore.ordered.adverts);
   if (isLoaded(adverts)) {
     return (
-      <>
-      <div>
+      <div style={{ marginTop: '55px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
         {Object.values(adverts).map((advert) => {
           return <Advert
-            title={advert.title}
             redirectUrl={advert.redirectUrl}
-            img={advert.img}
-            alt={advert.alt}
+            imgUrl={advert.imgUrl}
+            altText={advert.altText}
             id={advert.id}
             key={advert.id}/>
         })}
       </div>
-      </>
     );
   } else if (isEmpty) {
     return( 

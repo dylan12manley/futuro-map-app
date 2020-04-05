@@ -2,13 +2,13 @@ import React from "react";
 import { useFirestore } from 'react-redux-firebase';
 import { Link } from "react-router-dom";
 import { Row, Col } from 'antd';
+import axios from 'axios';
 
 function NewArticleForm(){
-
   const firestore = useFirestore();
-
-  
-
+  function fileUploadHandler(event){
+    axios.post('')
+  }
   function addArticleToFirestore(event) {
     event.preventDefault();
     window.alert('article added')
@@ -20,21 +20,13 @@ function NewArticleForm(){
         headline: event.target.headline.value,
         body: event.target.body.value,
         category: event.target.category.value,
-        mainImg: event.target.mainImg.value
+        mainImg: event.target.mainImg.value,
+        ImgArray: event.target.ImgArray.value
       }
     );
   }
-
-  const formStyle = {
-    padding: '5vmin',
-    backgroundColor: '#183023',
-    color: '#8E545E',
-    height: '100%',
-    minHeight: "100vh",
-    fontFamily: 'Black Ops One',
-    textAlign: 'center'}
+  const formStyle = { padding: '5vmin', backgroundColor: '#183023', color: '#8E545E', height: '100%', minHeight: "100vh", fontFamily: 'Black Ops One', textAlign: 'center'}
   const inputStyle = { margin: '2.5vmin' }
-
   return (
       <div style={formStyle}>
         <form onSubmit={addArticleToFirestore}>
@@ -87,6 +79,12 @@ function NewArticleForm(){
                 name='mainImg'
                 placeholder='URL for Main Image'
                 style={inputStyle}/>
+                <br></br>
+              <input
+                type='file'
+                name='imgArray'
+                placeholder='Other Images'
+               />
             </Col>
              <Col xs={24} sm={10} lg={10} xl={9} xxl={8}>
             <textarea

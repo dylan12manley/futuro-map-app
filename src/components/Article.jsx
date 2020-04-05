@@ -1,13 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Card } from 'antd';
+import { Card, Collapse } from 'antd';
+import { CaretRightOutlined } from '@ant-design/icons';
+
+const { Panel } = Collapse;
 
 function Article(props){
   return (
     <>
       <Card hoverable
+            
             title={<h2>{props.title}</h2>}
-            cover={<img alt="article" src={props.mainImg} />}
+            cover={<img alt="article" src={props.mainImg} style={{ overflow: 'hidden'}}/>}
             headStyle={{
               fontFamily: 'Rubik',
               fontWeight: '100',
@@ -29,6 +33,16 @@ function Article(props){
             fontWeight: '500',
             margin: '0px'}}
             >{props.headline}</p>
+          <Collapse
+            bordered={false}
+            defaultActiveKey={['0']}
+            expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
+            className="site-collapse-custom-collapse"
+          >
+            <Panel header="Read the rest?" key="1" className="site-collapse-custom-panel">
+              <p>{props.body}</p>
+            </Panel>
+          </Collapse>
         </div>
       </Card>
       <hr/>
