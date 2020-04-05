@@ -8,6 +8,8 @@ import SignIn from "./SignIn";
 import LandingPage from './LandingPage';
 import Error404 from './Error404';
 import NewArticleForm from './NewArticleForm';
+import NewAdvertForm from './NewAdvertForm';
+import NewCarouselItemForm from './NewCarouselForm';
 import ArticleList from './ArticleList';
 import Admin from './Admin';
 
@@ -44,6 +46,8 @@ class App extends React.Component {
           <Route path="/newArticle" component={ArticleList} articleList={this.props.articleList}/>
           <Route path="/admin" component={Admin}/>
           <Route path="/NewArticleForm" component={NewArticleForm} />
+          <Route path="/addad" component={NewAdvertForm} />
+          <Route path="/NewCarouselItemForm" component={NewCarouselItemForm} />
           <Route component={Error404} />
         </Switch>
       </Router>

@@ -6,7 +6,7 @@ import { withFirestore, isLoaded } from 'react-redux-firebase';
 
 import Header from "./Header";
 import MainCarousel from "./MainCarousel";
-import FakeAdvert from "./FakeAdvert";
+import AdvertList from "./AdvertList";
 
 
 
@@ -46,14 +46,18 @@ class Admin extends React.Component {
               padding: 'calc(8px + 1vmin)',
               color: '#38171C'
         }}>
-        <h1>🛸Yo Bruv💓</h1> 
+        <h1>Yo🛸Bru💓</h1> 
         <Link to="/signin" >Sign In</Link>
         <br></br>
         <Link to="/newarticleForm" >New Article</Link>
           <ArticleList/>
         </Col>
-        <Col xs={24} sm={8} lg={7} xl={8} xxl={8}>
-          <FakeAdvert/>
+        <Col xs={24} sm={8} lg={7} xl={8} xxl={8}
+        style={{marginTop: '55px',
+              padding: 'calc(8px + 1vmin)',
+              color: '#38171C'
+        }}>
+          <AdvertList/>
         </Col>
       </Row>
       </React.Fragment>

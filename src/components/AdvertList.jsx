@@ -1,23 +1,18 @@
 import React from "react";
 import { useSelector } from 'react-redux';
 import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase';
-
 import Advert from "./Advert";
 
-
 function AdvertList(props){
-
   useFirestoreConnect([
     { collection: 'adverts' }
   ]);
-
   const adverts = useSelector(state => state.firestore.ordered.adverts);
-
   if (isLoaded(adverts)) {
     return (
       <>
       <div>
-        {Object.values(props.advertList).map((advert) => {
+        {Object.values(adverts).map((advert) => {
           return <Advert
             title={advert.title}
             redirectUrl={advert.redirectUrl}
@@ -36,7 +31,7 @@ function AdvertList(props){
         </p>
       </div>
     )
-  } else {
+  } else 
     return (
       <React.Fragment>
         <p>Randomly hearing your favorite song on the radio is more satisfying than playing it directly from your ipod.</p>
@@ -46,7 +41,6 @@ function AdvertList(props){
         <h3>LOADING...</h3>
       </React.Fragment>
     );
-  }
 }
 
 

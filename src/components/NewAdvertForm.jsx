@@ -1,47 +1,51 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { useFirestore } from 'react-redux-firebase'
+import { Link } from "react-router-dom";
 
-function NewAdvertForm(props){
+function NewAdvertForm(){
 
-  const formStyle = {
-    backgroundColor: '#183023',
-    color: '#8E545E',
-    height: '100vh',
-    fontFamily: 'Black Ops One'
-  }
   const firestore = useFirestore();
+
 
   function addAdvertToFirestore(event) {
     event.preventDefault();
-    props.onNewAdvertCreation();
+    window.alert('Ay! Added Ad')
     return firestore.collection('tickets').add(
       {
-        image: event.target.image.value,
-        advertUrl: event.target.advertUrl.value,
+        imgUrl: event.target.imgUrl.value,
+        redirectUrl: event.target.redirectUrl.value,
       }
     );
   }
 
   return (
-      <div style={formStyle}>
+      <div style={{
+        backgroundColor: '#183023',
+        color: '#8E545E',
+        height: '100vh',
+        fontFamily: 'Black Ops One'
+      }}>
         <form onSubmit={addAdvertToFirestore}>
           <input
             type='string'
-            name='advertImage'
-            placeholder='Image'/>
+            name='imgUrl'
+            placeholder='URL for Image'/>
          <input
             type='text'
-            name='advertUrl'
+            name='redirectUrl'
             placeholder='Url for advertisment website'/>
           <button type='submit'>Add Advert</button>
         </form>
+        <div style={{paddingTop: '4vh',
+                  textAlign: 'center',
+                   color: '#8E545E'}}>
+          <Link to="/admin" >Admin Page</Link>
+          <br></br>
+          <Link to="/home" >Home</Link>
+        </div>
       </div>
     );
   }
 
-  NewAdvertForm.propTypes = {
-    onNewAdvertCreation: PropTypes.func
-  };
 
   export default NewAdvertForm;

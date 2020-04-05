@@ -3,30 +3,11 @@ import { useFirestore } from 'react-redux-firebase';
 import { Link } from "react-router-dom";
 import { Row, Col } from 'antd';
 
-function NewArticleForm(props){
+function NewArticleForm(){
 
   const firestore = useFirestore();
 
-  const formStyle = {
-    padding: '5vmin',
-    backgroundColor: '#183023',
-    color: '#8E545E',
-    height: '100%',
-    minHeight: "100vh",
-    fontFamily: 'Black Ops One',
-    textAlign: 'center',
-  }
-
-  const inputStyle = {
-    margin: '2.5vmin',
-  }
-
-
-  const linkStyle = {
-    paddingTop: '4vh',
-    textAlign: 'center',
-    color: '#8E545E',
-  }
+  
 
   function addArticleToFirestore(event) {
     event.preventDefault();
@@ -43,6 +24,16 @@ function NewArticleForm(props){
       }
     );
   }
+
+  const formStyle = {
+    padding: '5vmin',
+    backgroundColor: '#183023',
+    color: '#8E545E',
+    height: '100%',
+    minHeight: "100vh",
+    fontFamily: 'Black Ops One',
+    textAlign: 'center'}
+  const inputStyle = { margin: '2.5vmin' }
 
   return (
       <div style={formStyle}>
@@ -84,12 +75,12 @@ function NewArticleForm(props){
                   marginLeft: '4vmin',
                   margin: '2.5vmin',
                 }}/>
-                <br></br>
-                  <input
-                    type='text'
-                    name='category'
-                    placeholder='Category'
-                    style={inputStyle}/>
+              <br></br>
+              <input
+                type='text'
+                name='category'
+                placeholder='Category'
+                style={inputStyle}/>
               <br></br>
               <input
                 type='string'
@@ -110,9 +101,6 @@ function NewArticleForm(props){
               </Col>
             <Col lg={0} xl={1} xxl={2}></Col>
           </Row>
-          
-             
-         
             <button 
             type='submit'
             style={{height: 'calc(8px+2vh)',
@@ -123,7 +111,10 @@ function NewArticleForm(props){
                     overflow: 'hide',
                     }}>Add Article</button>
         </form>
-        <div style={linkStyle}>
+        <div 
+          style={{paddingTop: '4vh',
+                  textAlign: 'center',
+                   color: '#8E545E',}}>
           <Link to="/admin" >Admin Page</Link>
           <br></br>
           <Link to="/home" >Home</Link>

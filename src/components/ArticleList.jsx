@@ -8,9 +8,7 @@ function ArticleList() {
   useFirestoreConnect([
     { collection: 'articles' }
   ]);
-
   const articles = useSelector(state => state.firestore.ordered.articles);
-
   if (isLoaded(articles)) {
     return (
       <div>
