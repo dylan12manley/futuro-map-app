@@ -1,10 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { useSelector } from 'react-redux';
+import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase';
 
 import Advert from "./Advert";
 
 
 function AdvertList(props){
+
+  useFirestoreConnect([
+    { collection: 'articles' }
+  ]);
 
   return (
     <>

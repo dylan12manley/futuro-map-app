@@ -37,11 +37,16 @@ class Admin extends React.Component {
       <Header/>
       <Row>
         <Col>
-         <MainCarousel/>
+          <MainCarousel/>
         </Col>
       </Row>
       <Row>
-        <Col  xs={24} sm={16} lg={17} xl={16} xxl={16}>
+        <Col  xs={24} sm={16} lg={17} xl={16} xxl={16}
+              style={{marginTop: '55px',
+              padding: 'calc(8px + 1vmin)',
+              color: '#38171C'
+        }}>
+        <h1>🛸Yo Bruv💓</h1> 
         <Link to="/signin" >Sign In</Link>
         <br></br>
         <Link to="/newarticleForm" >New Article</Link>
