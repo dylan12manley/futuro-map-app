@@ -2,13 +2,9 @@ import React from "react";
 import { useFirestore } from 'react-redux-firebase';
 import { Link } from "react-router-dom";
 import { Row, Col } from 'antd';
-import axios from 'axios';
 
 function NewArticleForm(){
   const firestore = useFirestore();
-  function fileUploadHandler(event){
-    axios.post('')
-  }
   function addArticleToFirestore(event) {
     event.preventDefault();
     window.alert('article added')
@@ -21,7 +17,7 @@ function NewArticleForm(){
         body: event.target.body.value,
         category: event.target.category.value,
         mainImg: event.target.mainImg.value,
-        ImgArray: event.target.ImgArray.value
+        img2: event.target.img2.value
       }
     );
   }
@@ -81,10 +77,10 @@ function NewArticleForm(){
                 style={inputStyle}/>
                 <br></br>
               <input
-                type='file'
-                name='imgArray'
-                placeholder='Other Images'
-               />
+                type='string'
+                name='img2'
+                placeholder='URL for Seccong Image'
+                style={inputStyle}/>
             </Col>
              <Col xs={24} sm={10} lg={10} xl={9} xxl={8}>
             <textarea

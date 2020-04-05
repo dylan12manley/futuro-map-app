@@ -41,6 +41,7 @@ function Article(props){
           >
             <Panel header="Read the rest?" key="1" className="site-collapse-custom-panel">
               <p>{props.body}</p>
+              <img src={props.img2} alt='Seccond Img'></img>
             </Panel>
           </Collapse>
         </div>
@@ -58,6 +59,7 @@ Article.propTypes = {
   body: PropTypes.string,
   category: PropTypes.string,
   mainImg: PropTypes.string,
+  Img2: PropTypes.string,
   id: PropTypes.string,
 };
 

@@ -7,11 +7,16 @@ import Home from "./Home";
 import SignIn from "./SignIn";
 import LandingPage from './LandingPage';
 import Error404 from './Error404';
+import Admin from './Admin';
 import NewArticleForm from './NewArticleForm';
 import NewAdvertForm from './NewAdvertForm';
 import NewCarouselItemForm from './NewCarouselForm';
 import ArticleList from './ArticleList';
-import Admin from './Admin';
+import ArtPage from './ArtPage';
+import FashionPage from './FashionPage';
+import FilmPage from './FilmPage';
+import PeoplePage from './PeoplePage';
+import SoundPage from './SoundPage';
 
 const appStyle = {
   backgroundColor: '#F3F7F2',
@@ -48,6 +53,11 @@ class App extends React.Component {
           <Route path="/NewArticleForm" component={NewArticleForm} />
           <Route path="/addad" component={NewAdvertForm} />
           <Route path="/NewCarouselItemForm" component={NewCarouselItemForm} />
+          <Route path="/art" component={ArtPage} />
+          <Route path="/fashion" component={FashionPage} />
+          <Route path="/film" component={FilmPage} />
+          <Route path="/people" component={PeoplePage} />
+          <Route path="/sound" component={SoundPage} />
           <Route component={Error404} />
         </Switch>
       </Router>
