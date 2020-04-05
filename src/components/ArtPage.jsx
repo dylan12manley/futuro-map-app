@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from 'react-redux';
 import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase';
 import Article from "./Article";
+import Header from "./Header";
 
 function ArtPage() {
   useFirestoreConnect([
@@ -10,9 +11,10 @@ function ArtPage() {
   const articles = useSelector(state => state.firestore.ordered.articles);
   if (isLoaded(articles)) {
     return (
+    <div><Header/>
       <div style={{ marginTop: '55px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
         {Object.values(articles).map((article) => {
-            if(article.category === 'Art'){
+            if(article.category === 'Art')
                 return <Article
                     title={article.title}
                     headline={article.headline}
@@ -23,15 +25,9 @@ function ArtPage() {
                     mainImg={article.mainImg}
                     img2={article.img2}
                     id={article.id}
-                    key={article.id}/>
-            } else
-            return(
-                <div>
-                    <p>No Articles Added to the Art Category Yet</p>
-                    <p>Dont get caught lackin</p>
-                </div>
-            ) 
+                    key={article.id}/> 
         })}
+      </div>
       </div>
     );
   } else if (isEmpty) {
