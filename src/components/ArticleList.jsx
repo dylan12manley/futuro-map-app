@@ -20,6 +20,7 @@ function ArticleList() {
             date={article.date}
             category={article.category}
             mainImg={article.mainImg}
+            img2={article.img2}
             id={article.id}
             key={article.id}/>
         })}
