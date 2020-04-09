@@ -2,14 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-import rings1 from './../assets/images/rings1BnW.png'
-import rings2 from './../assets/images/rings2.png'
-import mag from './../assets/images/MagazineBnW.png'
-import futuro from './../assets/images/futuroBnW.png'
-import fm from './../assets/images/FMBnW.png'
+import rings1 from '../../assets/images/rings1BnW.png'
+import mag from '../../assets/images/MagazineBnW.png'
+import futuro from '../../assets/images/futuroBnW.png'
+import fm from '../../assets/images/FMBnW.png'
 
 
-function LandingPage(){
+function Landing(){
   const styledLanding = {
     backgroundColor: '#183023',
     color: '#8E545E',
@@ -49,4 +48,4 @@ function LandingPage(){
   );
 }
 
-export default LandingPage;
+export default Landing;

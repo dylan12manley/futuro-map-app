@@ -5,18 +5,18 @@ import PropTypes from "prop-types";
 
 import Home from "./Home";
 import SignIn from "./SignIn";
-import LandingPage from './LandingPage';
+import Landing from './pages/Landing';
 import Error404 from './Error404';
 import Admin from './Admin';
 import NewArticleForm from './NewArticleForm';
 import NewAdvertForm from './NewAdvertForm';
 import NewCarouselItemForm from './NewCarouselForm';
 import ArticleList from './ArticleList';
-import ArtPage from './ArtPage';
-import FashionPage from './FashionPage';
-import FilmPage from './FilmPage';
-import PeoplePage from './PeoplePage';
-import SoundPage from './SoundPage';
+import Art from './pages/Art';
+import Fashion from './pages/Fashion';
+import Film from './pages/Film';
+import People from './pages/People';
+import Sound from './pages/Sound';
 
 const appStyle = {
   backgroundColor: '#F3F7F2',
@@ -45,7 +45,7 @@ class App extends React.Component {
       <div style={appStyle}>
       <Router>
         <Switch>
-          <Route exact path="/" component={LandingPage}/>
+          <Route exact path="/" component={Landing}/>
           <Route path="/signin" component={SignIn} />
           <Route path="/home" component={Home} articleList={this.props.articleList}/>
           <Route path="/newArticle" component={ArticleList} articleList={this.props.articleList}/>
@@ -53,11 +53,11 @@ class App extends React.Component {
           <Route path="/NewArticleForm" component={NewArticleForm} />
           <Route path="/addad" component={NewAdvertForm} />
           <Route path="/NewCarouselItemForm" component={NewCarouselItemForm} />
-          <Route path="/art" component={ArtPage} />
-          <Route path="/fashion" component={FashionPage} />
-          <Route path="/film" component={FilmPage} />
-          <Route path="/people" component={PeoplePage} />
-          <Route path="/sound" component={SoundPage} />
+          <Route path="/art" component={Art} />
+          <Route path="/fashion" component={Fashion} />
+          <Route path="/film" component={Film} />
+          <Route path="/people" component={People} />
+          <Route path="/sound" component={Sound} />
           <Route component={Error404} />
         </Switch>
       </Router>

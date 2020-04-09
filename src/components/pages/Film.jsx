@@ -1,10 +1,10 @@
 import React from "react";
 import { useSelector } from 'react-redux';
 import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase';
-import Article from "./Article";
-import Header from "./Header";
+import Article from "../Article";
+import Header from "../Header";
 
-function ArtPage() {
+function Film() {
   useFirestoreConnect([
     { collection: 'articles' }
   ]);
@@ -14,7 +14,7 @@ function ArtPage() {
     <div><Header/>
       <div style={{ marginTop: '55px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
         {Object.values(articles).map((article) => {
-            if(article.category === 'Art')
+            if(article.category === 'Fashion'){
                 return <Article
                     title={article.title}
                     headline={article.headline}
@@ -25,7 +25,8 @@ function ArtPage() {
                     mainImg={article.mainImg}
                     img2={article.img2}
                     id={article.id}
-                    key={article.id}/> 
+                    key={article.id}/>
+            } 
         })}
       </div>
       </div>
@@ -56,4 +57,4 @@ function ArtPage() {
 
 
 
-export default ArtPage;
+export default Film;

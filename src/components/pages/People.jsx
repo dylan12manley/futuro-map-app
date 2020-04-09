@@ -1,20 +1,20 @@
 import React from "react";
 import { useSelector } from 'react-redux';
 import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase';
-import Article from "./Article";
-import Header from "./Header";
+import Article from "../Article";
+import Header from "../Header";
 
-function FilmPage() {
+function People() {
   useFirestoreConnect([
     { collection: 'articles' }
   ]);
   const articles = useSelector(state => state.firestore.ordered.articles);
   if (isLoaded(articles)) {
     return (
-    <div><Header/>
+        <div><Header/>
       <div style={{ marginTop: '55px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
         {Object.values(articles).map((article) => {
-            if(article.category === 'Fashion'){
+            if(article.category === 'People'){
                 return <Article
                     title={article.title}
                     headline={article.headline}
@@ -57,4 +57,4 @@ function FilmPage() {
 
 
 
-export default FilmPage;
+export default People;
