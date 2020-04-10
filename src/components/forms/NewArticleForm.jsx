@@ -14,20 +14,22 @@ function NewArticleForm(){
         author: event.target.author.value,
         date: event.target.date.value,
         headline: event.target.headline.value,
-        p1: event.target.body.value,
-        p2: event.target.body.value,
-        p3: event.target.body.value,
-        p4: event.target.body.value,
-        p5: event.target.body.value,
-        p6: event.target.body.value,
+        p1: event.target.p1.value,
+        p2: event.target.p2.value,
+        p3: event.target.p3.value,
+        p4: event.target.p4.value,
+        p5: event.target.p5.value,
+        p6: event.target.p6.value,
         category: event.target.category.value,
         mainImg: event.target.mainImg.value,
         img2: event.target.img2.value,
-        img3: event.target.img2.value,
-        img4: event.target.img2.value,
-        img5: event.target.img2.value,
-        img6: event.target.body.value,
-        img7: event.target.body.value,
+        img3: event.target.img3.value,
+        img4: event.target.img4.value,
+        img5: event.target.img5.value,
+        img6: event.target.img6.value,
+        img7: event.target.img7.value,
+        img8: event.target.img8.value,
+        img9: event.target.img9.value,
       }
     );
   }
@@ -77,13 +79,18 @@ function NewArticleForm(){
     border: '1.2px solid #A86470',
     borderRadius: '3px', 
 }
-  const buttonStyle = {
+  const linkStyle = {
     height: 'calc(8px+2vh)',
     width: '20vh',
     fontSize: '2.75vh',
     borderRadius: '5px',
     border: '6px double', 
-    overflow: 'hide',}
+    overflow: 'hide',
+    color: '#102118',
+    backgroundColor: '#BF9D95',
+    marginRight: '22vmin',
+    marginLeft: '22vmin',
+  }
   return (
     <div style={{ backgroundColor: '#4F121C', height: '120%', padding: '5vmin'}}>
       <div style={formStyle}>
@@ -190,8 +197,8 @@ function NewArticleForm(){
                 />
               </div>
               <textarea
-                name='p3'
-                placeholder='Part 3'
+                name='p4'
+                placeholder='Part 4'
                 style={bodyStyle2}
               />
             </Col>
@@ -207,8 +214,8 @@ function NewArticleForm(){
               style={bodyStyle}
               />
               <textarea
-              name='p4'
-              placeholder='Part 4'
+              name='p3'
+              placeholder='Part 3'
               style={bodyStyle}/>
               <textarea
                 name='p5'
@@ -231,17 +238,19 @@ function NewArticleForm(){
               borderRadius: '5px',
               border: '6px double', 
               overflow: 'hide',
+              backgroundColor: '#BF9D95',
               }}>Add Article</button>
         </form>
+        <Row>
         <div 
           style={{
             paddingTop: '4vh',
             textAlign: 'center',
             color: '#8E545E',}}>
-          <Link to="/admin" >Admin Page</Link>
-          <br></br>
-          <Link to="/home" >Home</Link>
+          <Link style={linkStyle} to="/admin" >Admin Page</Link>
+          <Link style={linkStyle} to="/home" >Home</Link>
         </div>
+        </Row>
       </div>
       </div>
     );
