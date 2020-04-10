@@ -48,7 +48,8 @@ function Footer(){
     <>
     <div style={mainStyle}>
         <div style={imagesStyle}>
-          <img src={f} style={imgStyle}></img><img src={m} style={imgStyle}></img>
+          <p>Contact us: <br></br>
+          <Link src='media@futuromagazine.com'>media@futuromagazine.com</Link></p>
         </div>  
     </div>
     </>
