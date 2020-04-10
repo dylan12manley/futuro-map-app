@@ -88,11 +88,11 @@ function NewArticleForm(){
     overflow: 'hide',
     color: '#102118',
     backgroundColor: '#BF9D95',
-    marginRight: '22vmin',
-    marginLeft: '22vmin',
+    marginRight: '1vmin',
+    marginLeft: '1vmin',
   }
   return (
-    <div style={{ backgroundColor: '#4F121C', height: '120%', padding: '5vmin'}}>
+    <div style={{ backgroundColor: '#4F121C', height: '120%', padding: '.25vmin'}}>
       <div style={formStyle}>
         <h1 style={headerStyle}>Enter New Article</h1>
         <form onSubmit={addArticleToFirestore}>
@@ -240,8 +240,8 @@ function NewArticleForm(){
               overflow: 'hide',
               backgroundColor: '#BF9D95',
               }}>Add Article</button>
+        
         </form>
-        <Row>
         <div 
           style={{
             paddingTop: '4vh',
@@ -250,7 +250,6 @@ function NewArticleForm(){
           <Link style={linkStyle} to="/admin" >Admin Page</Link>
           <Link style={linkStyle} to="/home" >Home</Link>
         </div>
-        </Row>
       </div>
       </div>
     );
