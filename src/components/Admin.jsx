@@ -1,5 +1,6 @@
 import React from "react";
 import ArticleList from "./ArticleList";
+import ArticlePage from "./pages/ArticlePage";
 import { Row, Col } from 'antd';
 import { Link } from "react-router-dom";
 import { withFirestore, isLoaded } from 'react-redux-firebase';
@@ -50,6 +51,8 @@ class Admin extends React.Component {
         <Link to="/signin" >Sign In</Link>
         <br></br>
         <Link to="/newarticleForm" >New Article</Link>
+          <ArticlePage/>
+          <h1>Article List</h1>
           <ArticleList/>
         </Col>
         <Col xs={24} sm={8} lg={7} xl={8} xxl={8}

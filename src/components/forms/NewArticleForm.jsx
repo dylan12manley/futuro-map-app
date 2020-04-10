@@ -92,7 +92,11 @@ function NewArticleForm(){
     marginLeft: '1vmin',
   }
   return (
-    <div style={{ backgroundColor: '#4F121C', height: '120%', padding: '.25vmin'}}>
+    <div style={{ 
+      backgroundColor: '#4F121C', 
+      height: '120%', 
+      padding: '.25vmin'}}
+    >
       <div style={formStyle}>
         <h1 style={headerStyle}>Enter New Article</h1>
         <form onSubmit={addArticleToFirestore}>

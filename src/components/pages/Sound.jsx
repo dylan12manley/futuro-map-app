@@ -28,6 +28,14 @@ function Sound() {
                     date={article.date}
                     category={article.category}
                     mainImg={article.mainImg}
+                    img2={article.img2}
+                    img3={article.img3}
+                    img4={article.img4}
+                    img5={article.img5}
+                    img6={article.img6}
+                    img7={article.img7}
+                    img8={article.img8}
+                    img9={article.img9}
                     id={article.id}
                     key={article.id}/>
             } 

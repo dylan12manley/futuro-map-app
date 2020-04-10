@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from 'react-redux';
 import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase';
-import ArticleFull from "./shared/ArticleFull";
+import ArticleFull from "../shared/ArticleFull";
 
 function ArticlePage() {
   useFirestoreConnect([
