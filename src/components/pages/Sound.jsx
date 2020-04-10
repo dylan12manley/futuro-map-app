@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from 'react-redux';
 import { useFirestoreConnect, isLoaded } from 'react-redux-firebase';
-import Article from "../shared/Article";
+import ArticleFull from "../shared/ArticleFull";
 import Header from "../shared/Header";
 
 function Sound() {
@@ -15,10 +15,15 @@ function Sound() {
       <div style={{ marginTop: '55px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
         {Object.values(articles).map((article) => {
             if(article.category === 'Sound'){
-                return <Article
+                return <ArticleFull
                     title={article.title}
                     headline={article.headline}
-                    body={article.body}
+                    p1={article.p1}
+                    p2={article.p2}
+                    p3={article.p3}
+                    p4={article.p4}
+                    p5={article.p5}
+                    p6={article.p6}
                     author={article.author}
                     date={article.date}
                     category={article.category}
