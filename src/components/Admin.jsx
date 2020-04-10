@@ -4,7 +4,7 @@ import { Row, Col } from 'antd';
 import { Link } from "react-router-dom";
 import { withFirestore, isLoaded } from 'react-redux-firebase';
 
-import Header from "./Header";
+import Header from "./shared/Header";
 import MainCarousel from "./MainCarousel";
 import AdvertList from "./AdvertList";
 
