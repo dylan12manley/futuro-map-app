@@ -1,8 +1,8 @@
 import React from "react";
 import { useSelector } from 'react-redux';
 import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase';
-import Article from "../Article";
-import Header from "../Header";
+import Article from "../shared/Article";
+import Header from "../shared/Header";
 
 function Art() {
   useFirestoreConnect([

@@ -1,11 +1,10 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "./shared/Header";
+import Footer from "./shared/Footer";
 import MainCarousel from "./MainCarousel";
 import ArticleList from "./ArticleList";
-// import ArticleList from "./ArticleList";
 import FakeAdvert from "./FakeAdvert";
-import Sidebar from "./Sidebar";
+import Sidebar from "./shared/Sidebar";
 import { Row, Col } from 'antd';
 
 
