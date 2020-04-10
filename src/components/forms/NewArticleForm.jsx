@@ -31,12 +31,52 @@ function NewArticleForm(){
       }
     );
   }
-  const formStyle = { padding: '2vmin', backgroundColor: '#183023', color: '#102118', height: '89%', minHeight: "90vh", fontFamily: 'Black Ops One', textAlign: 'center', border: '2px solid #A86470', margin: '5vmin', borderRadius: '5px'}
-  const inputStyle = { margin: '0.5vmin', backgroundColor: '#EFEFEF', border: '1.2px solid #A86470', borderRadius: '3px', }
-  const imgInputStyle = { margin: '1.5vmin', backgroundColor: '#EFEFEF', border: '1.2px solid #A86470', borderRadius: '3px', }
-  const headerStyle = { padding: '0', backgroundColor: '#4F121C', textShadow: '0.1vmin 0.1vmin #485266' }
-  const bodyStyle = { width: '130%', margin: '1.5vmin', backgroundColor: '#EFEFEF', border: '1.2px solid #A86470', borderRadius: '3px', height: '20vmin'}
-  const bodyStyle2 = { width: '90%', marginLeft: '1vmin', margin: '1vmin', height: '40vmin', backgroundColor: '#EFEFEF', border: '1.2px solid #A86470', borderRadius: '3px', }
+  const formStyle = { 
+    padding: '2vmin', 
+    backgroundColor: '#183023', 
+    color: '#102118', 
+    height: '89%', 
+    minHeight: "90vh", 
+    fontFamily: 'Black Ops One', 
+    textAlign: 'center', 
+    border: '2px solid #A86470', 
+    margin: '5vmin', 
+    borderRadius: '5px'}
+  const inputStyle = { 
+    margin: '0.5vmin', 
+    backgroundColor: '#EFEFEF', 
+    border: '1.2px solid #A86470', 
+    borderRadius: '3px', 
+    width: '98%'}
+  const imgInputStyle = { 
+    margin: '1.5vmin', 
+    backgroundColor: '#EFEFEF', 
+    border: '1.2px solid #A86470', 
+    borderRadius: '3px', 
+    width: '89%', 
+  }
+  const headerStyle = { 
+    padding: '0', 
+    backgroundColor: '#4F121C', 
+    textShadow: '0.1vmin 0.1vmin #485266', 
+  }
+  const bodyStyle = { 
+    width: '130%', 
+    margin: '1.5vmin', 
+    backgroundColor: '#EFEFEF',
+    border: '1.2px solid #A86470', 
+    borderRadius: '3px', 
+    height: '20vmin',
+  }
+  const bodyStyle2 = { 
+    width: '90%', 
+    marginLeft: '1vmin', 
+    margin: '1vmin', 
+    height: '30vmin', 
+    backgroundColor: '#EFEFEF', 
+    border: '1.2px solid #A86470',
+    borderRadius: '3px', 
+}
   const buttonStyle = {
     height: 'calc(8px+2vh)',
     width: '20vh',
@@ -92,6 +132,9 @@ function NewArticleForm(){
                   width: '89%',
                   marginLeft: '4vmin',
                   margin: '2.5vmin',
+                  backgroundColor: '#EFEFEF', 
+                  border: '1.2px solid #A86470', 
+                  borderRadius: '3px',
                 }}/>
               <div style ={{border: '3px double #A86470', borderRadius: '5px'}}>
                 <h1 style={headerStyle}>Image URLs</h1>
