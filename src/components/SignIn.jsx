@@ -35,20 +35,8 @@ function SignIn(){
   }
 
       return (
-        <div>
+        <div style={{textAlign: 'center'}}>
           <h1><Link to="/admin" >Admin Page?</Link></h1>
-          <h1>Sign up</h1>
-          <form onSubmit={doSignUp}>
-            <input
-              type='text'
-              name='email'
-              placeholder='email' />
-            <input
-              type='password'
-              name='password'
-              placeholder='Password' />
-            <button type='submit'>Sign up</button>
-          </form>
           <h1>Sign In</h1>
           <form onSubmit={doSignIn}>
             <input

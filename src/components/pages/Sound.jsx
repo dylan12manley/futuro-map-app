@@ -4,6 +4,7 @@ import { useFirestoreConnect, isLoaded } from 'react-redux-firebase';
 import ArticleFull from "../shared/ArticleFull";
 import Header from "../shared/Header";
 
+
 function Sound() {
   useFirestoreConnect([
     { collection: 'articles' }
@@ -14,7 +15,7 @@ function Sound() {
         <div><Header/>
       <div style={{ marginTop: '55px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
         {Object.values(articles).map((article) => {
-            if(article.category === 'Sound'){
+            if(article.category === 'Sound' || article.category === 'sound'){
                 return <ArticleFull
                     title={article.title}
                     headline={article.headline}

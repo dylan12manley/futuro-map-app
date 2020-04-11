@@ -48,7 +48,6 @@ class Admin extends React.Component {
               color: '#38171C'
         }}>
         <h1>Yo🛸Bru💓</h1> 
-        <Link to="/signin" >Sign In</Link>
         <br></br>
         <Link to="/newarticleForm" >New Article</Link>
           <ArticlePage/>
