@@ -8,6 +8,11 @@ const paragraphStyle = {
   fontSize: 'calc(12px + .6vmin',
 }
 
+const imageStyle = {
+  overflow: 'hidden',
+  maxHeight: '65vh',
+}
+
 
 const { Panel } = Collapse;
 
@@ -92,31 +97,31 @@ function ArticleFull(props) {
             <Panel header="Read the rest?" key="1" className="site-collapse-custom-panel" style={paragraphStyle}>
             <div>
              <p>{props.p1}</p>
-             <img src={props.img2}></img>
+             <img src={props.img2} alt='img2' style={imageStyle}></img>
             </div>
             <div>
              <p>{props.p2}</p>
-             <img src={props.img3}></img>
+             <img src={props.img3} alt='img3' style={imageStyle}></img>
             </div>
             <div>
              <p>{props.p3}</p>
-             <img src={props.img4}></img>
+             <img src={props.img4} alt='img4' style={imageStyle}></img>
             </div>
             <div>
              <p>{props.p4}</p>
-             <img src={props.img5}></img>
+             <img src={props.img5} alt='img5' style={imageStyle}></img>
             </div>
             <div>
              <p>{props.p5}</p>
-             <img src={props.img6}></img>
+             <img src={props.img6} alt='img6' style={imageStyle}></img>
             </div>
             <div>
              <p>{props.p6}</p>
-             <img src={props.img7}></img>
+             <img src={props.img7} alt='img7' style={imageStyle}></img>
             </div>
             <div>
-             <img src={props.img8}></img>
-             <img src={props.img9}></img>
+             <img src={props.img8} alt='img8' style={imageStyle}></img>
+             <img src={props.img9} alt='img9' style={imageStyle}></img>
             </div>
             </Panel>
           </Collapse>
