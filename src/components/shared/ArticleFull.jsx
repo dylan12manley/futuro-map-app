@@ -3,6 +3,12 @@ import PropTypes from "prop-types";
 import { Card, Collapse } from 'antd';
 import { CaretRightOutlined } from '@ant-design/icons';
 
+const paragraphStyle = {
+  fontFamily: 'Rubik',
+  fontSize: 'calc(12px + .6vmin',
+}
+
+
 const { Panel } = Collapse;
 
 function ArticleFull(props) {
@@ -22,7 +28,7 @@ function ArticleFull(props) {
                       color: '#1C0B0D',
                       fontFamily: 'Rubik',
                     }}>
-                <div className='articleBottom'>
+                <div >
                   <p style={{
                     fontSize: '18px',
                     margin: '8px',
@@ -83,7 +89,7 @@ function ArticleFull(props) {
             expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
             className="site-collapse-custom-collapse"
           >
-            <Panel header="Read the rest?" key="1" className="site-collapse-custom-panel">
+            <Panel header="Read the rest?" key="1" className="site-collapse-custom-panel" style={paragraphStyle}>
             <div>
              <p>{props.p1}</p>
              <img src={props.img2}></img>
