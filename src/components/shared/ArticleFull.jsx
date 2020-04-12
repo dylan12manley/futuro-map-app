@@ -10,7 +10,8 @@ const paragraphStyle = {
 
 const imageStyle = {
   overflow: 'hidden',
-  maxHeight: '65vh',
+  maxHeight: '50vmin',
+  maxwidth: '50vmin',
 }
 
 
@@ -22,7 +23,11 @@ function ArticleFull(props) {
             <>
               <Card hoverable
                     title={<h2>{props.title}</h2>}
-                    cover={<img alt="article" src={props.mainImg} style={{ overflow: 'hidden'}}/>}
+                    cover={<img 
+                              alt="article" 
+                              src={props.mainImg} 
+                              style={{ overflow: 'hidden'}}
+                            />}
                     headStyle={{
                       fontFamily: 'Rubik',
                       fontWeight: '100',
@@ -64,7 +69,11 @@ function ArticleFull(props) {
         <>
           <Card hoverable
                 title={<h2>{props.title}</h2>}
-                cover={<img alt="article" src={props.mainImg} style={{ overflow: 'hidden'}}/>}
+                cover={<img 
+                        alt="article" 
+                        src={props.mainImg} 
+                        style={{ overflow: 'hidden'}}
+                      />}
                 headStyle={{
                   fontFamily: 'Rubik',
                   fontWeight: '100',
@@ -87,14 +96,7 @@ function ArticleFull(props) {
                 margin: '0px'}}
                 >{props.headline}</p>
             </div>
-          </Card>
-          <Collapse
-            bordered={false}
-            defaultActiveKey={['0']}
-            expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
-            className="site-collapse-custom-collapse"
-          >
-            <Panel header="Read the rest?" key="1" className="site-collapse-custom-panel" style={paragraphStyle}>
+            <div style={paragraphStyle}>
             <div>
              <p>{props.p1}</p>
              <img src={props.img2} alt='img2' style={imageStyle}></img>
@@ -123,8 +125,8 @@ function ArticleFull(props) {
              <img src={props.img8} alt='img8' style={imageStyle}></img>
              <img src={props.img9} alt='img9' style={imageStyle}></img>
             </div>
-            </Panel>
-          </Collapse>
+            </div>
+            </Card>
           <hr/>
         </>
       );
