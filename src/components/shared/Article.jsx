@@ -12,36 +12,44 @@ const imageStyle = {
 }
 
 function Article(props){
-
-  if(!props.img2){
+//(conditional if there is not any img 2 through 9. //
+  if(!props.img2 && !props.img3 && !props.img4 && !props.img5 && !props.img6 && !props.img7 && !props.img8 && !props.img9 )
   return (
     <>
-      <Card hoverable
-            title={<h2>{props.title}</h2>}
-            cover={<img alt="article" src={props.mainImg} style={{ overflow: 'hidden'}}/>}
-            headStyle={{
-              fontFamily: 'Rubik',
-              fontWeight: '100',
-              margin:'0px',
-              height: '42px'
-            }}
-            bodyStyle={{
-              color: '#1C0B0D',
-              fontFamily: 'Rubik',
-            }}>
+      <Card 
+        hoverable
+        title={<h2>{props.title}</h2>}
+        cover={<img alt="article" src={props.mainImg} style={{ overflow: 'hidden'}}/>}
+        headStyle={{
+          fontFamily: 'Rubik',
+          fontWeight: '100',
+          margin:'0px',
+          height: '42px'}}
+        bodyStyle={{
+          color: '#1C0B0D',
+          fontFamily: 'Rubik'}}>
         <div className='articleBottom'>
-          <p style={{
-            fontSize: '18px',
-            margin: '8px',
-          }}>{props.author} <span style={{
-            paddingLeft: '15vw'
-          }}>{props.date} </span></p>
-          <p style={{
-            fontWeight: '500',
-            margin: '0px'}}
-            >{props.headline}</p>
+          <p 
+            style={{
+              fontSize: '18px',
+              margin: '8px'}}
+          >
+          {props.author} 
+          <span 
+            style={{
+              paddingLeft: '15vw'}}>
+            {props.date} 
+          </span>
+          </p>
+          <p 
+            style={{
+              fontWeight: '500',
+              margin: '0px'}}>
+          {props.headline}
+          </p>
         </div>
       </Card>
+
       <Collapse
         bordered={false}
         defaultActiveKey={['0']}
@@ -60,7 +68,7 @@ function Article(props){
       <hr/>
     </>
   );
-  }
+  
   else return (
     
       <Card hoverable
