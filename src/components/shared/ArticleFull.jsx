@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Card, Collapse } from 'antd';
-import { CaretRightOutlined } from '@ant-design/icons';
+import { Card } from 'antd';
 
 const paragraphStyle = {
   fontFamily: 'Rubik',
@@ -15,10 +14,8 @@ const imageStyle = {
 }
 
 
-const { Panel } = Collapse;
-
 function ArticleFull(props) {
-    if(props.body){
+    if(props.body)
         return (
             <>
               <Card 
@@ -39,7 +36,7 @@ function ArticleFull(props) {
                     color: '#1C0B0D',
                     fontFamily: 'Rubik',
               }}>
-              <div >
+              <div style={paragraphStyle}>
                 <p style={{
                   fontSize: '18px',
                   margin: '8px',
@@ -50,23 +47,77 @@ function ArticleFull(props) {
                   fontWeight: '500',
                   margin: '0px'}}
                   >{props.headline}</p>
+                <div>
+                 <p>{props.body}</p>
+                 <img src={props.img2} alt='img2' style={imageStyle}></img>
+                </div>
               </div>
               </Card>
-              <Collapse
-                bordered={false}
-                defaultActiveKey={['0']}
-                expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
-                className="site-collapse-custom-collapse"
-              >
-                <Panel header="Read the rest?" key="1" className="site-collapse-custom-panel">
-                  <p>{props.body}</p>
-                  <div></div>
-                </Panel>
-              </Collapse>
               <hr/>
             </>
           );
-    } else if (props.img6) {
+          else if (props.img9) 
+          return (
+            <>
+              <Card hoverable
+                title={
+                  <h2>{props.title}
+                  <span style={{
+                    fontSize: '16px',
+                    paddingLeft: '5vmin'
+                    }}>{props.date} by: {props.author}</span>
+                  </h2>
+                }
+                cover={<img 
+                  alt="article" 
+                  src={props.mainImg} 
+                  style={{ overflow: 'hidden'}}
+                />}
+                headStyle={{
+                  fontFamily: 'Rubik',
+                  fontWeight: '100',
+                  margin:'0px',
+                  height: '42px'
+                }}
+                bodyStyle={{
+                  color: '#1C0B0D',
+                  fontFamily: 'Rubik',
+                }}>
+                <div style={paragraphStyle}>
+                <div>
+                 <p>{props.p1}</p>
+                 <img src={props.img2} alt='img2' style={imageStyle}></img>
+                </div>
+                <div>
+                 <p>{props.p2}</p>
+                 <img src={props.img3} alt='img3' style={imageStyle}></img>
+                </div>
+                <div>
+                 <p>{props.p3}</p>
+                 <img src={props.img4} alt='img4' style={imageStyle}></img>
+                </div>
+                <div>
+                 <p>{props.p4}</p>
+                 <img src={props.img5} alt='img5' style={imageStyle}></img>
+                </div>
+                <div>
+                 <p>{props.p5}</p>
+                 <img src={props.img6} alt='img6' style={imageStyle}></img>
+                </div>
+                <div>
+                 <p>{props.p6}</p>
+                 <img src={props.img7} alt='img7' style={imageStyle}></img>
+                </div>
+                <div>
+                 <img src={props.img8} alt='img8' style={imageStyle}></img>
+                 <img src={props.img9} alt='img9' style={imageStyle}></img>
+                </div>
+                </div>
+                </Card>
+              <hr/>
+            </>
+          );
+      else if (props.img6) 
     return (
       <>
         <Card hoverable
@@ -116,18 +167,184 @@ function ArticleFull(props) {
           </div>
           <div>
            <p>{props.p6}</p>
-           <img src={props.img7} alt='img7' style={imageStyle}></img>
           </div>
           <div>
-           <img src={props.img8} alt='img8' style={imageStyle}></img>
-           <img src={props.img9} alt='img9' style={imageStyle}></img>
           </div>
           </div>
           </Card>
         <hr/>
       </>
-    );}
-    else return (
+    );
+    else if (props.img5) return (
+      <>
+        <Card hoverable
+          title={
+            <h2>{props.title}
+            <span style={{
+              fontSize: '16px',
+              paddingLeft: '5vmin'
+              }}>{props.date} by: {props.author}</span>
+            </h2>
+          }
+          cover={<img 
+            alt="article" 
+            src={props.mainImg} 
+            style={{ overflow: 'hidden'}}
+          />}
+          headStyle={{
+            fontFamily: 'Rubik',
+            fontWeight: '100',
+            margin:'0px',
+            height: '42px'
+          }}
+          bodyStyle={{
+            color: '#1C0B0D',
+            fontFamily: 'Rubik',
+          }}>
+          <div style={paragraphStyle}>
+            <div>
+              <p>{props.p1}</p>
+              <img src={props.img2} alt='img2' style={imageStyle}></img>
+            </div>
+            <div>
+              <p>{props.p2}</p>
+              <img src={props.img3} alt='img3' style={imageStyle}></img>  
+            </div>
+            <div>
+              <p>{props.p3}</p>          
+            </div>
+            <div>
+              <p>{props.p4}</p>
+              <img src={props.img4} alt='img4' style={imageStyle}></img> 
+            </div>
+            <div>
+              <p>{props.p5}</p>
+            </div>
+            <div>
+              <p>{props.p5}</p>
+              <img src={props.img5} alt='img5' style={imageStyle}></img>  
+            </div>
+            <div>
+              <p>{props.p6}</p>   
+            </div>
+          </div>
+          </Card>
+        <hr/>
+      </>
+    );
+    else if (props.img4) return (
+      <>
+        <Card hoverable
+          title={
+            <h2>{props.title}
+            <span style={{
+              fontSize: '16px',
+              paddingLeft: '5vmin'
+              }}>{props.date} by: {props.author}</span>
+            </h2>
+          }
+          cover={<img 
+            alt="article" 
+            src={props.mainImg} 
+            style={{ overflow: 'hidden'}}
+          />}
+          headStyle={{
+            fontFamily: 'Rubik',
+            fontWeight: '100',
+            margin:'0px',
+            height: '42px'
+          }}
+          bodyStyle={{
+            color: '#1C0B0D',
+            fontFamily: 'Rubik',
+          }}>
+          <div style={paragraphStyle}>
+            <div>
+              <p>{props.p1}</p>
+            </div>
+            <div>
+              <p>{props.p2}</p>
+              <img src={props.img2} alt='img2' style={imageStyle}></img>  
+            </div>
+            <div>
+              <p>{props.p3}</p>          
+            </div>
+            <div>
+              <p>{props.p4}</p>
+              <img src={props.img3} alt='img3' style={imageStyle}></img> 
+            </div>
+            <div>
+              <p>{props.p5}</p>
+            </div>
+            <div>
+              <p>{props.p5}</p>
+              <img src={props.img4} alt='img4' style={imageStyle}></img>  
+            </div>
+            <div>
+              <p>{props.p6}</p>   
+            </div>
+          </div>
+          </Card>
+        <hr/>
+      </>
+    );
+    
+    else if (props.img3) return (
+      <>
+        <Card hoverable
+          title={
+            <h2>{props.title}
+            <span style={{
+              fontSize: '16px',
+              paddingLeft: '5vmin'
+              }}>{props.date} by: {props.author}</span>
+            </h2>
+          }
+          cover={<img 
+            alt="article" 
+            src={props.mainImg} 
+            style={{ overflow: 'hidden'}}
+          />}
+          headStyle={{
+            fontFamily: 'Rubik',
+            fontWeight: '100',
+            margin:'0px',
+            height: '42px'
+          }}
+          bodyStyle={{
+            color: '#1C0B0D',
+            fontFamily: 'Rubik',
+          }}>
+          <div style={paragraphStyle}>
+            <div>
+              <p>{props.p1}</p>
+            </div>
+            <div>
+              <p>{props.p2}</p>
+              <img src={props.img2} alt='img2' style={imageStyle}></img>  
+            </div>
+            <div>
+              <p>{props.p3}</p>          
+            </div>
+            <div>
+              <p>{props.p4}</p>
+            </div>
+            <div>
+              <p>{props.p5}</p>
+            </div>
+            <div>
+              <p>{props.p5}</p>
+            </div>
+            <div>
+              <p>{props.p6}</p>   
+              <img src={props.img3} alt='img3' style={imageStyle}></img>   
+            </div>
+          </div>
+          </Card>
+        <hr/>
+      </>
+    );
+    else if (props.img2) return (
         <>
           <Card hoverable
             title={
@@ -156,29 +373,78 @@ function ArticleFull(props) {
             <div style={paragraphStyle}>
               <div>
                 <p>{props.p1}</p>
-                <img src={props.img2} alt='img2' style={imageStyle}></img>
               </div>
               <div>
                 <p>{props.p2}</p>
-                
               </div>
               <div>
-                <p>{props.p3}</p>
-                <img src={props.img3} alt='img3' style={imageStyle}></img>
+                <p>{props.p3}</p>          
               </div>
               <div>
                 <p>{props.p4}</p>
               </div>
               <div>
                 <p>{props.p5}</p>
-                <img src={props.img4} alt='img4' style={imageStyle}></img>
               </div>
               <div>
                 <p>{props.p5}</p>
               </div>
               <div>
                 <p>{props.p6}</p>   
-                <img src={props.img5} alt='img5' style={imageStyle}></img>       
+                <img src={props.img2} alt='img2' style={imageStyle}></img>   
+              </div>
+            </div>
+            </Card>
+          <hr/>
+        </>
+      );
+      else return (
+        <>
+          <Card hoverable
+            title={
+              <h2>{props.title}
+              <span style={{
+                fontSize: '16px',
+                paddingLeft: '5vmin'
+                }}>{props.date} by: {props.author}</span>
+              </h2>
+            }
+            cover={<img 
+              alt="article" 
+              src={props.mainImg} 
+              style={{ overflow: 'hidden'}}
+            />}
+            headStyle={{
+              fontFamily: 'Rubik',
+              fontWeight: '100',
+              margin:'0px',
+              height: '42px'
+            }}
+            bodyStyle={{
+              color: '#1C0B0D',
+              fontFamily: 'Rubik',
+            }}>
+            <div style={paragraphStyle}>
+              <div>
+                <p>{props.p1}</p>
+              </div>
+              <div>
+                <p>{props.p2}</p>
+              </div>
+              <div>
+                <p>{props.p3}</p>
+              </div>
+              <div>
+                <p>{props.p4}</p>
+              </div>
+              <div>
+                <p>{props.p5}</p>
+              </div>
+              <div>
+                <p>{props.p5}</p>
+              </div>
+              <div>
+                <p>{props.p6}</p>   
               </div>
             </div>
             </Card>
