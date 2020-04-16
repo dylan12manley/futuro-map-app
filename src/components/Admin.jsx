@@ -6,15 +6,11 @@ import { Link } from "react-router-dom";
 import { withFirestore, isLoaded } from 'react-redux-firebase';
 
 import Header from "./shared/Header";
-import MainCarousel from "./MainCarousel";
+import MainCarousel from "./shared/MainCarousel";
 import AdvertList from "./AdvertList";
-
-
-
 
 class Admin extends React.Component {
  
-
   render(){
     const auth = this.props.firebase.auth();
     if (!isLoaded(auth)) {
