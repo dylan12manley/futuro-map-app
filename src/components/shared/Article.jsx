@@ -5,6 +5,12 @@ import { CaretRightOutlined } from '@ant-design/icons';
 
 const { Panel } = Collapse;
 
+const imageStyle = {
+  overflow: 'hidden',
+  maxHeight: '50vmin',
+  maxwidth: '50vmin',
+}
+
 function Article(props){
 
   if(!props.img2){
@@ -43,7 +49,11 @@ function Article(props){
         className="site-collapse-custom-collapse"
       >
         <Panel header="Read the rest?" key="1" className="site-collapse-custom-panel">
-          <p>{props.body}</p>
+          <p>{props.p1}</p>
+          <img src={props.img2} alt='img2' style={imageStyle}></img>
+          <p>{props.p2}</p>
+          <img src={props.img3} alt='img3' style={imageStyle}></img>
+          <p>Full Article?</p>
           <div></div>
         </Panel>
       </Collapse>
@@ -52,7 +62,7 @@ function Article(props){
   );
   }
   else return (
-    <>
+    
       <Card hoverable
             title={<h2>{props.title}</h2>}
             cover={<img alt="article" src={props.mainImg} style={{ overflow: 'hidden'}}/>}
@@ -79,20 +89,7 @@ function Article(props){
             >{props.headline}</p>
         </div>
       </Card>
-      <Collapse
-        bordered={false}
-        defaultActiveKey={['0']}
-        expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
-        className="site-collapse-custom-collapse"
-      >
-        <Panel header="Read the rest?" key="1" className="site-collapse-custom-panel">
-          <p>{props.body}</p>
-          <img src={props.img2} alt='Seccond Img'></img>
-          <div></div>
-        </Panel>
-      </Collapse>
-      <hr/>
-    </>
+     
   );
 
 }
@@ -102,10 +99,12 @@ Article.propTypes = {
   author: PropTypes.string,
   date: PropTypes.string,
   headline: PropTypes.string,
-  body: PropTypes.string,
+  p1: PropTypes.string,
+  p2: PropTypes.string,
   category: PropTypes.string,
   mainImg: PropTypes.string,
   Img2: PropTypes.string,
+  Img3: PropTypes.string,
   id: PropTypes.string,
 };
 
