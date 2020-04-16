@@ -21,35 +21,36 @@ function ArticleFull(props) {
     if(props.body){
         return (
             <>
-              <Card hoverable
-                    title={<h2>{props.title}</h2>}
-                    cover={<img 
-                              alt="article" 
-                              src={props.mainImg} 
-                              style={{ overflow: 'hidden'}}
-                            />}
-                    headStyle={{
-                      fontFamily: 'Rubik',
-                      fontWeight: '100',
-                      margin:'0px',
-                      height: '42px'
-                    }}
-                    bodyStyle={{
-                      color: '#1C0B0D',
-                      fontFamily: 'Rubik',
-                    }}>
-                <div >
-                  <p style={{
-                    fontSize: '18px',
-                    margin: '8px',
-                  }}>{props.author} <span style={{
-                    paddingLeft: '15vw'
-                  }}>{props.date} </span></p>
-                  <p style={{
-                    fontWeight: '500',
-                    margin: '0px'}}
-                    >{props.headline}</p>
-                </div>
+              <Card 
+                hoverable
+                title={<h2>{props.title}</h2>}
+                cover={<img 
+                  alt="article" 
+                  src={props.mainImg} 
+                  style={{ overflow: 'hidden'}}
+                />}
+                headStyle={{
+                  fontFamily: 'Rubik',
+                  fontWeight: '100',
+                  margin:'0px',
+                  height: '42px'
+                }}
+                  bodyStyle={{
+                    color: '#1C0B0D',
+                    fontFamily: 'Rubik',
+              }}>
+              <div >
+                <p style={{
+                  fontSize: '18px',
+                  margin: '8px',
+                }}>{props.author} <span style={{
+                  paddingLeft: '15vw'
+                }}>{props.date} </span></p>
+                <p style={{
+                  fontWeight: '500',
+                  margin: '0px'}}
+                  >{props.headline}</p>
+              </div>
               </Card>
               <Collapse
                 bordered={false}
