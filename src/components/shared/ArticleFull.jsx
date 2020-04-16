@@ -15,6 +15,7 @@ const imageStyle = {
 
 
 function ArticleFull(props) {
+  // for articles inputed with old format
     if(props.body)
         return (
             <>

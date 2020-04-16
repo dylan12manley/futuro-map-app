@@ -49,7 +49,6 @@ function Article(props){
           </p>
         </div>
       </Card>
-
       <Collapse
         bordered={false}
         defaultActiveKey={['0']}
@@ -68,7 +67,35 @@ function Article(props){
       <hr/>
     </>
   );
-  
+  //Conditional filtering out articles missing img6-9 
+  else if ( !props.img6 && !props.img7 && !props.img8 && !props.img9) return (
+    <Card hoverable
+          title={<h2>{props.title}</h2>}
+          cover={<img alt="article" src={props.mainImg} style={{ overflow: 'hidden'}}/>}
+          headStyle={{
+            fontFamily: 'Rubik',
+            fontWeight: '100',
+            margin:'0px',
+            height: '42px'
+          }}
+          bodyStyle={{
+            color: '#1C0B0D',
+            fontFamily: 'Rubik',
+          }}>
+      <div className='articleBottom'>
+        <p style={{
+          fontSize: '18px',
+          margin: '8px',
+        }}>{props.author} <span style={{
+          paddingLeft: '15vw'
+        }}>{props.date} </span></p>
+        <p style={{
+          fontWeight: '500',
+          margin: '0px'}}
+          >{props.headline}</p>
+      </div>
+    </Card>
+);
   else return (
     
       <Card hoverable
