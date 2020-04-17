@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from 'react-redux';
 import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase';
-import Article from "../shared/Article";
+import ArticleFull from "../shared/ArticleFull";
 
 function Film() {
   useFirestoreConnect([
@@ -15,17 +15,30 @@ function Film() {
       <h1 style={{textAlign: 'center'}}>Film</h1>
         {Object.values(articles).map((article) => {
             if(article.category === 'Fashion'){
-                return <Article
-                    title={article.title}
-                    headline={article.headline}
-                    body={article.body}
-                    author={article.author}
-                    date={article.date}
-                    category={article.category}
-                    mainImg={article.mainImg}
-                    img2={article.img2}
-                    id={article.id}
-                    key={article.id}/>
+                return <ArticleFull
+                title={article.title}
+                headline={article.headline}
+                p1={article.p1}
+                p2={article.p2}
+                p3={article.p3}
+                p4={article.p4}
+                p5={article.p5}
+                p6={article.p6}
+                author={article.author}
+                date={article.date}
+                category={article.category}
+                mainImg={article.mainImg}
+                img2={article.img2}
+                img3={article.img3}
+                img4={article.img4}
+                img5={article.img5}
+                img6={article.img6}
+                img7={article.img7}
+                img8={article.img8}
+                img9={article.img9}
+                id={article.id}
+                key={article.id}
+              />
             } 
         })}
       </div>
