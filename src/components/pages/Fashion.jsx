@@ -2,7 +2,6 @@ import React from "react";
 import { useSelector } from 'react-redux';
 import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase';
 import ArticleFull from "../shared/ArticleFull";
-import Header from "../shared/Header";
 
 function FashionPage() {
   useFirestoreConnect([
@@ -11,7 +10,7 @@ function FashionPage() {
   const articles = useSelector(state => state.firestore.ordered.articles);
   if (isLoaded(articles)) {
     return (
-    <div><Header/>
+    <div>
       <div style={{ marginTop: '55px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
       <h1 style={{textAlign: 'center'}}>Fashion</h1>
         {Object.values(articles).map((article) => {

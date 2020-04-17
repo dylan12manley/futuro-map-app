@@ -12,10 +12,10 @@ import NewArticleForm from './forms/NewArticleForm';
 import NewAdvertForm from './forms/NewAdvertForm';
 import NewCarouselItemForm from './forms/NewCarouselForm';
 import ArticleList from './ArticleList';
-import Art from './pages/Art';
-import Fashion from './pages/Fashion';
-import Film from './pages/Film';
-import People from './pages/People';
+import Art from './pages/ArtPage';
+import Fashion from './pages/FashionPage';
+import Film from './pages/FilmPage';
+import People from './pages/PeoplePage';
 import Sound from './pages/SoundPage';
 
 const appStyle = {

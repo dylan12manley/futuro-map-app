@@ -2,7 +2,6 @@ import React from "react";
 import { useSelector } from 'react-redux';
 import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase';
 import ArticleFull from "../shared/ArticleFull";
-import Header from "../shared/Header";
 import { Link } from "react-router-dom";
 
 
@@ -14,7 +13,6 @@ function People() {
   if (isLoaded(articles)) {
     return (
         <div>
-          <Header/>
       <div style={{ marginTop: '55px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
           <br></br>
           <Link to="/signin" >Sign In</Link>
