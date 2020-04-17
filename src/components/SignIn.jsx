@@ -49,10 +49,30 @@ function SignIn(){
               placeholder='Password' />
             <button type='submit'>Sign in</button>
           </form>
+
+<br></br> <br></br>
+          <h1>Sign Up</h1>
+          <form onsubmit={doSignUp}>
+            <input
+              type="email"
+              name="signinEmail"
+              placeholder="new email"
+            />
+         
+            <input
+              type="password"
+              name="signinPassword"
+              placeholder="new Password"
+            />
+            <button type='submit'>Sign up</button>
+        </form>
+        <br></br>
           <h1>Sign Out</h1>
           <button onClick={doSignOut}>Sign out</button>
         </div>
       );
+
+      
 
   }
 
