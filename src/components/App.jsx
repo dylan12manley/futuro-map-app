@@ -16,7 +16,7 @@ import Art from './pages/Art';
 import Fashion from './pages/Fashion';
 import Film from './pages/Film';
 import People from './pages/People';
-import Sound from './pages/Sound';
+import Sound from './pages/SoundPage';
 
 const appStyle = {
   backgroundColor: '#F3F7F2',
