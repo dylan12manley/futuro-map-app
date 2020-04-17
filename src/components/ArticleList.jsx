@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from 'react-redux';
 import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase';
-import Article from "./Article";
+import Article from "./shared/Article";
 
 function ArticleList() {
   useFirestoreConnect([
@@ -15,12 +15,18 @@ function ArticleList() {
           return <Article
             title={article.title}
             headline={article.headline}
-            body={article.body}
+            p1={article.p1}
+            p2={article.p2}
+            p3={article.p3}
+            p4={article.p4}
+            p5={article.p5}
+            p6={article.p6}
             author={article.author}
             date={article.date}
             category={article.category}
             mainImg={article.mainImg}
             img2={article.img2}
+            img3={article.img3}
             id={article.id}
             key={article.id}/>
         })}
