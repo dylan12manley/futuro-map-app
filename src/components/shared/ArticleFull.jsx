@@ -7,6 +7,15 @@ const paragraphStyle = {
   fontSize: 'calc(12px + .6vmin',
 }
 
+const header = {
+  fontSize: 'calc(15px + 1vmin)',
+  position: 'relative',
+  top: '0',
+  backgroundColor: 'white',
+  radius: '5px',
+  paddingLeft: '2vmin',
+}
+
 const imageStyle = {
   overflow: 'hidden',
   maxHeight: '50vmin',
@@ -15,118 +24,83 @@ const imageStyle = {
 
 
 function ArticleFull(props) {
-  // for articles inputed with old format
-    if(props.body)
-        return (
-            <>
-              <Card 
-                hoverable
-                title={<h2>{props.title}</h2>}
-                cover={<img 
-                  alt="article" 
-                  src={props.mainImg} 
-                  style={{ overflow: 'hidden'}}
-                />}
-                headStyle={{
-                  fontWeight: '100',
-                  margin:'0px',
-                  height: '42px'
-                }}
-                  bodyStyle={{
-                    color: '#1C0B0D',
-              }}>
-              <div style={paragraphStyle}>
-                <p style={{
-                  fontSize: '18px',
-                  margin: '8px',
-                }}>{props.author} <span style={{
-                  paddingLeft: '15vw'
-                }}>{props.date} </span></p>
-                <p style={{
-                  fontWeight: '500',
-                  margin: '0px'}}
-                  >{props.headline}</p>
-                <div>
-                 <p>{props.body}</p>
-                 <img src={props.img2} alt='img2' style={imageStyle}></img>
-                </div>
-              </div>
-              </Card>
-              <hr/>
-            </>
-          );
-          else if (props.img9) 
-          return (
-            <>
-              <Card hoverable
-                title={
-                  <h2>{props.title}
-                  <span style={{
-                    fontSize: '16px',
-                    paddingLeft: '5vmin'
-                    }}>{props.date} by: {props.author}</span>
-                  </h2>
-                }
-                cover={<img 
-                  alt="article" 
-                  src={props.mainImg} 
-                  style={{ overflow: 'hidden'}}
-                />}
-                headStyle={{
-                  fontFamily: 'Raleway',
-                  fontWeight: '100',
-                  margin:'0px',
-                  height: '42px'
-                }}
-                bodyStyle={{
-                  color: '#1C0B0D',
-                  fontFamily: 'Raleway',
-                }}>
-                <div style={paragraphStyle}>
-                <div>
-                 <p>{props.p1}</p>
-                 <img src={props.img2} alt='img2' style={imageStyle}></img>
-                </div>
-                <div>
-                 <p>{props.p2}</p>
-                 <img src={props.img3} alt='img3' style={imageStyle}></img>
-                </div>
-                <div>
-                 <p>{props.p3}</p>
-                 <img src={props.img4} alt='img4' style={imageStyle}></img>
-                </div>
-                <div>
-                 <p>{props.p4}</p>
-                 <img src={props.img5} alt='img5' style={imageStyle}></img>
-                </div>
-                <div>
-                 <p>{props.p5}</p>
-                 <img src={props.img6} alt='img6' style={imageStyle}></img>
-                </div>
-                <div>
-                 <p>{props.p6}</p>
-                 <img src={props.img7} alt='img7' style={imageStyle}></img>
-                </div>
-                <div>
-                 <img src={props.img8} alt='img8' style={imageStyle}></img>
-                 <img src={props.img9} alt='img9' style={imageStyle}></img>
-                </div>
-                </div>
-                </Card>
-              <hr/>
-            </>
-          );
-      else if (props.img6) 
+  if (props.img9) 
     return (
       <>
         <Card hoverable
           title={
+            <div style={header}>
             <h2>{props.title}
             <span style={{
               fontSize: '16px',
               paddingLeft: '5vmin'
               }}>{props.date} by: {props.author}</span>
             </h2>
+            </div>
+          }
+          cover={<img 
+            alt="article" 
+            src={props.mainImg} 
+            style={{ overflow: 'hidden'}}
+          />}
+          headStyle={{
+            radius: '5px',
+            fontWeight: '100',
+            margin:'0px',
+            height: '42px',
+            fontFamily: 'Raleway',
+          }}
+          bodyStyle={{
+            color: '#1C0B0D',
+            fontFamily: 'Raleway',
+          }}>
+          <div style={paragraphStyle}>
+          <div>
+            <p>{props.p1}</p>
+            <img src={props.img2} alt='img2' style={imageStyle}></img>
+          </div>
+          <div>
+            <p>{props.p2}</p>
+            <img src={props.img3} alt='img3' style={imageStyle}></img>
+          </div>
+          <div>
+            <p>{props.p3}</p>
+            <img src={props.img4} alt='img4' style={imageStyle}></img>
+          </div>
+          <div>
+            <p>{props.p4}</p>
+            <img src={props.img5} alt='img5' style={imageStyle}></img>
+          </div>
+          <div>
+            <p>{props.p5}</p>
+            <img src={props.img6} alt='img6' style={imageStyle}></img>
+          </div>
+          <div>
+            <p>{props.p6}</p>
+            <img src={props.img7} alt='img7' style={imageStyle}></img>
+          </div>
+          <div>
+            <img src={props.img8} alt='img8' style={imageStyle}></img>
+            <img src={props.img9} alt='img9' style={imageStyle}></img>
+          </div>
+          </div>
+          </Card>
+        <hr/>
+      </>
+    );
+  else if (props.img6) 
+    return (
+      <>
+        <Card hoverable
+          title={
+            <div style={header}>
+            <h2>{props.title}
+            <span style={{
+              fontSize: '16px',
+              paddingLeft: '5vmin'
+              }}>{props.date} <br></br>{props.author}</span>
+            </h2>
+            </div>
           }
           cover={<img 
             alt="article" 
@@ -178,12 +152,14 @@ function ArticleFull(props) {
       <>
         <Card hoverable
           title={
+            <div style={header}>
             <h2>{props.title}
             <span style={{
               fontSize: '16px',
               paddingLeft: '5vmin'
               }}>{props.date} by: {props.author}</span>
             </h2>
+            </div>
           }
           cover={<img 
             alt="article" 
@@ -235,12 +211,14 @@ function ArticleFull(props) {
       <>
         <Card hoverable
           title={
+            <div style={header}>
             <h2>{props.title}
             <span style={{
               fontSize: '16px',
               paddingLeft: '5vmin'
               }}>{props.date} by: {props.author}</span>
             </h2>
+            </div>
           }
           cover={<img 
             alt="article" 
@@ -292,12 +270,14 @@ function ArticleFull(props) {
       <>
         <Card hoverable
           title={
+            <div style={header}>
             <h2>{props.title}
             <span style={{
               fontSize: '16px',
               paddingLeft: '5vmin'
               }}>{props.date} by: {props.author}</span>
             </h2>
+            </div>
           }
           cover={<img 
             alt="article" 
@@ -347,12 +327,14 @@ function ArticleFull(props) {
         <>
           <Card hoverable
             title={
+              <div style={header}>
               <h2>{props.title}
               <span style={{
                 fontSize: '16px',
                 paddingLeft: '5vmin'
                 }}>{props.date} by: {props.author}</span>
               </h2>
+              </div>
             }
             cover={<img 
               alt="article" 
@@ -401,12 +383,14 @@ function ArticleFull(props) {
         <>
           <Card hoverable
             title={
+              <div style={header}>
               <h2>{props.title}
               <span style={{
                 fontSize: '16px',
                 paddingLeft: '5vmin'
                 }}>{props.date} by: {props.author}</span>
               </h2>
+              </div>
             }
             cover={<img 
               alt="article" 
