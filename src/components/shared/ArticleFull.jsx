@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Card } from 'antd';
 
 const paragraphStyle = {
-  fontFamily: 'Rubik',
+  fontFamily: 'Raleway',
   fontSize: 'calc(12px + .6vmin',
 }
 
@@ -28,14 +28,12 @@ function ArticleFull(props) {
                   style={{ overflow: 'hidden'}}
                 />}
                 headStyle={{
-                  fontFamily: 'Rubik',
                   fontWeight: '100',
                   margin:'0px',
                   height: '42px'
                 }}
                   bodyStyle={{
                     color: '#1C0B0D',
-                    fontFamily: 'Rubik',
               }}>
               <div style={paragraphStyle}>
                 <p style={{
@@ -75,14 +73,14 @@ function ArticleFull(props) {
                   style={{ overflow: 'hidden'}}
                 />}
                 headStyle={{
-                  fontFamily: 'Rubik',
+                  fontFamily: 'Raleway',
                   fontWeight: '100',
                   margin:'0px',
                   height: '42px'
                 }}
                 bodyStyle={{
                   color: '#1C0B0D',
-                  fontFamily: 'Rubik',
+                  fontFamily: 'Raleway',
                 }}>
                 <div style={paragraphStyle}>
                 <div>
@@ -136,14 +134,14 @@ function ArticleFull(props) {
             style={{ overflow: 'hidden'}}
           />}
           headStyle={{
-            fontFamily: 'Rubik',
+            fontFamily: 'Raleway',
             fontWeight: '100',
             margin:'0px',
             height: '42px'
           }}
           bodyStyle={{
             color: '#1C0B0D',
-            fontFamily: 'Rubik',
+            fontFamily: 'Raleway',
           }}>
           <div style={paragraphStyle}>
           <div>
@@ -193,14 +191,14 @@ function ArticleFull(props) {
             style={{ overflow: 'hidden'}}
           />}
           headStyle={{
-            fontFamily: 'Rubik',
+            fontFamily: 'Raleway',
             fontWeight: '100',
             margin:'0px',
             height: '42px'
           }}
           bodyStyle={{
             color: '#1C0B0D',
-            fontFamily: 'Rubik',
+            fontFamily: 'Raleway',
           }}>
           <div style={paragraphStyle}>
             <div>
@@ -250,14 +248,14 @@ function ArticleFull(props) {
             style={{ overflow: 'hidden'}}
           />}
           headStyle={{
-            fontFamily: 'Rubik',
+            fontFamily: 'Raleway',
             fontWeight: '100',
             margin:'0px',
             height: '42px'
           }}
           bodyStyle={{
             color: '#1C0B0D',
-            fontFamily: 'Rubik',
+            fontFamily: 'Raleway',
           }}>
           <div style={paragraphStyle}>
             <div>
@@ -307,14 +305,14 @@ function ArticleFull(props) {
             style={{ overflow: 'hidden'}}
           />}
           headStyle={{
-            fontFamily: 'Rubik',
+            fontFamily: 'Raleway',
             fontWeight: '100',
             margin:'0px',
             height: '42px'
           }}
           bodyStyle={{
             color: '#1C0B0D',
-            fontFamily: 'Rubik',
+            fontFamily: 'Raleway',
           }}>
           <div style={paragraphStyle}>
             <div>
@@ -362,14 +360,14 @@ function ArticleFull(props) {
               style={{ overflow: 'hidden'}}
             />}
             headStyle={{
-              fontFamily: 'Rubik',
+              fontFamily: 'Raleway',
               fontWeight: '100',
               margin:'0px',
               height: '42px'
             }}
             bodyStyle={{
               color: '#1C0B0D',
-              fontFamily: 'Rubik',
+              fontFamily: 'Raleway',
             }}>
             <div style={paragraphStyle}>
               <div>
@@ -416,14 +414,14 @@ function ArticleFull(props) {
               style={{ overflow: 'hidden'}}
             />}
             headStyle={{
-              fontFamily: 'Rubik',
+              fontFamily: 'Raleway',
               fontWeight: '100',
               margin:'0px',
               height: '42px'
             }}
             bodyStyle={{
               color: '#1C0B0D',
-              fontFamily: 'Rubik',
+              fontFamily: 'Raleway',
             }}>
             <div style={paragraphStyle}>
               <div>

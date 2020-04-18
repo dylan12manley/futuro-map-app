@@ -11,23 +11,29 @@ const imageStyle = {
   maxwidth: '50vmin',
 }
 
+const articleStyle = {
+ fontFamily: 'Raleway',
+}
+
 function Article(props){
 //(conditional if there is not any img 2 through 9. //
   if(!props.img2 && !props.img3 && !props.img4 && !props.img5 && !props.img6 && !props.img7 && !props.img8 && !props.img9 )
   return (
-    <>
+    <div style={articleStyle}>
       <Card 
         hoverable
         title={<h2>{props.title}</h2>}
         cover={<img alt="article" src={props.mainImg} style={{ overflow: 'hidden'}}/>}
         headStyle={{
-          fontFamily: 'Rubik',
+        
           fontWeight: '100',
           margin:'0px',
-          height: '42px'}}
+          height: '42px',
+          }}
         bodyStyle={{
           color: '#1C0B0D',
-          fontFamily: 'Rubik'}}>
+          }}
+        >
         <div className='articleBottom'>
           <p 
             style={{
@@ -62,24 +68,24 @@ function Article(props){
         </Panel>
       </Collapse>
       <hr/>
-    </>
+    </div>
   );
 //(conditional if there is not any img 3 through 9. //
   else if(!props.img3 && !props.img4 && !props.img5 && !props.img6 && !props.img7 && !props.img8 && !props.img9 )
   return (
-    <>
+    <div style={articleStyle}>
       <Card 
         hoverable
         title={<h2>{props.title}</h2>}
         cover={<img alt="article" src={props.mainImg} style={{ overflow: 'hidden'}}/>}
         headStyle={{
-          fontFamily: 'Rubik',
           fontWeight: '100',
           margin:'0px',
           height: '42px'}}
         bodyStyle={{
           color: '#1C0B0D',
-          fontFamily: 'Rubik'}}>
+        }}
+      >
         <div className='articleBottom'>
           <p 
             style={{
@@ -116,24 +122,24 @@ function Article(props){
         </Panel>
       </Collapse>
       <hr/>
-    </>
+    </div>
   );
   //(conditional if there is not any img 4 through 9. //
   else if(!props.img4 && !props.img5 && !props.img6 && !props.img7 && !props.img8 && !props.img9 )
   return (
-    <>
+    <div style={articleStyle}>
       <Card 
         hoverable
         title={<h2>{props.title}</h2>}
         cover={<img alt="article" src={props.mainImg} style={{ overflow: 'hidden'}}/>}
         headStyle={{
-          fontFamily: 'Rubik',
           fontWeight: '100',
           margin:'0px',
           height: '42px'}}
         bodyStyle={{
           color: '#1C0B0D',
-          fontFamily: 'Rubik'}}>
+          }}
+        >
         <div className='articleBottom'>
           <p 
             style={{
@@ -171,40 +177,39 @@ function Article(props){
         </Panel>
       </Collapse>
       <hr/>
-    </>
+    </div>
   );
   else 
    return (
-    <>
+    <div style={articleStyle}>
     <Card 
       hoverable
       title={
         <h2>{props.title}</h2>}
       cover={
-        <img alt="article" src={props.mainImg} style={{ overflow: 'hidden'}}/>}
+        <img alt="article" 
+          src={props.mainImg} 
+          style={{ overflow: 'hidden'}}
+        />}
       headStyle={{
-        fontFamily: 'Rubik',
         fontWeight: '100',
         margin:'0px',
         height: '42px'
           }}
       bodyStyle={{
         color: '#1C0B0D',
-        fontFamily: 'Rubik',
           }}
     >
     <div className='articleBottom'>
-      <p 
-        style={{
+      <p style={{
         fontSize: '18px',
         margin: '8px',
           }}
       >
       {props.author} 
-      <span 
-        style={{
+      <span style={{
           paddingLeft: '15vw',
-          }}
+      }}
       >
       {props.date} 
       </span>
@@ -236,7 +241,7 @@ function Article(props){
       </Panel>
     </Collapse>
     <hr/>
-  </>
+  </div>
    )
 
 }
