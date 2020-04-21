@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 
 import rings1 from '../../assets/images/rings1BnW.png'
-import mag from '../../assets/images/MagazineBnW.png'
-import futuro from '../../assets/images/futuroBnW.png'
 import fm from '../../assets/images/FMBnW.png'
-
+import f from '../../assets/images/greenf.png'
+import utu from '../../assets/images/utu.png'
+import ro from '../../assets/images/ro.png'
 
 function Landing(){
   const styledLanding = {
@@ -14,24 +14,20 @@ function Landing(){
     color: '#8E545E',
     padding: '50px',
     height: '100vh',
-    fontFamily: 'Black Ops One',
     textAlign: 'center',
     filter: 'grayscale(.75)',
   }
 
 
-  const styledMagImgs = {
-    height: '24vmin',
-    width: '33vmin',
-  }
 
 
   return (
     <div style={styledLanding}>
       <div style={{paddingTop: '18vh',
-                   filter: 'grayscale(.25)',}}>
+                   }}
+      >
         <div style={{height: '20vh'}}>
-          <img src={futuro} style={{width: '45%', height: '75%', filter: 'brightness(3)'}} alt='Futuro'></img>
+          <img src={f} alt='Futuro'></img>
         </div>
         <div>
           <img src={rings1} style={{height: '12vh'}} alt='rings'></img>
@@ -41,8 +37,9 @@ function Landing(){
       </div>
 
 
-      <div style={{color: '#D6684D', filter: 'grayscale(.5)'}}>
-        <img src={mag} style={{ width: '50%', filter: 'brightness(3)' }} alt='Mag'></img>
+      <div>
+        <img src={utu} alt='utu'></img>
+        <img src={ro} alt='ro'></img>
       </div>
     </div>
   );
