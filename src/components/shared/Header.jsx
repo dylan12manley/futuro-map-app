@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import futuro from '../../assets/images/greenfuturo.png'
 
 function Header(){
 
@@ -75,7 +76,8 @@ function Header(){
   return (
     <>
     <div style={mainStyle}>
-      <Link to="/" style={linkStyle}><h4 style={headerTitleStyle}>Futuro Magazine</h4></Link>
+      <Link to="/" style={linkStyle}> <img src={futuro} style={{height: 'calc(10px + 18vmin)', padding: '1vmin', margin: '0', border: '3px solid black', borderRadius: '10px'}} alt='Futuro'></img></Link>
+     
       <div style={navLinksStyle}>
         <Link to="/art" style={linkStyle2b}>Art</Link>
         <Link to="/fashion" style={linkStyle2}>Fashion</Link>
