@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import futuro from '../../assets/images/greenfuturo.png'
+import futuro from '../../assets/images/BnRfuturo.png'
 
 function Header(){
 
@@ -10,32 +10,19 @@ function Header(){
     top: '0',
     backgroundColor: '#1C0B0D',
     color: '#D2E8CC',
-    filter: 'grayscale(.75)',
+    // filter: 'grayscale(.75)',
     height: 'calc(40px + 2.5vmin)',
     paddingTop: '0px',
     width: '100%',
     display: 'inline-flex',
   }
 
-  const headerTitleStyle = {
-    position: 'fixed',
-    left: '0',
-    top: '0',
+  const futuroTitle = {
+    height: 'calc(40px + 5vmin)',
     backgroundColor: '#1C0B0D',
-    color: '#F7F3F2',
-    display: 'inline-flex',
-    marginLeft: '1.2vw',
-    marginRight: '1.2vw',
-    marginTop: '30px',
-    height: 'calc(26px + 1.8vmin)',
-    fontSize: 'calc(12px + 1.8vmin)',
-    border: '3px double #CCA7A3',
-    padding: '0.33vmin',
-    paddingTop: '0px',
-    borderRadius:  '8px',
-    fontFamily: 'Bungee',
-    fontWeight: '100',
-    textShadow: '1px 1px 1px #1C0B0D',
+    borderRadius: '10px',
+    padding: '3px',
+    marginTop: '3px' 
   }
 
 
@@ -53,7 +40,6 @@ function Header(){
     color: '#F7F0ED',
     textDecoration: 'none',
     fontSize: 'calc(5.6px + 1.75vmin)',
-    border: '1px solid #B7B4B3'
   }
 
   const linkStyle2 = {
@@ -76,7 +62,13 @@ function Header(){
   return (
     <>
     <div style={mainStyle}>
-      <Link to="/" style={linkStyle}> <img src={futuro} style={{height: 'calc(10px + 18vmin)', padding: '1vmin', margin: '0', border: '3px solid black', borderRadius: '10px'}} alt='Futuro'></img></Link>
+      <Link to="/" 
+      > 
+        <img src={futuro} 
+          style={futuroTitle} 
+          alt='Futuro'>
+        </img>
+      </Link>
      
       <div style={navLinksStyle}>
         <Link to="/art" style={linkStyle2b}>Art</Link>
