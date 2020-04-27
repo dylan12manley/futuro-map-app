@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from 'react-redux';
 import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase';
 import ArticleFull from "../shared/ArticleFull";
-
+import { Card, Icon, Image } from 'semantic-ui-react'
 function ArticlePage() {
   useFirestoreConnect([
     { collection: 'articles' }
