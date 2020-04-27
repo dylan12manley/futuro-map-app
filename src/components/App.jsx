@@ -17,6 +17,7 @@ import Fashion from './pages/FashionPage';
 import Film from './pages/FilmPage';
 import People from './pages/PeoplePage';
 import Sound from './pages/SoundPage';
+import ArticleX from './shared/ArticleX';
 
 const appStyle = {
   backgroundColor: '#F3F7F2',
@@ -58,8 +59,9 @@ class App extends React.Component {
           <Route path="/film" component={Film} />
           <Route path="/people" component={People} />
           <Route path="/sound" component={Sound} />
-          <Route component={Error404} />
+          <Route path="/articlex" component={ArticleX} />
         </Switch>
+          <Route component={Error404} />
       </Router>
       </div>
     );
