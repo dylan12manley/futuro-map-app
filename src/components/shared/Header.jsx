@@ -8,9 +8,8 @@ function Header(){
     position: 'fixed',
     zIndex: '1',
     top: '0',
-    backgroundColor: '#1C0B0D',
+    backgroundColor: 'black',
     color: '#D2E8CC',
-    // filter: 'grayscale(.75)',
     height: 'calc(40px + 2.5vmin)',
     paddingTop: '0px',
     width: '100%',
@@ -19,7 +18,7 @@ function Header(){
 
   const futuroTitle = {
     height: 'calc(40px + 5vmin)',
-    backgroundColor: '#1C0B0D',
+    backgroundColor: 'black',
     borderRadius: '10px',
     padding: '3px',
     marginTop: '3px' 

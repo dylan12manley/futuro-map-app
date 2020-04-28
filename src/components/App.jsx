@@ -47,21 +47,21 @@ class App extends React.Component {
       <Router>
         <Switch>
           <Route exact path="/" component={Landing}/>
-          <Route path="/signin" component={SignIn} />
-          <Route path="/home" component={Home} articleList={this.props.articleList}/>
-          <Route path="/newArticle" component={ArticleList} articleList={this.props.articleList}/>
-          <Route path="/admin" component={Admin}/>
-          <Route path="/NewArticleForm" component={NewArticleForm} />
-          <Route path="/addad" component={NewAdvertForm} />
-          <Route path="/NewCarouselItemForm" component={NewCarouselItemForm} />
-          <Route path="/art" component={Art} />
-          <Route path="/fashion" component={Fashion} />
-          <Route path="/film" component={Film} />
-          <Route path="/people" component={People} />
-          <Route path="/sound" component={Sound} />
-          <Route path="/articlex" component={ArticleX} />
-        </Switch>
+          <Route exact path="/signin" component={SignIn} />
+          <Route exact path="/home" component={Home} articleList={this.props.articleList}/>
+          <Route exact path="/newArticle" component={ArticleList} articleList={this.props.articleList}/>
+          <Route exact path="/admin" component={Admin}/>
+          <Route exact path="/NewArticleForm" component={NewArticleForm} />
+          <Route exact path="/addad" component={NewAdvertForm} />
+          <Route exact path="/NewCarouselItemForm" component={NewCarouselItemForm} />
+          <Route exact path="/art" component={Art} />
+          <Route exact path="/fashion" component={Fashion} />
+          <Route exact path="/film" component={Film} />
+          <Route exact path="/people" component={People} />
+          <Route exact path="/sound" component={Sound} />
+          <Route exact path="/articlex" component={ArticleX} />
           <Route component={Error404} />
+        </Switch>
       </Router>
       </div>
     );

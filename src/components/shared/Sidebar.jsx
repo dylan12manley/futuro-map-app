@@ -7,7 +7,7 @@ function Sidebar(){
     <>
     <div style={{height: '100%',
                  width: '100%',
-                 backgroundColor: '#1C0B0D',
+                 backgroundColor: 'black',
                  filter: 'grayscale(.75)',
                  marginTop: 'calc(16px + 3.75vh)'}}>
 
