@@ -1,5 +1,5 @@
 import React from "react";
-import ArticleList from "./ArticleList";
+import ArticleList from "./shared/ArticleList";
 import ArticlePage from "./pages/ArticlePage";
 import { Row, Col } from 'antd';
 import { Link } from "react-router-dom";

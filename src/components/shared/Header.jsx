@@ -26,6 +26,8 @@ function Header(){
   }
 
   const navLinksStyle = {
+    position: 'fixed',
+    right: '8vmin',
     color: '#F7F0ED',
     display: 'inline-flex',
     marginTop: '1.5vmin',
@@ -36,7 +38,7 @@ function Header(){
     marginLeft: '1.3vmin',
     marginRight: '1.3vmin',
     color: '#F7F0ED',
-    fontSize: 'calc(4px + 1.5vmin)',
+    fontSize: 'calc(7px + 1.5vmin)',
     fontFamily: 'Bungee',
     fontWeight: '0'
   }
@@ -53,15 +55,11 @@ function Header(){
       </Link>
      
       <div style={navLinksStyle}>
-        <Link to="/art" style={linkStyle}>Art Now</Link>
+        <Link to="/art" style={linkStyle}>Art</Link>
         <Link to="/fashion" style={linkStyle}>Fashion</Link>
         <Link to="/film" style={linkStyle}>Film</Link>
         <Link to="/people" style={linkStyle}>Humans</Link>
-        <Link to="/people" style={linkStyle}>Studios</Link>
         <Link to="/sound" style={linkStyle}>Sound</Link>
-        <Link to="/art" style={linkStyle}>Adventures</Link>
-        <Link to="/fashion" style={linkStyle}>Rad Places</Link>
-        <Link to="/film" style={linkStyle}>Store</Link>
       </div>
     </div>
     </>

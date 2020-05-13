@@ -16,6 +16,7 @@ const articleStyle = {
 }
 
 function Article(props){
+  console.log()
 //(conditional if there is not any img 2 through 9. //
   if(!props.img2 && !props.img3 && !props.img4 && !props.img5 && !props.img6 && !props.img7 && !props.img8 && !props.img9 )
   return (
@@ -25,7 +26,6 @@ function Article(props){
         title={<h2>{props.title}</h2>}
         cover={<img alt="article" src={props.mainImg} style={{ overflow: 'hidden'}}/>}
         headStyle={{
-        
           fontWeight: '100',
           margin:'0px',
           height: '42px',

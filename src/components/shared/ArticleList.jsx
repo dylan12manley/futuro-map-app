@@ -34,7 +34,11 @@ function ArticleList() {
     );
   } else if (isEmpty) {
       return( 
-        <div>
+        <div style={{ marginTop: '55px'}}>
+          <p>Randomly hearing your favorite song on the radio is more satisfying than playing it directly from your phone.</p>
+          <p>Ever think about that?</p>
+          <p>Or how about: "Go to bed, you'll feel better in the morning" is the human version of "Did you turn it off and turn it back on again?"</p>
+          <p>Sorry for the wait, just wanted to provide some ideas for time pass while this is</p>
           <p>No Articles Added Yet
           </p>
         </div>
@@ -42,9 +46,6 @@ function ArticleList() {
     } 
   return (
     <React.Fragment>
-      <p>Randomly hearing your favorite song on the radio is more satisfying than playing it directly from your ipod.</p>
-      <p>Ever think about that?</p>
-      <p>Or how about: "Go to bed, you'll feel better in the morning" is the human version of "Did you turn it off and turn it back on again?"</p>
       <p>Sorry for the wait, just wanted to provide some ideas for time pass while this is</p>
       <h3>LOADING...</h3>
     </React.Fragment>

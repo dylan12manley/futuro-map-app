@@ -11,7 +11,6 @@ import Admin from './Admin';
 import NewArticleForm from './forms/NewArticleForm';
 import NewAdvertForm from './forms/NewAdvertForm';
 import NewCarouselItemForm from './forms/NewCarouselForm';
-import ArticleList from './ArticleList';
 import Art from './pages/ArtPage';
 import Fashion from './pages/FashionPage';
 import Film from './pages/FilmPage';
@@ -23,7 +22,6 @@ const appStyle = {
   backgroundColor: 'white',
   color: '#1C0B0D',
   width: '100%',
-  fontFamily: 'Montserrat Subrayada',
 }
 
 class App extends React.Component {
@@ -49,7 +47,6 @@ class App extends React.Component {
           <Route exact path="/" component={Landing}/>
           <Route exact path="/signin" component={SignIn} />
           <Route exact path="/home" component={Home} articleList={this.props.articleList}/>
-          <Route exact path="/newArticle" component={ArticleList} articleList={this.props.articleList}/>
           <Route exact path="/admin" component={Admin}/>
           <Route exact path="/NewArticleForm" component={NewArticleForm} />
           <Route exact path="/addad" component={NewAdvertForm} />
