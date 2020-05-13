@@ -3,7 +3,7 @@ import { Carousel } from 'antd';
 import futuro from '../../assets/images/Futuro.jpg';
 
 const styledCarousel = {
-  paddingTop: '60px',
+  paddingTop: '90px',
   height: '45vh',
 }
 
