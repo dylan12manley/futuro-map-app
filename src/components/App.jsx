@@ -20,7 +20,7 @@ import Sound from './pages/SoundPage';
 import ArticleX from './shared/ArticleX';
 
 const appStyle = {
-  backgroundColor: '#F3F7F2',
+  backgroundColor: 'white',
   color: '#1C0B0D',
   width: '100%',
   fontFamily: 'Montserrat Subrayada',

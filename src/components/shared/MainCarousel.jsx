@@ -4,11 +4,11 @@ import futuro from '../../assets/images/Futuro.jpg';
 
 const styledCarousel = {
   paddingTop: '60px',
-  height: '36vh',
+  height: '42vh',
 }
 
 const styledImage = {
-  height: '35vh',
+  height: '41vh',
   width: '100%',
 }
 
