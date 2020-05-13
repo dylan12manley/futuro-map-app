@@ -4,7 +4,7 @@ import Footer from "../shared/Footer";
 import MainCarousel from "../shared/MainCarousel";
 import ArticleList from "../shared/ArticleList";
 import FakeAdvert from "../FakeAdvert";
-import Sidebar from "./shared/Sidebar";
+import Sidebar from "../shared/Sidebar";
 import { Row, Col } from 'antd';
 
 
@@ -15,18 +15,18 @@ function Home(){
     <div >
       <Header/>
       <Row>
-        <Col xl={1} xxl={1}>
+        <Col xl={1} xxl={2}>
           <Sidebar/>
         </Col>
         <Col xs={0} sm={24} xl={22} xxl={20}>
          <MainCarousel/>
         </Col>
-        <Col xl={1} xxl={3}>
+        <Col xl={1} xxl={2}>
           <Sidebar/>
         </Col>
       </Row>
       <Row>
-        <Col lg={0} xl={1} xxl={1}>
+        <Col lg={0} xl={1} xxl={2}>
         <Sidebar/>
         </Col>
         <Col  xs={24} sm={16} lg={17} xl={16} xxl={15}>
@@ -36,10 +36,7 @@ function Home(){
           
           <FakeAdvert/>
         </Col>
-        <Col lg={0} xl={1} xxl={1}>
-        <Sidebar/>
-        </Col>
-        <Col lg={0} xl={0} xxl={2}>
+        <Col lg={0} xl={1} xxl={2}>
         <Sidebar/>
         </Col>
       </Row>

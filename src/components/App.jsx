@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { connect } from 'react-redux';
 import PropTypes from "prop-types";
 
-import Home from "./Home";
+import Home from "./pages/Home";
 import SignIn from "./SignIn";
 import Landing from './pages/Landing';
 import Error404 from './Error404';

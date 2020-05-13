@@ -8,7 +8,7 @@ function Footer(){
     position: 'fixed',
     zIndex: '1',
     bottom: '0',
-    backgroundColor: '#1C0B0D',
+    backgroundColor: 'black',
     color: '#D2E8CC',
     height: 'calc(26px + 2.5vmin)',
     paddingTop: '0px',
@@ -17,7 +17,7 @@ function Footer(){
   }
 
   const imagesStyle = {
-    backgroundColor: '#1C0B0D',
+    backgroundColor: 'black',
     display: 'inline-flex',
     marginRight: '1.2vw',
     height: '20px',
