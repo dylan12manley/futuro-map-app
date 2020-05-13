@@ -14,6 +14,7 @@ function Header(){
     paddingTop: '0px',
     width: '100%',
     display: 'inline-flex',
+    textAlign: 'center',
   }
 
   const futuroTitle = {
@@ -24,39 +25,21 @@ function Header(){
     marginTop: '3px' 
   }
 
-
   const navLinksStyle = {
-    position: 'fixed',
-    right: '0',
     color: '#F7F0ED',
     display: 'inline-flex',
-    marginTop: '1.2vmin',
+    marginTop: '1.5vmin',
+    marginLeft: '5vmin',
   }
 
   const linkStyle = {
-    marginLeft: '1.2vw',
-    marginRight: '1.2vw',
+    marginLeft: '1.3vmin',
+    marginRight: '1.3vmin',
     color: '#F7F0ED',
-    textDecoration: 'none',
-    fontSize: 'calc(5.6px + 1.75vmin)',
+    fontSize: 'calc(4px + 1.5vmin)',
+    fontFamily: 'Bungee',
+    fontWeight: '0'
   }
-
-  const linkStyle2 = {
-    marginLeft: '1.2vw',
-    marginRight: '1.2vw',
-    color: '#F7F0ED',
-    textDecoration: 'none',
-    fontSize: 'calc(6.5px + 1.75vmin)',
-  }
-
-  const linkStyle2b = {
-    marginLeft: '1.2vw',
-    marginRight: '1.2vw',
-    color: '#F7F0ED',
-    textDecoration: 'overline',
-    fontSize: 'calc(6px + 1.75vmin)',
-  }
-
 
   return (
     <>
@@ -70,11 +53,15 @@ function Header(){
       </Link>
      
       <div style={navLinksStyle}>
-        <Link to="/art" style={linkStyle2b}>Art</Link>
-        <Link to="/fashion" style={linkStyle2}>Fashion</Link>
+        <Link to="/art" style={linkStyle}>Art Now</Link>
+        <Link to="/fashion" style={linkStyle}>Fashion</Link>
+        <Link to="/film" style={linkStyle}>Film</Link>
+        <Link to="/people" style={linkStyle}>Humans</Link>
+        <Link to="/people" style={linkStyle}>Studios</Link>
         <Link to="/sound" style={linkStyle}>Sound</Link>
-        <Link to="/film" style={linkStyle2b}>Film</Link>
-        <Link to="/people" style={linkStyle2}>People</Link>
+        <Link to="/art" style={linkStyle}>Adventures</Link>
+        <Link to="/fashion" style={linkStyle}>Rad Places</Link>
+        <Link to="/film" style={linkStyle}>Store</Link>
       </div>
     </div>
     </>
