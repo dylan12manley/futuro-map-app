@@ -1,11 +1,11 @@
 import React from "react";
 import Advert from "./Advert";
 
-import dior from '../assets/images/dior.jpg'
-import keene from '../assets/images/keene.jpg'
-import arTecHouse from '../assets/images/artechouse.png'
-import taschen from '../assets/images/Taschen.png'
-import tein from '../assets/images/TEIN.jpg'
+import dior from '../../assets/images/dior.jpg'
+import keene from '../../assets/images/keene.jpg'
+import arTecHouse from '../../assets/images/artechouse.png'
+import taschen from '../../assets/images/Taschen.png'
+import tein from '../../assets/images/TEIN.jpg'
 
 const advertList = [
   {

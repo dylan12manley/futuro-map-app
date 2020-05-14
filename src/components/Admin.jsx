@@ -7,7 +7,7 @@ import { withFirestore, isLoaded } from 'react-redux-firebase';
 
 import Header from "./shared/Header";
 import MainCarousel from "./shared/MainCarousel";
-import AdvertList from "./AdvertList";
+import AdvertList from "./shared/AdvertList";
 
 class Admin extends React.Component {
  

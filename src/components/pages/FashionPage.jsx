@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../shared/Header";
 import Footer from "../shared/Footer";
 import Fashion from "../pages/Fashion";
-import FakeAdvert from "../FakeAdvert";
+import FakeAdvert from "../shared/FakeAdvert";
 import Sidebar from "../shared/Sidebar";
 import { Row, Col } from 'antd';
 

@@ -3,7 +3,7 @@ import Header from "../shared/Header";
 import Footer from "../shared/Footer";
 import MainCarousel from "../shared/MainCarousel";
 import ArticleList from "../shared/ArticleList";
-import FakeAdvert from "../FakeAdvert";
+import FakeAdvert from "../shared/FakeAdvert";
 import Sidebar from "../shared/Sidebar";
 import { Row, Col } from 'antd';
 
