@@ -15,8 +15,8 @@ function People() {
         <div>
       <div style={{ marginTop: '75px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
           <br></br>
-          <Link to="/signin" >Sign In</Link>
-          <Link to="/articlex" >new card style</Link>
+          <Link to="/signin" >Sign In</Link> <br/>
+          {/* <Link to="/articlex" >new card style</Link> */}
           <h1 style={{textAlign: 'center'}}>People</h1>
         {Object.values(articles).map((article) => {
             if(article.category === 'People' || article.category === 'people'){

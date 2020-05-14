@@ -3,16 +3,19 @@
 }
 
 .collapse-custom-panel {
+  position: fixed;
+  right: 2%;
   background: black; 
-  width: 140px;
+  width: 128px;
   max-height: 275px;
+  text-align: left;
 }
 
 .logo {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    height: calc(40px + 5vmin);
+    height: calc(45px + 10vmin);
     background-color: black;
     border-radius: 10px;
     padding: 3px;
