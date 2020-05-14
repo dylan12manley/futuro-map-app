@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import PropTypes from "prop-types";
 
 import Home from "./pages/Home";
-import SignIn from "./SignIn";
+import SignIn from "./pages/SignIn";
 import Landing from './pages/Landing';
 import Error404 from './Error404';
 import Admin from './pages/Admin';
