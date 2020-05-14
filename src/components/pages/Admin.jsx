@@ -1,13 +1,13 @@
 import React from "react";
-import ArticleList from "./shared/ArticleList";
-import ArticlePage from "./pages/ArticlePage";
+import ArticleList from "../shared/ArticleList";
+import ArticlePage from "./ArticlePage";
 import { Row, Col } from 'antd';
 import { Link } from "react-router-dom";
 import { withFirestore, isLoaded } from 'react-redux-firebase';
 
-import Header from "./shared/Header";
-import MainCarousel from "./shared/MainCarousel";
-import AdvertList from "./shared/AdvertList";
+import Header from "../shared/Header";
+import MainCarousel from "../shared/MainCarousel";
+import AdvertList from "../shared/AdvertList";
 
 class Admin extends React.Component {
  

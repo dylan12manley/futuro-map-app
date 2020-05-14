@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import SignIn from "./SignIn";
 import Landing from './pages/Landing';
 import Error404 from './Error404';
-import Admin from './Admin';
+import Admin from './pages/Admin';
 import NewArticleForm from './forms/NewArticleForm';
 import NewAdvertForm from './forms/NewAdvertForm';
 import NewCarouselItemForm from './forms/NewCarouselForm';
