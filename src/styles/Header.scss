@@ -1,0 +1,20 @@
+.collapse-col {
+  padding-top: 5px;
+}
+
+.site-collapse-custom-panel {
+  background: black; 
+  width: 140px;
+  max-height: 275px;
+}
+
+.logo {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    height: calc(40px + 5vmin);
+    background-color: black;
+    border-radius: 10px;
+    padding: 3px;
+    margin-top: 40px;
+  }
