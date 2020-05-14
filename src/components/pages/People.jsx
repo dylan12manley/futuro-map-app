@@ -13,7 +13,7 @@ function People() {
   if (isLoaded(articles)) {
     return (
         <div>
-      <div style={{ marginTop: '55px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
+      <div style={{ marginTop: '75px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
           <br></br>
           <Link to="/signin" >Sign In</Link>
           <Link to="/articlex" >new card style</Link>

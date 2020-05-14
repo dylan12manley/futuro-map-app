@@ -11,7 +11,7 @@ function Film() {
   if (isLoaded(articles)) {
     return (
     <div>
-      <div style={{ marginTop: '55px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
+      <div style={{ marginTop: '75px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
       <h1 style={{textAlign: 'center'}}>Film</h1>
         {Object.values(articles).map((article) => {
             if(article.category === 'Fashion'){

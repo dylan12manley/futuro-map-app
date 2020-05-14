@@ -48,7 +48,7 @@ function FakeAdvert(){
   return (
     <>
       <div style={{
-        marginTop: '65px',
+        marginTop: '85px',
         textAlign: 'center',
       }}>
         {Object.values(advertList).map((advert) => {
