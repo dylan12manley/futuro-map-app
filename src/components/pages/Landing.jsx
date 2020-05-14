@@ -2,21 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import rings1 from '../../assets/images/rings1BnW.png'
-import fm from '../../assets/images/FMBnW.png'
-import f from '../../assets/images/greenf.png'
-import utu from '../../assets/images/utu.png'
-import ro from '../../assets/images/ro.png'
+import fRed from '../../assets/images/redF.png'
+import f from '../../assets/images/blueF.png'
+import uturo from '../../assets/images/uturo-RnB.png'
 
 function Landing(){
-  // const landingStz = {
-  //   backgroundColor: '#183023',
-  //   color: '#8E545E',
-  //   padding: '50px',
-  //   height: '100vh',
-  //   textAlign: 'center',
-  //   filter: 'grayscale(.75)',
-  // }
-
   const bigFStz = {
     height: 'calc(50px + 36vmin)',
     filter: 'grayscale(.15)',
@@ -27,52 +17,75 @@ function Landing(){
     filter: 'grayscale(.15)',
   }
 
-  function changeBackground(e) {
-    e.target.style.height = '80px';
-    e.target.style.brightness = '2';
+  function changeUturo(e) {
+    e.target.style.transform = 'rotate(180deg)';
+    e.target.style.filter = 'grayscale(.15)';
+  }
+
+  function changeF(e) {
+    e.target.style.transform = 'rotate(90deg)';
+    e.target.style.filter = 'grayscale(.15)';
+  }
+
+  function clickF(e) {
+    e.target.style.transform = 'rotate(-2deg)';
+  }
+
+  function clickUturo(e) {
+    e.target.style.transform = 'rotate(2deg)';
+  }
+
+  function displayNone(e) {
+    e.target.style.display = 'none';
+  }
+
+  function mouseRedF(e) {
+    e.target.style.height = '305px';
+    e.target.style.transform = 'rotate(270deg)';
   }
 
   return (
-    <div style={{textAlign: 'center',}}>
-      <div>
-          <img src={rings1} 
-               style={{height: '12vh'}} 
-               alt='rings'>
-          </img>
-          <Link to="/home" 
-                style={{ filter: 'brightness(1.87)' }}>
-            <img src={fm} 
-                 onMouseOver={changeBackground}
-                 style={{ height: '10vh' }} 
-                 alt='FM'>
-            </img> 
-          </Link>
-          <img src={rings1} style={{transform:'rotate(180deg)', height: '12vh'}} alt='rings'></img>
-        </div>
-      <div >
-          <img style={bigFStz} src={f} alt='Futuro'></img>
-        <img src={utu} style={title2} alt='utu'></img>
-        <img src={ro} alt='ro'></img>
+    <div style={{textAlign: 'center', backgroundColor: 'black', height: '100vh'}}>
+      <div style={{paddingTop: '10vh'}} >
+        <img 
+          style={bigFStz} 
+          src={f} alt='F' 
+          onMouseOver={changeF}
+          onClick={clickF}
+        ></img>
+        <img 
+          src={uturo} 
+          style={title2} 
+          alt='uturo' 
+          onMouseOver={changeUturo}
+          onClick={clickUturo}
+        >
+        </img>
       </div>
-
-
-
 
         <div>
           <img src={rings1} 
                style={{height: '12vh'}} 
-               alt='rings'>
+               alt='rings'
+               onMouseOver={displayNone}>
           </img>
           <Link to="/home" 
                 style={{ textDecoration: 'none', 
                          color: '#D6684D', 
                          filter: 'brightness(2)'}}>
-            <img src={fm} 
+            <img src={fRed} 
                  style={{height: '10vh'}} 
+                 onMouseOver={mouseRedF}
                  alt='FM'>
             </img> 
           </Link>
-          <img src={rings1} style={{transform:'rotate(180deg)', height: '12vh'}} alt='rings'></img>
+          <img 
+            src={rings1} 
+            style={{transform:'rotate(180deg)', height: '12vh'}} 
+            onMouseOver={displayNone}
+            alt='rings'>
+
+          </img>
         </div>
     </div>
   );

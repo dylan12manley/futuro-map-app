@@ -13,11 +13,11 @@ function People() {
   if (isLoaded(articles)) {
     return (
         <div>
-      <div style={{ marginTop: '75px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
+      <div style={{ marginTop: '65px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
           <br></br>
           <Link to="/signin" >Sign In</Link> <br/>
           {/* <Link to="/articlex" >new card style</Link> */}
-          <h1 style={{textAlign: 'center'}}>People</h1>
+          <h1 style={{textAlign: 'center', fontSize: '35px'}}>People</h1>
         {Object.values(articles).map((article) => {
             if(article.category === 'People' || article.category === 'people'){
                 return <ArticleFull

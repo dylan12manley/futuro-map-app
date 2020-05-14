@@ -16,7 +16,7 @@ function Header(){
     top: '0',
     backgroundColor: 'black',
     color: '#D2E8CC',
-    height: 'calc(70px + 2.5vmin)',
+    height: 'calc(60px + 2.5vmin)',
     paddingTop: '0px',
     width: '100%',
     display: 'inline-flex',
@@ -67,9 +67,6 @@ function Header(){
         </div>
         </Col>
         <Col md={8} lg={4} xxl={2}>
-        {/* <Link to="/" > 
-          <img src={futuro} style={futuroTitle} alt='Futuro'></img>
-        </Link> */}
         </Col>
         <Col xl={0} xxl={0}></Col>
         <Col xs={0} sm={0} md={0} lg={0} xl={10}xxl={11}>

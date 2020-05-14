@@ -11,8 +11,8 @@ function FashionPage() {
   if (isLoaded(articles)) {
     return (
     <div>
-      <div style={{ marginTop: '75px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
-      <h1 style={{textAlign: 'center'}}>Fashion</h1>
+      <div style={{ marginTop: '85px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
+      <h1 style={{textAlign: 'center', fontSize: '35px'}}>Fashion</h1>
         {Object.values(articles).map((article) => {
             if(article.category === 'Fashion' || article.category === 'fashion'){
               return <ArticleFull
