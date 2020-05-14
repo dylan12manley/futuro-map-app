@@ -48,7 +48,7 @@ function Header(){
   }
 
   const linkStyle2 = {
-    color: 'black',
+    color: '#F7F0ED',
     fontSize: 'calc(7px + 1vmin)',
     fontFamily: 'Bungee',
   }
@@ -98,7 +98,7 @@ function Header(){
             >
             <Panel 
               key="1" 
-              className="site-collapse-custom-panel">
+              className="collapse-custom-panel">
               <Link to="/people" style={linkStyle2}>People</Link><br/>
               <Link to="/art" style={linkStyle2}>Adventures</Link><br/>
               <Link to="/fashion" style={linkStyle2}>Places</Link><br/>
