@@ -1,6 +1,8 @@
 # FUTURO MAGAZINE
 
-Created By: Dylan Manley, Joey Paradox, and Diana 'Holla' Holland.
+Created By: Dylan Manley, Joey Paradox, with help from Diana 'Holla' Holland.
+
+## Website Available at https://futuromagazine-be1ee.firebaseapp.com/
 
 ## Instulation Instructions
 * Clone down repo
