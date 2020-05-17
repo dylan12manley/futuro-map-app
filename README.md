@@ -4,6 +4,8 @@ Created By: Dylan Manley, Joey Paradox, with help from Diana 'Holla' Holland.
 
 ## Website Available at https://futuromagazine-be1ee.firebaseapp.com/
 
+Made with React, Javascript, Node, 
+
 ## Instulation Instructions
 * Clone down repo
 * cd into repo
