@@ -20,11 +20,15 @@ React, Redux, Javascript,Sass, Node, Ant Design Library
 ## **Instulation Instructions**
 
 * Copy and paste this url into the command line: https://github.com/dylan12manley/futuro-map-app.git
-* Enter the project folder in the command line
+* Enter the project folder in the form inside  the goalden hour command line
+* use command the command line pro , enter "get a linke to  
 * Enter and run "NPM i" in project folder, in the command line
 * Enter and run "NPM start" in the same place and a window will open in your default browser
+*Greuest env condentilas from karhy, 
+                            <T^T> 
+## <v***^***v> You will need to obtain a .env file <v***^***v>   
 
-** ___You will need to obtain a .env file from the Futuro Team to run this localy.___
+*****from the Futuro Team to run this localy.___*****
 
 ## Contact Info: 
 Hey! I'm Dylan, feel free to email me at dylan.manley@gmail.com. I appreciate all questions, comments, contributions, critiques or conversation. 
