@@ -1,5 +1,6 @@
 .collapse-col {
   padding-top: 5px;
+  background: black; 
 }
 
 .collapse-custom-panel {
@@ -9,6 +10,9 @@
   width: 128px;
   max-height: 275px;
   text-align: left;
+  border-radius: 2px;
+  border: 0px;
+  overflow: hidden;
 }
 
 .logo {

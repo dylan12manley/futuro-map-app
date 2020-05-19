@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import futuro from '../../assets/images/BnRfuturo.png'
 import { Row, Col, Collapse } from 'antd';
-import { MenuUnfoldOutlined } from '@ant-design/icons';
+import { MenuOutlined } from '@ant-design/icons';
 
 import '../../styles/Header.scss';
 
@@ -90,7 +90,7 @@ function Header(){
             showArrow={false} 
             bordered={false}
             className='collapse'
-            expandIcon={({ isActive }) => <MenuUnfoldOutlined style={{fontSize: '24px', margin: '0, auto', backgroundColor: '#F7F0ED'}}rotate={isActive ? 90 : 360} />}
+            expandIcon={({ isActive }) => <MenuOutlined style={{fontSize: '24px', margin: '0, auto', backgroundColor: '#F7F0ED'}}rotate={isActive ? 90 : 360} />}
             >
             <Panel 
               key="1" 
