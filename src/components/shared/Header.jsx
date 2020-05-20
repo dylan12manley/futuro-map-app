@@ -1,14 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import futuro from '../../assets/images/BnRfuturo.png'
-import { Row, Col, Collapse } from 'antd';
-import { MenuOutlined } from '@ant-design/icons';
+import React from "react"
+import { Link } from "react-router-dom"
+import futuro from '../../assets/images/logo-black-sm.jpg'
+import { Row, Col, Collapse } from 'antd'
+import { MenuOutlined } from '@ant-design/icons'
 
-import '../../styles/Header.scss';
+import '../../styles/Header.scss'
 
 function Header(){
   
-  const { Panel } = Collapse;
+  const { Panel } = Collapse
 
   const mainStyle = {
     position: 'fixed',
@@ -24,13 +24,13 @@ function Header(){
   }
 
   const navLinksStyle = {
-    color: '#F7F0ED',
+    color: 'white',
     marginTop: '1.5vmin',
     marginLeft: '5vmin',
   }
 
   const navLinksStyle2 = {
-    color: '#F7F0ED',
+    color: 'white',
     marginTop: '1.5vmin',
     marginRight: '5vmin',
     position: 'fixed',
@@ -41,14 +41,14 @@ function Header(){
   const linkStyle = {
     marginLeft: '1.5vmin',
     marginRight: '1.5vmin',
-    color: '#F7F0ED',
+    color: 'white',
     fontSize: 'calc(7px + 1.5vmin)',
     fontFamily: 'Bungee',
     fontWeight: '0'
   }
 
   const linkStyle2 = {
-    color: '#F7F0ED',
+    color: 'white',
     fontSize: 'calc(7px + 1vmin)',
     fontFamily: 'Bungee',
   }
@@ -90,10 +90,15 @@ function Header(){
             showArrow={false} 
             bordered={false}
             className='collapse'
-            expandIcon={({ isActive }) => <MenuOutlined style={{fontSize: '24px', margin: '0, auto', backgroundColor: '#F7F0ED'}}rotate={isActive ? 90 : 360} />}
+            expandIcon={({ isActive }) => <MenuOutlined 
+                                            style={{fontSize: '24px', 
+                                              margin: '0, auto', 
+                                              backgroundColor: 'white'}} 
+                                            rotate={isActive ? 90 : 360} 
+                                          />}
             >
             <Panel 
-              key="1" 
+              // key="1" 
               className="collapse-custom-panel">
               <Link to="/art" style={linkStyle2}>Art Now</Link><br/>
               <Link to="/fashion" style={linkStyle2}>Fashion</Link><br/>

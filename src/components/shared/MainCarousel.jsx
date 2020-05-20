@@ -6,18 +6,31 @@ import iOS3 from '../../assets/images/iOS3.jpg';
 
 const styledCarousel = {
   paddingTop: '75px',
-  height: '47vh',
+  height: 'calc(42vh + 30px)',
 }
 
 const styledImage = {
-  height: '46vh',
+  height: 'calc(37vh + 30px)',
   width: '100%',
 }
 
+const preHead = {
+  height: '30px',
+  width: '89%',
+  background: 'white',
+}
+
+const head = {
+  height: '30px',
+  width: '100%',
+  background: 'black',
+}
 
 function MainCarousel(){
   return (
     <div style={styledCarousel}>
+      <div style={preHead}></div>
+      <div style={head}></div>
       <Carousel>
         <div>
             <img src={futuro} alt={futuro} style={styledImage}></img>
