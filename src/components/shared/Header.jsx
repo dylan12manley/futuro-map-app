@@ -23,30 +23,6 @@ function Header(){
     textAlign: 'center',
   }
 
-  const navLinksStyle = {
-    color: 'white',
-    marginTop: '1.5vmin',
-    marginLeft: '5vmin',
-  }
-
-  const navLinksStyle2 = {
-    color: 'white',
-    marginTop: '1.5vmin',
-    marginRight: '5vmin',
-    position: 'fixed',
-    right: '0',
-    }
- 
-
-  const linkStyle = {
-    marginLeft: '1.5vmin',
-    marginRight: '1.5vmin',
-    color: 'white',
-    fontSize: 'calc(7px + 1.5vmin)',
-    fontFamily: 'Bungee',
-    fontWeight: '0'
-  }
-
   const linkStyle2 = {
     color: 'white',
     fontSize: 'calc(7px + 1vmin)',
@@ -56,42 +32,20 @@ function Header(){
   return (
     <>
     <div style={mainStyle}>
-      <Row>
-        <Col xs={0} sm={0} md={0} lg={0} xl={10} xxl={11}>
-        <div style={navLinksStyle}>
-          <Link to="/art" style={linkStyle}>Art</Link>
-          <Link to="/fashion" style={linkStyle}>Fashion</Link>
-          <Link to="/film" style={linkStyle}>Film</Link>
-          <Link to="/people" style={linkStyle}>Humans</Link>
-          <Link to="/people" style={linkStyle}>Studios</Link>
-        </div>
-        </Col>
-        <Col md={8} lg={4} xxl={2}>
-        </Col>
-        <Col xl={0} xxl={0}></Col>
-        <Col xs={0} sm={0} md={0} lg={0} xl={10}xxl={11}>
-          <div style={navLinksStyle2}>
-            <Link to="/sound" style={linkStyle}>Sound</Link>
-            <Link to="/art" style={linkStyle}>Adventures</Link>
-            <Link to="/fashion" style={linkStyle}>Rad Places</Link>
-            <Link to="/film" style={linkStyle}>Store</Link>
-          </div>
-        </Col>
-      </Row>
       <Row style={{textAlign: 'center'}}>
         <Col xs={12} sm={12} md={12} lg={12} xl={24}>
           <Link to="/" > 
             <img src={futuro} className='logo' alt='Futuro'></img>
           </Link>
         </Col>
-        <Col xs={8} sm={8} md={8} lg={8} xl={0} xxl={0}
+        <Col  lg={8} xl={8} 
           className='collapse-col'>
           <Collapse 
             showArrow={false} 
             bordered={false}
             className='collapse'
             expandIcon={({ isActive }) => <MenuOutlined 
-                                            style={{fontSize: '24px', 
+                                            style={{fontSize: 'calc(12px + 2vmin)', 
                                               margin: '0, auto', 
                                               backgroundColor: 'white'}} 
                                             rotate={isActive ? 90 : 360} 

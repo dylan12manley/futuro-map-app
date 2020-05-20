@@ -7,15 +7,17 @@ function Landing(){
 
   const bigLogoStz = {
     height: 'calc(50px + 36vmin)',
+    display: 'none',
   }
   
   const logoStz = {
-    height: 'calc(50px + 36vmin)',
+    height: '70vmin',
   }
 
   function mouseLogo(e) {
-    e.target.style.transform = 'rotate(-12deg)'
+    e.target.style.transform = 'rotate(-.12deg)'
     e.target.style.filter= 'brightness(1.2)'
+    e.target.style.height= '72vmin'
   }
 
   function mouseSmLogo(e) {
@@ -24,6 +26,7 @@ function Landing(){
 
   function clickLogo(e) {
     e.target.style.transform = 'rotate(-2deg)'
+    e.target.style.height= '72vmin'
   }
 
   return (
