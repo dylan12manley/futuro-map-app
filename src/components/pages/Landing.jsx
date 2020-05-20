@@ -1,63 +1,54 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import f from '../../assets/images/blueF.png'
-import uturo from '../../assets/images/uturo-RnB.png'
+import React from 'react'
+import { Link } from 'react-router-dom'
+import logoBlack from '../../assets/images/logo-black.jpg'
+import smLogo from '../../assets/images/logo-black-sm.jpg'
 
 function Landing(){
-  const bigFStz = {
+
+  const bigLogoStz = {
     height: 'calc(50px + 36vmin)',
-    filter: 'grayscale(.15)',
+  }
+  
+  const logoStz = {
+    height: 'calc(50px + 36vmin)',
   }
 
-  const title2 = {
-    height: 'calc(20px + 24vmin)',
-    filter: 'grayscale(.15)',
+  function mouseLogo(e) {
+    e.target.style.transform = 'rotate(-12deg)'
+    e.target.style.filter= 'brightness(1.2)'
   }
 
-  function changeUturo(e) {
-    e.target.style.transform = 'rotate(180deg)';
-    e.target.style.filter = 'grayscale(.15)';
+  function mouseSmLogo(e) {
+    e.target.style.display = 'none'
   }
 
-  function changeF(e) {
-    e.target.style.transform = 'rotate(90deg)';
-    e.target.style.filter = 'grayscale(.15)';
-  }
-
-  function clickF(e) {
-    e.target.style.transform = 'rotate(-2deg)';
-  }
-
-  function clickUturo(e) {
-    e.target.style.transform = 'rotate(2deg)';
+  function clickLogo(e) {
+    e.target.style.transform = 'rotate(-2deg)'
   }
 
   return (
-    <div style={{textAlign: 'center', backgroundColor: 'black', height: '100vh'}}>
+    <div style={{
+      textAlign: 'center', 
+      backgroundColor: 'black', 
+      height: '100vh'}}>
       <div style={{paddingTop: '10vh'}} >
-         <Link to="/home" 
-                style={{ textDecoration: 'none', 
-                         color: '#D6684D', 
-                         filter: 'brightness(2)'}}>
-              <img 
-          style={bigFStz} 
-          src={f} alt='F' 
-          onMouseOver={changeF}
-          onClick={clickF}
-        ></img>
-          </Link>
-        <Link to="/home" 
-                style={{ textDecoration: 'none', 
-                         color: '#D6684D', 
-                         filter: 'brightness(2)'}}>
-              <img 
-              src={uturo} 
-              style={title2} 
-              alt='uturo' 
-              onMouseOver={changeUturo}
-              onClick={clickUturo}>
+         <Link to="/home">
+            <img style={logoStz} 
+              src={logoBlack} 
+              alt='F' 
+              onMouseOver={mouseLogo}
+              onClick={clickLogo}
+              >
             </img>
           </Link>
+      </div>
+      <div>
+      <img style={bigLogoStz} 
+              src={smLogo} 
+              alt='F' 
+              onMouseOver={mouseSmLogo}
+              onClick={clickLogo}
+              ></img>
       </div>
     </div>
   );
