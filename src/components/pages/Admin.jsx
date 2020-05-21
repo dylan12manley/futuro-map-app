@@ -45,7 +45,9 @@ class Admin extends React.Component {
         }}>
         <h1>Yo🛸Bru💓</h1> 
         <br></br>
-        <Link to="/newarticleForm" >New Article</Link>
+        <Link to="/newarticleform" >New Article</Link><br/>
+        <Link to="/addad" >New Advert</Link><br/>
+        <Link to="/NewCarouselItemForm" >New Carousel Item</Link><br/>
           <ArticlePage/>
           <h1>Article List</h1>
           <ArticleList/>

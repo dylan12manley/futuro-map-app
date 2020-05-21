@@ -31,7 +31,9 @@ function MainCarousel(){
     <div style={styledCarousel}>
       <div style={preHead}></div>
       <div style={head}></div>
-      <Carousel>
+      <Carousel 
+        effect="fade"
+        autoplay>
         <div>
             <img src={futuro} alt={futuro} style={styledImage}></img>
         </div>

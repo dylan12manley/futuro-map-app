@@ -15,7 +15,6 @@ function People() {
         <div>
       <div style={{ marginTop: '65px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
           <br></br>
-          <Link to="/signin" >Sign In</Link> <br/>
           {/* <Link to="/articlex" >new card style</Link> */}
           <h1 style={{textAlign: 'left', fontSize: 'calc(8px + 8vmin)'}}>People</h1>
         {Object.values(articles).map((article) => {
@@ -46,6 +45,7 @@ function People() {
             } 
         })}
       </div>
+      <Link to="/signin" >Sign In</Link> <br/>
       </div>
     );
   } else if (isEmpty) {

@@ -13,7 +13,7 @@ function Art() {
     return (
     <div>
       <div style={{ marginTop: '45px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
-      <p style={{textAlign: 'left', fontSize: 'calc(8px + 8vmin)'}}>Art</p>
+      <h1 style={{textAlign: 'left', fontSize: 'calc(8px + 8vmin)'}}>Art</h1>
         {Object.values(articles).map((article) => {
             if(article.category === 'Art' || article.category === 'art')
                 return <ArticleFull
