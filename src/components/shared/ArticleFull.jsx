@@ -8,7 +8,7 @@ const paragraphStyle = {
 }
 
 const header = {
-  fontSize: 'calc(15px + 1vmin)',
+  fontSize: 'calc(15px + 2vmin)',
   position: 'relative',
   top: '0',
   backgroundColor: 'white',
@@ -31,10 +31,6 @@ function ArticleFull(props) {
           title={
             <div style={header}>
             <h2>{props.title}
-            <span style={{
-              fontSize: '16px',
-              paddingLeft: '5vmin'
-              }}>{props.date} by: {props.author}</span>
             </h2>
             </div>
           }
@@ -55,8 +51,18 @@ function ArticleFull(props) {
             fontFamily: 'Raleway',
           }}>
           <div style={paragraphStyle}>
+            <p style={{fontSize: 'calc(8px + 2vmin)', 
+                        textAlign: 'center'}}>
+              {props.author}
+              <span style={{
+                    fontSize: 'calc(8px + 1.75vmin)',
+                    paddingLeft: '5vmin'
+                    }}>
+                {props.date}
+              </span>
+            </p>
           <div>
-            <p>{props.p1}</p>
+            <p>{props.p1} </p>
             <img src={props.img2} alt='img2' style={imageStyle}></img>
           </div>
           <div>
@@ -95,10 +101,6 @@ function ArticleFull(props) {
           title={
             <div style={header}>
             <h2>{props.title}
-            <span style={{
-              fontSize: '16px',
-              paddingLeft: '5vmin'
-              }}>{props.date} <br></br>{props.author}</span>
             </h2>
             </div>
           }
@@ -118,6 +120,16 @@ function ArticleFull(props) {
             fontFamily: 'Raleway',
           }}>
           <div style={paragraphStyle}>
+          <p style={{fontSize: 'calc(8px + 2vmin)', 
+                        textAlign: 'center'}}>
+              {props.author}
+              <span style={{
+                    fontSize: 'calc(8px + 1.75vmin)',
+                    paddingLeft: '5vmin'
+                    }}>
+                {props.date}
+              </span>
+            </p>
           <div>
            <p>{props.p1}</p>
            <img src={props.img2} alt='img2' style={imageStyle}></img>
@@ -154,10 +166,6 @@ function ArticleFull(props) {
           title={
             <div style={header}>
             <h2>{props.title}
-            <span style={{
-              fontSize: '16px',
-              paddingLeft: '5vmin'
-              }}>{props.date} by: {props.author}</span>
             </h2>
             </div>
           }
@@ -177,6 +185,17 @@ function ArticleFull(props) {
             fontFamily: 'Raleway',
           }}>
           <div style={paragraphStyle}>
+          <p style={{fontSize: 'calc(8px + 2vmin)', 
+                        textAlign: 'center'}}>
+              {props.author}
+              <span style={{
+                    fontSize: 'calc(8px + 1.75vmin)',
+                    paddingLeft: '5vmin'
+                    }}>
+                {props.date}
+              </span>
+            </p>
+          <p>{props.author}</p>
             <div>
               <p>{props.p1}</p>
               <img src={props.img2} alt='img2' style={imageStyle}></img>
@@ -212,12 +231,7 @@ function ArticleFull(props) {
         <Card hoverable
           title={
             <div style={header}>
-            <h2>{props.title}
-            <span style={{
-              fontSize: '16px',
-              paddingLeft: '5vmin'
-              }}>{props.date} by: {props.author}</span>
-            </h2>
+            <h2>{props.title}</h2>
             </div>
           }
           cover={<img 
@@ -236,6 +250,16 @@ function ArticleFull(props) {
             fontFamily: 'Raleway',
           }}>
           <div style={paragraphStyle}>
+          <p style={{fontSize: 'calc(8px + 2vmin)', 
+                        textAlign: 'center'}}>
+              {props.author}
+              <span style={{
+                    fontSize: 'calc(8px + 1.75vmin)',
+                    paddingLeft: '5vmin'
+                    }}>
+                {props.date}
+              </span>
+            </p>
             <div>
               <p>{props.p1}</p>
             </div>
@@ -272,10 +296,6 @@ function ArticleFull(props) {
           title={
             <div style={header}>
             <h2>{props.title}
-            <span style={{
-              fontSize: '16px',
-              paddingLeft: '5vmin'
-              }}>{props.date} by: {props.author}</span>
             </h2>
             </div>
           }
@@ -295,6 +315,16 @@ function ArticleFull(props) {
             fontFamily: 'Raleway',
           }}>
           <div style={paragraphStyle}>
+          <p style={{fontSize: 'calc(8px + 2vmin)', 
+                        textAlign: 'center'}}>
+              {props.author}
+              <span style={{
+                    fontSize: 'calc(8px + 1.75vmin)',
+                    paddingLeft: '5vmin'
+                    }}>
+                {props.date}
+              </span>
+            </p>
             <div>
               <p>{props.p1}</p>
             </div>
@@ -328,12 +358,7 @@ function ArticleFull(props) {
           <Card hoverable
             title={
               <div style={header}>
-              <h2>{props.title}
-              <span style={{
-                fontSize: '16px',
-                paddingLeft: '5vmin'
-                }}>{props.date} by: {props.author}</span>
-              </h2>
+              <h2>{props.title}</h2>
               </div>
             }
             cover={<img 
@@ -352,6 +377,16 @@ function ArticleFull(props) {
               fontFamily: 'Raleway',
             }}>
             <div style={paragraphStyle}>
+            <p style={{fontSize: 'calc(8px + 2vmin)', 
+                        textAlign: 'center'}}>
+              {props.author}
+              <span style={{
+                    fontSize: 'calc(8px + 1.75vmin)',
+                    paddingLeft: '5vmin'
+                    }}>
+                {props.date}
+              </span>
+            </p>
               <div>
                 <p>{props.p1}</p>
               </div>
@@ -385,10 +420,6 @@ function ArticleFull(props) {
             title={
               <div style={header}>
               <h2>{props.title}
-              <span style={{
-                fontSize: '16px',
-                paddingLeft: '5vmin'
-                }}>{props.date} by: {props.author}</span>
               </h2>
               </div>
             }
@@ -408,6 +439,16 @@ function ArticleFull(props) {
               fontFamily: 'Raleway',
             }}>
             <div style={paragraphStyle}>
+            <p style={{fontSize: 'calc(8px + 2vmin)', 
+                        textAlign: 'center'}}>
+              {props.author}
+              <span style={{
+                    fontSize: 'calc(8px + 1.75vmin)',
+                    paddingLeft: '5vmin'
+                    }}>
+                {props.date}
+              </span>
+            </p>
               <div>
                 <p>{props.p1}</p>
               </div>
