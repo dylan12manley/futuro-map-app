@@ -16,8 +16,10 @@ const articleStyle = {
  fontFamily: 'Raleway',
 }
 
+// const currentCategory = 'props.category'
+
 function Article(props){
-  // if(!props.img2 && !props.img3 && !props.img4 && !props.img5 && !props.img6 && !props.img7 && !props.img8 && !props.img9 )
+  if(!props.img2 && !props.img3 && !props.img4 && !props.img5 && !props.img6 && !props.img7 && !props.img8 && !props.img9 )
   return (
     <div style={articleStyle}>
       <Card 
@@ -27,7 +29,7 @@ function Article(props){
         headStyle={{
           fontWeight: '100',
           margin:'0px',
-          height: 'calc(50px + 8vmin)',
+          height: 'calc(50px + 6vmin)',
           }}
         bodyStyle={{
           color: '#1C0B0D',
@@ -36,7 +38,7 @@ function Article(props){
         <div className='articleBottom'>
           <p 
             style={{
-              fontSize: '18px',
+              fontSize: 'calc(8px + 3vmin)',
               margin: '8px'}}
           >
           {props.author} 
@@ -49,6 +51,7 @@ function Article(props){
           <p 
             style={{
               fontWeight: '500',
+              fontSize: 'calc(6px + 2vmin)',
               margin: '0px'}}>
           {props.headline}
           </p>
@@ -60,9 +63,12 @@ function Article(props){
         expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
         className="site-collapse-custom-collapse"
       >
-        <Panel header="Read the rest?" key="1" className="site-collapse-custom-panel">
+        <Panel header="Read the rest?" 
+        key="1" 
+        style={{fontSize: 'calc(6px + 2vmin)'}}
+        className="site-collapse-custom-panel">
           <p>{props.p1}</p>
-          <a href='/{props.category}'>{props.category}</a>
+          <a href='/film'>{props.category}</a>
           <div></div>
         </Panel>
       </Collapse>
@@ -70,178 +76,191 @@ function Article(props){
     </div>
   );
 //(conditional if there is not any img 3 through 9. //
-  // else if(!props.img3 && !props.img4 && !props.img5 && !props.img6 && !props.img7 && !props.img8 && !props.img9 )
-  // return (
-  //   <div style={articleStyle}>
-  //     <Card 
-  //       hoverable
-  //       title={<h2>{props.title}</h2>}
-  //       cover={<img alt="article" src={props.mainImg} style={{ overflow: 'hidden'}}/>}
-  //       headStyle={{
-  //         fontWeight: '100',
-  //         margin:'0px',
-  //         height: '42px'}}
-  //       bodyStyle={{
-  //         color: '#1C0B0D',
-  //       }}
-  //     >
-  //       <div className='articleBottom'>
-  //         <p 
-  //           style={{
-  //             fontSize: '18px',
-  //             margin: '8px'}}
-  //         >
-  //         {props.author} 
-  //         <span 
-  //           style={{
-  //             paddingLeft: '15vw'}}>
-  //           {props.date} 
-  //         </span>
-  //         </p>
-  //         <p 
-  //           style={{
-  //             fontWeight: '500',
-  //             margin: '0px'}}>
-  //         {props.headline}
-  //         </p>
-  //       </div>
-  //     </Card>
-  //     <Collapse
-  //       bordered={false}
-  //       defaultActiveKey={['0']}
-  //       expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
-  //       className="site-collapse-custom-collapse"
-  //     >
-  //       <Panel header="Read the rest?" key="1" className="site-collapse-custom-panel">
-  //         <p>{props.p1}</p>
-  //         <img src={props.img2} alt='img2' style={imageStyle}></img>
-  //         <p>{props.p2}</p>
-  //         <a href='/{props.category}'>{props.category}</a>
-  //         <div></div>
-  //       </Panel>
-  //     </Collapse>
-  //     <hr/>
-  //   </div>
-  // );
-  // //(conditional if there is not any img 4 through 9. //
-  // else if(!props.img4 && !props.img5 && !props.img6 && !props.img7 && !props.img8 && !props.img9 )
-  // return (
-  //   <div style={articleStyle}>
-  //     <Card 
-  //       hoverable
-  //       title={<h2>{props.title}</h2>}
-  //       cover={<img alt="article" src={props.mainImg} style={{ overflow: 'hidden'}}/>}
-  //       headStyle={{
-  //         fontWeight: '100',
-  //         margin:'0px',
-  //         height: '42px'}}
-  //       bodyStyle={{
-  //         color: '#1C0B0D',
-  //         }}
-  //       >
-  //       <div className='articleBottom'>
-  //         <p 
-  //           style={{
-  //             fontSize: '18px',
-  //             margin: '8px'}}
-  //         >
-  //         {props.author} 
-  //         <span 
-  //           style={{
-  //             paddingLeft: '15vw'}}>
-  //           {props.date} 
-  //         </span>
-  //         </p>
-  //         <p 
-  //           style={{
-  //             fontWeight: '500',
-  //             margin: '0px'}}>
-  //         {props.headline}
-  //         </p>
-  //       </div>
-  //     </Card>
-  //     <Collapse
-  //       bordered={false}
-  //       defaultActiveKey={['0']}
-  //       expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
-  //       className="site-collapse-custom-collapse"
-  //     >
-  //       <Panel header="Read the rest?" key="1" className="site-collapse-custom-panel">
-  //         <img src={props.img2} alt='img2' style={imageStyle}></img>
-  //         <p>{props.p1}</p>
-  //         <img src={props.img3} alt='img3' style={imageStyle}></img>
-  //         <p>{props.p2}</p>
-  //         <a href='/{props.category}'>{props.category}</a>
-  //         <div></div>
-  //       </Panel>
-  //     </Collapse>
-  //     <hr/>
-  //   </div>
-  // );
-  // else 
-  //  return (
-  //   <div style={articleStyle}>
-  //   <Card 
-  //     hoverable
-  //     title={
-  //       <h2>{props.title}</h2>}
-  //     cover={
-  //       <img alt="article" 
-  //         src={props.mainImg} 
-  //         style={{ overflow: 'hidden'}}
-  //       />}
-  //     headStyle={{
-  //       fontWeight: '100',
-  //       margin:'0px',
-  //       height: '42px'
-  //         }}
-  //     bodyStyle={{
-  //       color: '#1C0B0D',
-  //         }}
-  //   >
-  //   <div className='articleBottom'>
-  //     <p style={{
-  //       fontSize: '18px',
-  //       margin: '8px',
-  //         }}
-  //     >
-  //     {props.author} 
-  //     <span style={{
-  //         paddingLeft: '15vw',
-  //     }}
-  //     >
-  //     {props.date} 
-  //     </span>
-  //     </p>
-  //     <p 
-  //       style={{
-  //         fontWeight: '500',
-  //         margin: '0px'
-  //         }}
-  //       >
-  //     {props.headline}
-  //     </p>
-  //   </div>
-  //   </Card>
-  //   <Collapse
-  //     bordered={false}
-  //     defaultActiveKey={['0']}
-  //     expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
-  //     className="site-collapse-custom-collapse"
-  //   >
-  //     <Panel header="Read the rest?" key="1" className="site-collapse-custom-panel">
-  //       <p>{props.p1}</p>
-  //       <img src={props.img2} alt='img2' style={imageStyle}></img>
-  //       <p>{props.p2}</p>
-  //       <img src={props.img3} alt='img3' style={imageStyle}></img>
-  //       <a href='/{props.category}'>{props.category}</a>
-  //       <img src={props.img4} alt='img4' style={imageStyle}></img>
-  //       <div></div>
-  //     </Panel>
-  //   </Collapse>
-  //   <hr/>
-  // </div>
-  //  )
+  else if(!props.img3 && !props.img4 && !props.img5 && !props.img6 && !props.img7 && !props.img8 && !props.img9 )
+  return (
+    <div style={articleStyle}>
+      <Card 
+        hoverable
+        title={<h2 className='article-title'>{props.title}</h2>}
+        cover={<img alt="article" src={props.mainImg} style={{ overflow: 'hidden'}}/>}
+        headStyle={{
+          fontWeight: '100',
+          margin:'0px',
+          height: 'calc(50px + 6vmin)',}}
+        bodyStyle={{
+          color: '#1C0B0D',
+        }}
+      >
+        <div className='articleBottom'>
+          <p 
+            style={{
+              fontSize: 'calc(8px + 3vmin)',
+              margin: '8px'}}
+          >
+          {props.author} 
+          <span 
+            style={{
+              paddingLeft: '15vw'}}>
+            {props.date} 
+          </span>
+          </p>
+          <p 
+            style={{
+              fontWeight: '500',
+              fontSize: 'calc(6px + 2vmin)',
+              margin: '0px'}}>
+          {props.headline}
+          </p>
+        </div>
+      </Card>
+      <Collapse
+        bordered={false}
+        defaultActiveKey={['0']}
+        expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
+        className="site-collapse-custom-collapse"
+      >
+        <Panel header="Read the rest?" 
+            key="1"
+            style={{fontSize: 'calc(6px + 2vmin)'}} 
+            className="site-collapse-custom-panel">
+          <p>{props.p1}</p>
+          <img src={props.img2} alt='img2' style={imageStyle}></img>
+          <p>{props.p2}</p>
+          <a href='/art'>{props.category}</a>
+          <div></div>
+        </Panel>
+      </Collapse>
+      <hr/>
+    </div>
+  );
+  //(conditional if there is not any img 4 through 9. //
+  else if(!props.img4 && !props.img5 && !props.img6 && !props.img7 && !props.img8 && !props.img9 )
+  return (
+    <div style={articleStyle}>
+      <Card 
+        hoverable
+        title={<h2 className='article-title'>{props.title}</h2>}
+        cover={<img alt="article" src={props.mainImg} style={{ overflow: 'hidden'}}/>}
+        headStyle={{
+          fontWeight: '100',
+          margin:'0px',
+          height: 'calc(50px + 6vmin)',}}
+        bodyStyle={{
+          color: '#1C0B0D',
+          }}
+        >
+        <div className='articleBottom'>
+          <p 
+            style={{
+              fontSize: 'calc(8px + 3vmin)',
+              margin: '8px'}}
+          >
+          {props.author} 
+          <span 
+            style={{
+              paddingLeft: '15vw'}}>
+            {props.date} 
+          </span>
+          </p>
+          <p 
+            style={{
+              fontWeight: '500',
+              fontSize: 'calc(6px + 2vmin)',
+              margin: '0px'}}>
+          {props.headline}
+          </p>
+        </div>
+      </Card>
+      <Collapse
+        bordered={false}
+        defaultActiveKey={['0']}
+        expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
+        className="site-collapse-custom-collapse"
+      >
+        <Panel 
+          header="Read the rest?" 
+          key="1" 
+          style={{fontSize: 'calc(6px + 2vmin)'}}
+          className="site-collapse-custom-panel">
+          <img src={props.img2} alt='img2' style={imageStyle}></img>
+          <p>{props.p1}</p>
+          <img src={props.img3} alt='img3' style={imageStyle}></img>
+          <p>{props.p2}</p>
+          <a href='/people'>{props.category}</a>
+          <div></div>
+        </Panel>
+      </Collapse>
+      <hr/>
+    </div>
+  );
+  else 
+   return (
+    <div style={articleStyle}>
+    <Card 
+      hoverable
+      title={<h2 className='article-title'>{props.title}</h2>}
+      cover={
+        <img alt="article" 
+          src={props.mainImg} 
+          style={{ overflow: 'hidden'}}
+        />}
+      headStyle={{
+        fontWeight: '100',
+        margin:'0px',
+        height: 'calc(50px + 6vmin)',
+          }}
+      bodyStyle={{
+        color: '#1C0B0D',
+          }}
+    >
+    <div className='articleBottom'>
+      <p style={{
+        fontSize: 'calc(8px + 3vmin)',
+        margin: '8px',
+          }}
+      >
+      {props.author} 
+      <span style={{
+          paddingLeft: '15vw',
+      }}
+      >
+      {props.date} 
+      </span>
+      </p>
+      <p 
+        style={{
+          fontWeight: '500',
+          margin: '0px',
+          fontSize: 'calc(6px + 2vmin)',
+          }}
+        >
+      {props.headline}
+      </p>
+    </div>
+    </Card>
+    <Collapse
+      bordered={false}
+      defaultActiveKey={['0']}
+      expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
+      className="site-collapse-custom-collapse"
+    >
+      <Panel 
+      header="Read the rest?" 
+      key="1"
+      style={{fontSize: 'calc(6px + 2vmin)'}}
+      className="site-collapse-custom-panel">
+        <p>{props.p1}</p>
+        <img src={props.img2} alt='img2' style={imageStyle}></img>
+        <p>{props.p2}</p>
+        <img src={props.img3} alt='img3' style={imageStyle}></img>
+        <a href='/film'>{props.category}</a>
+        <img src={props.img4} alt='img4' style={imageStyle}></img>
+        <div></div>
+      </Panel>
+    </Collapse>
+    <hr/>
+  </div>
+   )
 
 }
 

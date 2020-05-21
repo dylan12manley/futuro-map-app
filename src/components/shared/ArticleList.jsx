@@ -10,7 +10,7 @@ function ArticleList() {
   const articles = useSelector(state => state.firestore.ordered.articles);
   if (isLoaded(articles)) {
     return (
-      <div style={{ marginTop: '75px', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
+      <div style={{ marginTop: 'calc(65px + 6vmin)', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
         {Object.values(articles).map((article) => {
           return <Article
             title={article.title}

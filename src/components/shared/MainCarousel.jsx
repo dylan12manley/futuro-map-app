@@ -10,7 +10,7 @@ const styledCarousel = {
 }
 
 const styledImage = {
-  height: 'calc(37vh + 30px)',
+  height: 'calc(41vh + 30px)',
   width: '100%',
 }
 
