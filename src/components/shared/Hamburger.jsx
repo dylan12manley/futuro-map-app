@@ -22,6 +22,7 @@ const Link = styled.div`
   padding: 1em 1em 1em 3em;
   color: white;
   font-weight: bold;
+  background-color: black;
 `;
 
 class Hamburger extends React.Component {
@@ -62,9 +63,10 @@ class Hamburger extends React.Component {
           }}
         >
           {style => (
+            <div className='drawer'>
             <Drawer left={style.left}>
               <Link to="/art" style={linkStyle2}>Art Now</Link>
-              <Link to="/fashion" style={linkStyle2}>Fashion</Link><br/>
+              <Link to="/fashion" style={linkStyle2}>Fashion</Link>
               <Link to="/film" style={linkStyle2}>Film</Link>
               <Link to="/people" style={linkStyle2}>Humans</Link>
               <Link to="/people" style={linkStyle2}>Studios</Link>
@@ -73,6 +75,7 @@ class Hamburger extends React.Component {
               <Link to="/fashion" style={linkStyle2}>Rad Places</Link>
               <Link to="/film" style={linkStyle2}>Store</Link>
             </Drawer>
+            </div>
           )}
         </Motion>
       </div>
