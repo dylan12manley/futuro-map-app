@@ -17,6 +17,7 @@ import Film from './pages/FilmPage';
 import People from './pages/PeoplePage';
 import Sound from './pages/SoundPage';
 import ArticleX from './shared/ArticleX';
+import HamHelper from './pages/HamHelper';
 
 const appStyle = {
   backgroundColor: 'white',
@@ -57,6 +58,7 @@ class App extends React.Component {
           <Route exact path="/people" component={People} />
           <Route exact path="/sound" component={Sound} />
           <Route exact path="/articlex" component={ArticleX} />
+          <Route exact path="/ham" component={HamHelper} />
           <Route component={Error404} />
         </Switch>
       </Router>

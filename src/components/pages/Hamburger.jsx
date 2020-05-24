@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Motion, spring } from 'react-motion';
 import './App.css';
+import HamHelper from './HamHelper';
 
 const Drawer = styled.div`
   position: absolute;
@@ -35,4 +36,5 @@ class Hamburger extends React.Component {
     }
   }
 
+  export default Hamburger
   
