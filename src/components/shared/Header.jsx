@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import futuro from '../../assets/images/logo-black-sm.jpg'
 import { Row, Col, Collapse } from 'antd'
 import { MenuOutlined } from '@ant-design/icons'
+import Hamburger from './Hamburger'
 
 import '../../styles/Header.scss'
 
@@ -23,11 +24,6 @@ function Header(){
     textAlign: 'center',
   }
 
-  const linkStyle2 = {
-    color: 'white',
-    fontSize: 'calc(7px + 1vmin)',
-    fontFamily: 'Bungee',
-  }
 
   return (
     <>
@@ -38,7 +34,12 @@ function Header(){
             <img src={futuro} className='logo' alt='Futuro'></img>
           </Link>
         </Col>
-        <Col  lg={8} xl={8} 
+        <Col  lg={8} xl={8}>
+          <Hamburger/>
+        </Col>
+
+        
+        {/* <Col  lg={8} xl={8} 
           className='collapse-col'>
           <Collapse 
             showArrow={false} 
@@ -65,7 +66,7 @@ function Header(){
               <Link to="/film" style={linkStyle2}>Store</Link><br/>
             </Panel>
           </Collapse>
-        </Col>
+        </Col> */}
       </Row>
     </div>
     </>
