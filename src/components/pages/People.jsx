@@ -46,6 +46,7 @@ function People() {
         })}
       </div>
       <Link to="/signin" >Sign In</Link> <br/>
+      <Link to="/ham" >Burger time</Link> <br/>
       </div>
     );
   } else if (isEmpty) {
