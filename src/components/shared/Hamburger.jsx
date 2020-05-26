@@ -4,12 +4,6 @@ import styled from 'styled-components';
 import { Motion, spring } from 'react-motion';
 import '../../styles/Hamburger.scss';
 
-const linkStyle2 = {
-  color: 'white',
-  fontSize: 'calc(7px + 1vmin)',
-  fontFamily: 'Bungee',
-}
-
 const Drawer = styled.div`
   position: absolute;
   height: 90%;
@@ -20,10 +14,9 @@ const Drawer = styled.div`
 
 const LinkStz = {
   cursor: "pointer",
-  padding: "0.71em 0.71em 0.71em 0.71em",
+  padding: "calc(.5em + 2px)",
   color: 'white',
   fontWeight: 'bold',
-  backgroundColor: 'black',
   fontSize: 'calc(7px + 1vmin)',
   fontFamily: 'Bungee',
   width: 'calc(30px + 5vmin)',

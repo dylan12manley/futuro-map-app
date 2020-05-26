@@ -7,7 +7,7 @@
 .bar3 {
   width: 35px;
   height: 5px;
-  background-color: rgb(187, 187, 187);
+  background-color: white;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -28,21 +28,20 @@
 
 #nav-bar {
   background: black;
-  padding: 0.2em;
+  padding: 0.5em;
 }
 
 .drawer {
     background-color: black;
-    height: calc(320px + 4vmin);
+    height: calc(320px + 5vmin);
 }
 
 .ham-link { 
   cursor: pointer;
-  padding: 1em 1em 1em 3em;
+  padding: 1em 1em 1em 2em;
   color: white;
   font-weight: bold;
   background-color: black;
   font-size: 'calc(7px + 1vmin)';
   font-family: 'Bungee';
-  overflow: visible;
 }
