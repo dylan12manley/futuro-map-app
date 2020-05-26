@@ -17,7 +17,7 @@ function Header(){
     top: '0',
     backgroundColor: 'black',
     color: '#D2E8CC',
-    height: 'calc(60px + 2.5vmin)',
+    height: 'calc(120px + 5vmin)',
     paddingTop: '0px',
     width: '100%',
     display: 'inline-flex',
@@ -37,36 +37,6 @@ function Header(){
         <Col  lg={8} xl={8}>
           <Hamburger/>
         </Col>
-
-        
-        {/* <Col  lg={8} xl={8} 
-          className='collapse-col'>
-          <Collapse 
-            showArrow={false} 
-            bordered={false}
-            className='collapse'
-            expandIcon={({ isActive }) => <MenuOutlined 
-                                            style={{fontSize: 'calc(12px + 2vmin)', 
-                                              margin: '0, auto', 
-                                              backgroundColor: 'white'}} 
-                                            rotate={isActive ? 90 : 360} 
-                                          />}
-            >
-            <Panel 
-              // key="1" 
-              className="collapse-custom-panel">
-              <Link to="/art" style={linkStyle2}>Art Now</Link><br/>
-              <Link to="/fashion" style={linkStyle2}>Fashion</Link><br/>
-              <Link to="/film" style={linkStyle2}>Film</Link><br/>
-              <Link to="/people" style={linkStyle2}>Humans</Link><br/>
-              <Link to="/people" style={linkStyle2}>Studios</Link><br/>
-              <Link to="/sound" style={linkStyle2}>Sound</Link><br/>
-              <Link to="/art" style={linkStyle2}>Adventures</Link><br/>
-              <Link to="/fashion" style={linkStyle2}>Rad Places</Link><br/>
-              <Link to="/film" style={linkStyle2}>Store</Link><br/>
-            </Panel>
-          </Collapse>
-        </Col> */}
       </Row>
     </div>
     </>
