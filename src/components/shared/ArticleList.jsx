@@ -10,7 +10,7 @@ function ArticleList() {
   const articles = useSelector(state => state.firestore.ordered.articles);
   if (isLoaded(articles)) {
     return (
-      <div style={{ marginTop: 'calc(65px + 6vmin)', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
+      <div style={{ marginTop: 'calc(110px + 5vmin)', padding: 'calc(8px + 1vmin)', color: '#38171C'}}>
         {Object.values(articles).map((article) => {
           return <Article
             title={article.title}
@@ -34,7 +34,7 @@ function ArticleList() {
     );
   } else if (isEmpty) {
       return( 
-        <div style={{ marginTop: '75px'}}>
+        <div style={{ marginTop: 'calc(110px + 5vmin)'}}>
           <p>Randomly hearing your favorite song on the radio is more satisfying than playing it directly from your phone.</p>
           <p>Ever think about that?</p>
           <p>Or how about: "Go to bed, you'll feel better in the morning" is the human version of "Did you turn it off and turn it back on again?"</p>
