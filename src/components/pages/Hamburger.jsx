@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import { Motion, spring } from 'react-motion';
 import '../../styles/Hamburger.scss';
@@ -11,12 +12,12 @@ const Drawer = styled.div`
   left: ${props => props.left}vh;
 `;
 
-const Link = styled.div`
-  cursor: pointer;
-  padding: 1em 1em 1em 3em;
-  color: white;
-  font-weight: bold;
-`;
+// const Link = styled.div`
+//   cursor: pointer;
+//   padding: 1em 1em 1em 3em;
+//   color: white;
+//   font-weight: bold;
+// `;
 
 class Hamburger extends React.Component {
     constructor(props) {

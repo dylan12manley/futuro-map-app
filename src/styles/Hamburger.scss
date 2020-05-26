@@ -34,4 +34,15 @@
 .drawer {
     background-color: black;
     height: calc(30px + 8vmin);
+    
+}
+
+.ham-link { 
+  cursor: pointer;
+  padding: 1em 1em 1em 3em;
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  font-size: 'calc(7px + 1vmin)';
+  font-family: 'Bungee';
 }

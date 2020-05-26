@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import { Motion, spring } from 'react-motion';
 import '../../styles/Hamburger.scss';
@@ -17,13 +18,15 @@ const Drawer = styled.div`
   left: ${props => props.left}vh;
 `;
 
-const Link = styled.div`
-  cursor: pointer;
-  padding: 1em 1em 1em 3em;
-  color: white;
-  font-weight: bold;
-  background-color: black;
-`;
+const LinkStz = {
+  cursor: "pointer",
+  padding: "1em 1em 1em 3em",
+  color: 'white',
+  fontWeight: 'bold',
+  backgroundColor: 'black',
+  fontSize: 'calc(7px + 1vmin)',
+  fontFamily: 'Bungee',
+}
 
 class Hamburger extends React.Component {
     constructor(props) {
@@ -65,15 +68,15 @@ class Hamburger extends React.Component {
           {style => (
             <div className='drawer'>
             <Drawer left={style.left}>
-              <Link to="/art" style={linkStyle2}>Art Now</Link>
-              <Link to="/fashion" style={linkStyle2}>Fashion</Link>
-              <Link to="/film" style={linkStyle2}>Film</Link>
-              <Link to="/people" style={linkStyle2}>Humans</Link>
-              <Link to="/people" style={linkStyle2}>Studios</Link>
-              <Link to="/sound" style={linkStyle2}>Sound</Link>
-              <Link to="/art" style={linkStyle2}>Adventures</Link>
-              <Link to="/fashion" style={linkStyle2}>Rad Places</Link>
-              <Link to="/film" style={linkStyle2}>Store</Link>
+              <Link to="/art" style={LinkStz}>Art Now</Link>
+              <Link to="/fashion" style={LinkStz}>Fashion</Link>
+              <Link to="/film" style={LinkStz}>Film</Link>
+              <Link to="/people" style={LinkStz}>Humans</Link>
+              <Link to="/people" style={LinkStz}>Studios</Link>
+              <Link to="/sound" style={LinkStz}>Sound</Link>
+              <Link to="/art" style={LinkStz}>Adventures</Link>
+              <Link to="/fashion" style={LinkStz}>Rad Places</Link>
+              <Link to="/film" style={LinkStz}>Store</Link>
             </Drawer>
             </div>
           )}
