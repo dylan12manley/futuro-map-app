@@ -33,8 +33,7 @@
 
 .drawer {
     background-color: black;
-    height: calc(30px + 8vmin);
-    
+    height: calc(320px + 4vmin);
 }
 
 .ham-link { 
@@ -45,4 +44,5 @@
   background-color: black;
   font-size: 'calc(7px + 1vmin)';
   font-family: 'Bungee';
+  overflow: visible;
 }

@@ -20,12 +20,14 @@ const Drawer = styled.div`
 
 const LinkStz = {
   cursor: "pointer",
-  padding: "1em 1em 1em 3em",
+  padding: "0.71em 0.71em 0.71em 0.71em",
   color: 'white',
   fontWeight: 'bold',
   backgroundColor: 'black',
   fontSize: 'calc(7px + 1vmin)',
   fontFamily: 'Bungee',
+  width: 'calc(30px + 5vmin)',
+  overflow: 'visible',
 }
 
 class Hamburger extends React.Component {
@@ -68,15 +70,15 @@ class Hamburger extends React.Component {
           {style => (
             <div className='drawer'>
             <Drawer left={style.left}>
-              <Link to="/art" style={LinkStz}>Art Now</Link>
-              <Link to="/fashion" style={LinkStz}>Fashion</Link>
-              <Link to="/film" style={LinkStz}>Film</Link>
-              <Link to="/people" style={LinkStz}>Humans</Link>
-              <Link to="/people" style={LinkStz}>Studios</Link>
-              <Link to="/sound" style={LinkStz}>Sound</Link>
-              <Link to="/art" style={LinkStz}>Adventures</Link>
-              <Link to="/fashion" style={LinkStz}>Rad Places</Link>
-              <Link to="/film" style={LinkStz}>Store</Link>
+              <p className='LinkP'><Link to="/art" style={LinkStz}>Art Now</Link></p>
+              <p className='LinkP'><Link to="/fashion" style={LinkStz}>Fashion</Link></p>
+              <p className='LinkP'><Link to="/film" style={LinkStz}>Film</Link></p>
+              <p className='LinkP'><Link to="/people" style={LinkStz}>Humans</Link></p>
+              <p className='LinkP'><Link to="/people" style={LinkStz}>Studios</Link></p>
+              <p className='LinkP'><Link to="/sound" style={LinkStz}>Sound</Link></p>
+              <p className='LinkP'><Link to="/art" style={LinkStz}>Adventures</Link></p>
+              <p className='LinkP'><Link to="/fashion" style={LinkStz}>Rad Places</Link></p>
+              <p className='LinkP'><Link to="/film" style={LinkStz}>Store</Link></p>
             </Drawer>
             </div>
           )}
