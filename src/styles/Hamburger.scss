@@ -27,21 +27,22 @@
 }
 
 #nav-bar {
-  background: black;
   padding: 0.5em;
 }
 
 .drawer {
-    background-color: black;
     height: calc(320px + 5vmin);
 }
 
 .ham-link { 
   cursor: pointer;
-  padding: 1em 1em 1em 2em;
+  padding: 1em;
   color: white;
   font-weight: bold;
-  background-color: black;
   font-size: 'calc(7px + 1vmin)';
   font-family: 'Bungee';
+}
+
+.link-p {
+  padding: 0;
 }

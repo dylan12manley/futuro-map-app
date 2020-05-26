@@ -8,7 +8,7 @@ const Drawer = styled.div`
   position: absolute;
   height: 90%;
   background: black;
-  width: 28vw;
+  width: 22vw;
   left: ${props => props.left}vh;
 `;
 
@@ -19,7 +19,6 @@ const LinkStz = {
   fontWeight: 'bold',
   fontSize: 'calc(7px + 1vmin)',
   fontFamily: 'Bungee',
-  width: 'calc(30px + 5vmin)',
   overflow: 'visible',
 }
 
@@ -63,15 +62,15 @@ class Hamburger extends React.Component {
           {style => (
             <div className='drawer'>
             <Drawer left={style.left}>
-              <p className='LinkP'><Link to="/art" style={LinkStz}>Art Now</Link></p>
-              <p className='LinkP'><Link to="/fashion" style={LinkStz}>Fashion</Link></p>
-              <p className='LinkP'><Link to="/film" style={LinkStz}>Film</Link></p>
-              <p className='LinkP'><Link to="/people" style={LinkStz}>Humans</Link></p>
-              <p className='LinkP'><Link to="/people" style={LinkStz}>Studios</Link></p>
-              <p className='LinkP'><Link to="/sound" style={LinkStz}>Sound</Link></p>
-              <p className='LinkP'><Link to="/art" style={LinkStz}>Adventures</Link></p>
-              <p className='LinkP'><Link to="/fashion" style={LinkStz}>Rad Places</Link></p>
-              <p className='LinkP'><Link to="/film" style={LinkStz}>Store</Link></p>
+              <p className='link-p'><Link to="/art" style={LinkStz}>Art Now</Link></p>
+              <p className='link-p'><Link to="/fashion" style={LinkStz}>Fashion</Link></p>
+              <p className='link-p'><Link to="/film" style={LinkStz}>Film</Link></p>
+              <p className='link-p'><Link to="/people" style={LinkStz}>Humans</Link></p>
+              <p className='link-p'><Link to="/people" style={LinkStz}>Studios</Link></p>
+              <p className='link-p'><Link to="/sound" style={LinkStz}>Sound</Link></p>
+              <p className='link-p'><Link to="/art" style={LinkStz}>Adventures</Link></p>
+              <p className='link-p'><Link to="/fashion" style={LinkStz}>Rad Places</Link></p>
+              <p className='link-p'><Link to="/film" style={LinkStz}>Store</Link></p>
             </Drawer>
             </div>
           )}
