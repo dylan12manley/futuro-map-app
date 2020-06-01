@@ -1,6 +1,5 @@
 import React from "react";
 import { Carousel } from 'antd';
-// import futuro from '../../assets/images/Futuro.jpg';
 import iOS2 from '../../assets/images/iOS2.jpg';
 
 const styledCarousel = {
@@ -19,9 +18,6 @@ function MainCarousel(){
       <Carousel 
         effect="fade"
         autoplay>
-        {/* <div>
-            <img src={futuro} alt={futuro} style={styledImage}></img>
-        </div> */}
         <div>
           <img src={iOS2} alt={iOS2} style={styledImage}></img>
         </div>
