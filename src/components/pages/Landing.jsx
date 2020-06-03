@@ -35,7 +35,7 @@ function Landing(){
          <Link to="/home">
             <img style={logoStz} 
               src={logoBlack} 
-              alt='F' 
+              alt='FUTURO' 
               onMouseOver={mouseLogo}
               onClick={clickLogo}
               >
@@ -43,9 +43,9 @@ function Landing(){
           </Link>
       </div>
       <div>
-      <Iframe url="https://www.youtube.com/embed/qYG0tKyz0lo?autoplay=1"
-        display="none"
-        allow="autoplay"/>
+      <Iframe url='https://www.youtube.com/embed/qYG0tKyz0lo?autoplay=1'
+        display='none'
+        allow='autoplay'/>
       </div>
     </div>
   );
