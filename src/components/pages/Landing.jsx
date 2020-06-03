@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import logoBlack from '../../assets/images/logo-black.jpg'
 import smLogo from '../../assets/images/logo-black-sm.jpg'
+import Iframe from 'react-iframe'
 
 function Landing(){
 
@@ -18,10 +19,6 @@ function Landing(){
     e.target.style.transform = 'rotate(-.12deg)'
     e.target.style.filter= 'brightness(1.2)'
     e.target.style.height= '72vmin'
-  }
-
-  function mouseSmLogo(e) {
-    e.target.style.display = 'none'
   }
 
   function clickLogo(e) {
@@ -46,12 +43,9 @@ function Landing(){
           </Link>
       </div>
       <div>
-      <img style={bigLogoStz} 
-              src={smLogo} 
-              alt='F' 
-              onMouseOver={mouseSmLogo}
-              onClick={clickLogo}
-              ></img>
+      <Iframe url="https://www.youtube.com/embed/qYG0tKyz0lo?autoplay=1"
+        display="none"
+        allow="autoplay"/>
       </div>
     </div>
   );
