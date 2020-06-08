@@ -38,7 +38,7 @@ function Article(props){
         <div className='articleBottom'>
           <p 
             style={{
-              fontSize: 'calc(8px + 3vmin)',
+              fontSize: 'calc(12px + 1.2vmin)',
               margin: '8px'}}
           >
           {props.author} 
@@ -51,7 +51,7 @@ function Article(props){
           <p 
             style={{
               fontWeight: '500',
-              fontSize: 'calc(6px + 2vmin)',
+              fontSize: 'calc(6px + 1.2vmin)',
               margin: '0px'}}>
           {props.headline}
           </p>
@@ -65,7 +65,7 @@ function Article(props){
       >
         <Panel header="Read the rest?" 
         key="1" 
-        style={{fontSize: 'calc(6px + 2vmin)'}}
+        style={{fontSize: 'calc(6px + 1.2vmin)'}}
         className="site-collapse-custom-panel">
           <p>{props.p1}</p>
           <a href='/film'>{props.category}</a>
@@ -94,7 +94,7 @@ function Article(props){
         <div className='articleBottom'>
           <p 
             style={{
-              fontSize: 'calc(8px + 3vmin)',
+              fontSize: 'calc(12px + 1.2vmin)',
               margin: '8px'}}
           >
           {props.author} 
@@ -107,7 +107,7 @@ function Article(props){
           <p 
             style={{
               fontWeight: '500',
-              fontSize: 'calc(6px + 2vmin)',
+              fontSize: 'calc(6px + 1.2vmin)',
               margin: '0px'}}>
           {props.headline}
           </p>
@@ -121,7 +121,7 @@ function Article(props){
       >
         <Panel header="Read the rest?" 
             key="1"
-            style={{fontSize: 'calc(6px + 2vmin)'}} 
+            style={{fontSize: 'calc(6px + 1.2vmin)'}} 
             className="site-collapse-custom-panel">
           <p>{props.p1}</p>
           <img src={props.img2} alt='img2' style={imageStyle}></img>
@@ -152,7 +152,7 @@ function Article(props){
         <div className='articleBottom'>
           <p 
             style={{
-              fontSize: 'calc(8px + 3vmin)',
+              fontSize: 'calc(12px + 1.2vmin)',
               margin: '8px'}}
           >
           {props.author} 
@@ -165,7 +165,7 @@ function Article(props){
           <p 
             style={{
               fontWeight: '500',
-              fontSize: 'calc(6px + 2vmin)',
+              fontSize: 'calc(6px + 1.2vmin)',
               margin: '0px'}}>
           {props.headline}
           </p>
@@ -180,7 +180,7 @@ function Article(props){
         <Panel 
           header="Read the rest?" 
           key="1" 
-          style={{fontSize: 'calc(6px + 2vmin)'}}
+          style={{fontSize: 'calc(6px + 1.2vmin)'}}
           className="site-collapse-custom-panel">
           <img src={props.img2} alt='img2' style={imageStyle}></img>
           <p>{props.p1}</p>
@@ -215,7 +215,7 @@ function Article(props){
     >
     <div className='articleBottom'>
       <p style={{
-        fontSize: 'calc(8px + 3vmin)',
+        fontSize: 'calc(12px + 1.2vmin)',
         margin: '8px',
           }}
       >
@@ -231,7 +231,7 @@ function Article(props){
         style={{
           fontWeight: '500',
           margin: '0px',
-          fontSize: 'calc(6px + 2vmin)',
+          fontSize: 'calc(6px + 1.2vmin)',
           }}
         >
       {props.headline}
@@ -247,7 +247,7 @@ function Article(props){
       <Panel 
       header="Read the rest?" 
       key="1"
-      style={{fontSize: 'calc(6px + 2vmin)'}}
+      style={{fontSize: 'calc(6px + 1.2vmin)'}}
       className="site-collapse-custom-panel">
         <p>{props.p1}</p>
         <img src={props.img2} alt='img2' style={imageStyle}></img>
