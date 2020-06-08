@@ -25,7 +25,7 @@ function Article(props){
       <Card 
         hoverable
         title={<h2 className='article-title'>{props.title}</h2>}
-        cover={<img alt="article" src={props.mainImg} style={{ overflow: 'hidden'}}/>}
+        cover={<img alt="article" src={props.mainImg} className='mainImg'/>}
         headStyle={{
           fontWeight: '100',
           margin:'0px',
@@ -82,7 +82,7 @@ function Article(props){
       <Card 
         hoverable
         title={<h2 className='article-title'>{props.title}</h2>}
-        cover={<img alt="article" src={props.mainImg} style={{ overflow: 'hidden'}}/>}
+        cover={<img alt="article" src={props.mainImg} className='mainImg'/>}
         headStyle={{
           fontWeight: '100',
           margin:'0px',
@@ -140,7 +140,7 @@ function Article(props){
       <Card 
         hoverable
         title={<h2 className='article-title'>{props.title}</h2>}
-        cover={<img alt="article" src={props.mainImg} style={{ overflow: 'hidden'}}/>}
+        cover={<img alt="article" src={props.mainImg} className='mainImg'/>}
         headStyle={{
           fontWeight: '100',
           margin:'0px',
@@ -202,7 +202,7 @@ function Article(props){
       cover={
         <img alt="article" 
           src={props.mainImg} 
-          style={{ overflow: 'hidden'}}
+          className='mainImg'
         />}
       headStyle={{
         fontWeight: '100',
