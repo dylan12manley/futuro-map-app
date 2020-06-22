@@ -6,9 +6,9 @@ import '../../styles/Hamburger.scss';
 
 const Drawer = styled.div`
   position: absolute;
-  height: 90%;
+  height: 76%;
   background: black;
-  width: 22vw;
+  width: 23vmin;
   left: ${props => props.left}vh;
 `;
 
