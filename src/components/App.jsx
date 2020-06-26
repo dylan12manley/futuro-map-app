@@ -7,10 +7,6 @@ import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import Landing from './pages/Landing';
 import Error404 from './Error404';
-import Admin from './pages/Admin';
-import NewArticleForm from './forms/NewArticleForm';
-import NewAdvertForm from './forms/NewAdvertForm';
-import NewCarouselItemForm from './forms/NewCarouselForm';
 import Art from './pages/ArtPage';
 import Fashion from './pages/FashionPage';
 import Film from './pages/FilmPage';
@@ -38,10 +34,6 @@ class App extends React.Component {
           <Route exact path="/" component={Landing}/>
           <Route exact path="/signin" component={SignIn} />
           <Route exact path="/home" component={Home} articleList={this.props.articleList}/>
-          <Route exact path="/admin" component={Admin}/>
-          <Route exact path="/NewArticleForm" component={NewArticleForm} />
-          <Route exact path="/addad" component={NewAdvertForm} />
-          <Route exact path="/NewCarouselItemForm" component={NewCarouselItemForm} />
           <Route exact path="/art" component={Art} />
           <Route exact path="/fashion" component={Fashion} />
           <Route exact path="/film" component={Film} />
