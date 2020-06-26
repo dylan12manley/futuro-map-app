@@ -16,8 +16,6 @@ import Fashion from './pages/FashionPage';
 import Film from './pages/FilmPage';
 import People from './pages/PeoplePage';
 import Sound from './pages/SoundPage';
-import ArticleX from './shared/ArticleX';
-import HamHelper from './pages/HamHelper';
 
 const appStyle = {
   backgroundColor: 'white',
@@ -27,14 +25,6 @@ const appStyle = {
 
 class App extends React.Component {
 
-
-
-  // handleEditingArticleInList = (articleToEdit) => {
-  //   const { dispatch } = this.props;
-  //   const { title, headline, body, author, date, category, mainImg, id } = articleToEdit;
-  //   const action = a.addArticle(articleToEdit);
-  //   dispatch(action);
-  // }
 
   handleDeletingArticle = (id) => {
    this.props.firestore.delete({collection: 'articles', doc: id});
@@ -57,8 +47,6 @@ class App extends React.Component {
           <Route exact path="/film" component={Film} />
           <Route exact path="/people" component={People} />
           <Route exact path="/sound" component={Sound} />
-          <Route exact path="/articlex" component={ArticleX} />
-          <Route exact path="/ham" component={HamHelper} />
           <Route component={Error404} />
         </Switch>
       </Router>

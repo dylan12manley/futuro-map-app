@@ -38,7 +38,6 @@ class Hamburger extends React.Component {
       });
     }
  
-
   render() {
     return (
       <div id="parent">
@@ -49,7 +48,7 @@ class Hamburger extends React.Component {
             <div className="bar3"/>
           </div>
         </div>
-            
+
         <Motion
           defaultStyle={{ left: -40 }}
           style={{
@@ -80,4 +79,3 @@ class Hamburger extends React.Component {
   }
 }
 export default Hamburger;
-  
