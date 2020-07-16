@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Card } from 'antd';
+import './ArticleFull.scss'
 
 const paragraphStyle = {
   fontFamily: 'Raleway',
@@ -37,7 +38,7 @@ function ArticleFull(props) {
           cover={<img 
             alt="article" 
             src={props.mainImg} 
-            style={{ overflow: 'hidden'}}
+            className='card-cover-img'
           />}
           headStyle={{
             radius: '5px',
