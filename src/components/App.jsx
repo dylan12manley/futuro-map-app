@@ -21,7 +21,6 @@ const appStyle = {
 
 class App extends React.Component {
 
-
   handleDeletingArticle = (id) => {
    this.props.firestore.delete({collection: 'articles', doc: id});
  }
