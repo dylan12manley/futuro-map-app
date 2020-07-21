@@ -18,14 +18,11 @@ ___________      __
 
 ----
 
-## **Products Used**
-React, Redux, Javascript, Firebase, Firestore, Node(NPM), and CSS. 
-
-----
+## Currently Hoasted at www.futuromagazine-be1ee.firebaseapp.com
 
 ### **Packages Required to Run This Project Locally**
 
-React, Redux, Javascript,Sass, Node, Ant Design Library
+React, Redux, Javascript, Sass, Node, Ant Design Library
 
 -----
 
