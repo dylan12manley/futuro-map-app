@@ -6,8 +6,10 @@ import '../../styles/Hamburger.scss';
 
 const Drawer = styled.div`
   position: absolute;
-  height: 70%;
-  min-height: 42vmin;
+  // height: 70%;
+  height: 42vmin;
+  min-height: 272px;
+  max-height: 375px;
   background: black;
   width: 23vmin;
   min-width: 140px;
