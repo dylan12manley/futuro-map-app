@@ -6,9 +6,12 @@ import '../../styles/Hamburger.scss';
 
 const Drawer = styled.div`
   position: absolute;
-  height: 76%;
+  height: 70%;
+  min-height: 42vmin;
   background: black;
   width: 23vmin;
+  min-width: 140px;
+  top: 130px;
   left: ${props => props.left}vh;
 `;
 
@@ -17,7 +20,7 @@ const LinkStz = {
   padding: "calc(.5em + 2px)",
   color: 'white',
   fontWeight: 'bold',
-  fontSize: 'calc(7px + 1vmin)',
+  fontSize: 'calc(12px + 1vmin)',
   fontFamily: 'Bungee',
   overflow: 'visible',
 }
