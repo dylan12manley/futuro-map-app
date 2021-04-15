@@ -16,8 +16,6 @@ const articleStyle = {
  fontFamily: 'Raleway',
 }
 
-// const currentCategory = 'props.category'
-
 function Article(props){
   if(!props.img2 && !props.img3 && !props.img4 && !props.img5 && !props.img6 && !props.img7 && !props.img8 && !props.img9 )
   return (
@@ -26,13 +24,10 @@ function Article(props){
         hoverable
         title={<h2 className='article-title'>{props.title}</h2>}
         cover={<img alt="article" src={props.mainImg} className='mainImg'/>}
-        headStyle={{
-          fontWeight: '100',
+        headStyle={{ fontWeight: '100',
           margin:'0px',
-          height: 'calc(50px + 6vmin)',
-          }}
-        bodyStyle={{
-          color: '#1C0B0D'}}>
+          height: 'calc(50px + 6vmin)'}}
+        bodyStyle={{ color: '#1C0B0D'}}>
         <div className='articleBottom'>
           <p style={{ fontSize: 'calc(12px + 1.2vmin)',
               margin: '8px'}}>
@@ -51,12 +46,12 @@ function Article(props){
         expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
         className="site-collapse-custom-collapse">
       <Panel header="Read the rest?" 
-        key="1" 
-        style={{fontSize: 'calc(6px + 1.2vmin)'}}
-        className="site-collapse-custom-panel">
-          <p>{props.p1}</p>
-          <a href='/film'>{props.category}</a>
-          <div></div>
+          key="1" 
+          style={{fontSize: 'calc(6px + 1.2vmin)'}}
+          className="site-collapse-custom-panel">
+        <p>{props.p1}</p>
+        <a href='/film'>{props.category}</a>
+        <div></div>
         </Panel>
       </Collapse>
       <hr/>
