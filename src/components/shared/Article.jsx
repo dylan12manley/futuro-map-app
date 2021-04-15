@@ -32,8 +32,7 @@ function Article(props){
           height: 'calc(50px + 6vmin)',
           }}
         bodyStyle={{
-          color: '#1C0B0D',
-          }}>
+          color: '#1C0B0D'}}>
         <div className='articleBottom'>
           <p style={{ fontSize: 'calc(12px + 1.2vmin)',
               margin: '8px'}}>
