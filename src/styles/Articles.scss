@@ -1,6 +1,7 @@
 .article-title {
     font-size: calc(22px + 1.5vmin);
     text-align: center;
+    text-overflow: ellipsis;
 }
 
 .article-head {
