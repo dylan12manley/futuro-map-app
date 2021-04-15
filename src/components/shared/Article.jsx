@@ -33,37 +33,25 @@ function Article(props){
           }}
         bodyStyle={{
           color: '#1C0B0D',
-          }}
-        >
+          }}>
         <div className='articleBottom'>
-          <p 
-            style={{
-              fontSize: 'calc(12px + 1.2vmin)',
-              margin: '8px'}}
-          >
+          <p style={{ fontSize: 'calc(12px + 1.2vmin)',
+              margin: '8px'}}>
           {props.author} 
-          <span 
-            style={{
-              paddingLeft: '15vw'}}>
-            {props.date} 
-          </span>
+          <span style={{ paddingLeft: '15vw'}}> {props.date} </span>
           </p>
-          <p 
-            style={{
-              fontWeight: '500',
+          <p style={{ fontWeight: '500',
               fontSize: 'calc(6px + 1.2vmin)',
               margin: '0px'}}>
           {props.headline}
           </p>
         </div>
       </Card>
-      <Collapse
-        bordered={false}
+      <Collapse bordered={false}
         defaultActiveKey={['0']}
         expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
-        className="site-collapse-custom-collapse"
-      >
-        <Panel header="Read the rest?" 
+        className="site-collapse-custom-collapse">
+      <Panel header="Read the rest?" 
         key="1" 
         style={{fontSize: 'calc(6px + 1.2vmin)'}}
         className="site-collapse-custom-panel">
